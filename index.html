@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>零 -ZERO- BLOG | 身体探求の地図</title>
+  <meta name="description" content="解剖学の基礎から、臨床で役立つ知識まで。身体本来の力を引き出すための統合ブログ。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Spotlight / Featured layout for a single article */
+    .featured-article-container {
+      margin-bottom: 80px;
+    }
+
+    .featured-card {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .featured-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 175, 55, 0.4);
+      box-shadow: var(--gold-glow), 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .featured-img-wrapper {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      background: #1a1e24;
+    }
+
+    .featured-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    .featured-card:hover .featured-img-wrapper img {
+      transform: scale(1.03);
+    }
+
+    .featured-content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-badge {
+      align-self: flex-start;
+      background: rgba(20, 184, 166, 0.15);
+      border: 1px solid var(--free-accent-light);
+      color: var(--free-accent-light);
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+
+    .featured-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+      transition: var(--transition-fast);
+    }
+
+    .featured-card:hover .featured-title {
+      color: var(--gold-primary);
+    }
+
+    .featured-excerpt {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 992px) {
+      .featured-card {
+        grid-template-columns: 1fr;
+      }
+      .featured-content {
+        padding: 30px;
+      }
+      .featured-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span>零 -ZERO-</span> <div class="logo-badge">BLOG</div>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">ホーム</a></li>
+          <li><a href="free-article.html">記事一覧</a></li>
+        </ul>
+      </nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="blog-hero">
+    <div class="hero-background"></div>
+    <div class="container">
+      <span class="hero-tagline">Integrative Somatic Exploration</span>
+      <h1 class="hero-title">身体を戻す、<span>零の探求。</span></h1>
+      <p class="hero-description">
+        「足す前に戻る」「身体は本来完成している」。構造・神経・流れの三層から、身体の真実に迫る公式ブログ。
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Featured Article Section -->
+    <div class="featured-article-container">
+
+      <article class="featured-card">
+        <div class="featured-img-wrapper">
+          <img src="assets/thumbnail_oriental.png" alt="東洋医学の基礎">
+        </div>
+        <div class="featured-content">
+          <span class="featured-badge">東洋医学・基礎知識</span>
+          <div class="card-date" style="margin-bottom: 8px;">2026.06.19</div>
+          <h2 class="featured-title">
+            <a href="oriental-medicine-article.html">東洋医学の基礎 ― 身体を"巡り"として読む</a>
+          </h2>
+          <p class="featured-excerpt">
+            部分を分けて見る西洋に対し、東洋は全体の関係性と巡りで身体を読む。気血水、陰陽五行、経絡経穴、四診、未病という基本概念を、現代医学と対比しながら、トレーナー・セラピスト・国家資格者が"もう一つの評価レンズ"として臨床に組み込めるよう解説。
+          </p>
+          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
+            <a href="oriental-medicine-article.html" class="read-more-btn" style="font-size: 0.95rem;">
+              記事を読む
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-card" style="margin-top: 40px;">
+        <div class="featured-img-wrapper">
+          <img src="assets/thumbnail_neurology.png" alt="神経学の基礎">
+        </div>
+        <div class="featured-content">
+          <span class="featured-badge">神経学・基礎知識</span>
+          <div class="card-date" style="margin-bottom: 8px;">2026.06.19</div>
+          <h2 class="featured-title">
+            <a href="neurology-article.html">神経学の基礎 ― 身体を"支配する仕組み"を読む</a>
+          </h2>
+          <p class="featured-excerpt">
+            筋緊張も可動域も痛みも、最終決定を下しているのは神経系だ。中枢〜末梢の構成、運動制御、感覚入力、自律神経、痛みの神経科学、神経可塑性まで。トレーナー・セラピスト・国家資格者が評価とアプローチに直結させるための基礎を解説。
+          </p>
+          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
+            <a href="neurology-article.html" class="read-more-btn" style="font-size: 0.95rem;">
+              記事を読む
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-card" style="margin-top: 40px;">
+        <div class="featured-img-wrapper">
+          <img src="assets/thumbnail_physiology.png" alt="生理学の基礎">
+        </div>
+        <div class="featured-content">
+          <span class="featured-badge">生理学・基礎知識</span>
+          <div class="card-date" style="margin-bottom: 8px;">2026.06.19</div>
+          <h2 class="featured-title">
+            <a href="physiology-article.html">生理学の基礎 ― 身体を"動かす仕組み"を読む</a>
+          </h2>
+          <p class="featured-excerpt">
+            解剖学が身体の「地図」なら、生理学はその上で起きる電気と流れの仕組みだ。細胞とエネルギー、神経と自律神経、呼吸と循環――身体が本来どう働くようにできているのかを、臨床に活かせる形でわかりやすく解説。
+          </p>
+          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
+            <a href="physiology-article.html" class="read-more-btn" style="font-size: 0.95rem;">
+              記事を読む
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-card" style="margin-top: 40px;">
+        <div class="featured-img-wrapper">
+          <img src="assets/thumbnail_anatomy.png" alt="解剖学の基礎">
+        </div>
+        <div class="featured-content">
+          <span class="featured-badge">解剖学・基礎知識</span>
+          <div class="card-date" style="margin-bottom: 8px;">2026.06.17</div>
+          <h2 class="featured-title">
+            <a href="free-article.html">解剖学の基礎 ― 身体を"地図"として読む</a>
+          </h2>
+          <p class="featured-excerpt">
+            「解剖学」と聞くと、骨や筋肉の名前を暗記する退屈な勉強――そんなイメージを持つ人は多い。でも本来の解剖学は、身体という地図の読み方を学ぶことだ。痛みやコリの原因を見極め、臨床に活かすための基礎知識をわかりやすく解説。
+          </p>
+          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
+            <a href="free-article.html" class="read-more-btn" style="font-size: 0.95rem;">
+              記事を読む
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Premium CTA Box (Directing to external page for premium enrollment) -->
+    <section class="premium-cta-section">
+      <span class="cta-tag">Premium Community</span>
+      <h2 class="cta-title">零 -ZERO- MEMBERS</h2>
+      <p class="cta-description">
+        「構造・神経・流れ」の知恵をさらに深め、現場で圧倒的な結果を出すためのプロフェッショナル向け有料コミュニティ。オンライン症例検討会や定期セミナーへの参加権利とともに、現場で即座に活きる実践的な知識や考え方を学ぶ場所です。
+      </p>
+      <div class="cta-buttons">
+        <a href="https://forms.gle/vka8wN8LR3LfFsQi9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">メンバーシップに登録する (Google Form)</a>
+        <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">零を体験する</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="free-article.html">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; 2026 零 -ZERO- All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
