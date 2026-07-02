@@ -143,9 +143,115 @@
       margin-top: 0;
       margin-bottom: 32px;
     }
+    }
     @media (max-width: 992px) {
       .month-column-box {
         padding: 24px 20px;
+      }
+    }
+
+    /* Monthly Archive Summary Grid */
+    .month-summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin: 30px 0 60px;
+    }
+    .month-summary-card {
+      background: rgba(26, 30, 36, 0.65);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 16px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+    .month-summary-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold-primary) 0%, transparent 100%);
+    }
+    .month-summary-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-primary);
+      box-shadow: var(--gold-glow), 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    .month-summary-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .month-summary-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .month-summary-title span {
+      color: var(--gold-primary);
+    }
+    .month-count-badge {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-primary);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .month-summary-highlights {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px 0;
+    }
+    .month-summary-highlights li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .month-summary-highlights li::before {
+      content: "▪";
+      color: var(--gold-primary);
+      font-size: 1.2rem;
+    }
+    .month-action-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #2a2210 0%, #1a160b 100%);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      padding: 16px 24px;
+      border-radius: 8px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+    .month-action-btn:hover {
+      background: var(--gold-primary);
+      color: #0b0d10;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    }
+    @media (max-width: 992px) {
+      .month-summary-grid {
+        grid-template-columns: 1fr;
+      }
+      .month-summary-card {
+        padding: 28px 22px;
       }
     }
   </style>
@@ -183,17 +289,15 @@
   <!-- Main Content -->
   <main class="container">
 
-    <!-- Featured Article Section -->
-    <div class="featured-article-container">
+    <!-- Section Title: Latest Pickup -->
+    <div style="margin-bottom: 24px;">
+      <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Latest Featured</span>
+      <h2 style="font-size: 1.8rem; color: var(--text-primary); margin-top: 4px;">最新のピックアップ講義</h2>
+    </div>
 
-      <!-- 2026年7月 記事欄（コンテナ） -->
-      <section class="month-column-box">
-        <div class="month-section-header">
-          <h2 class="month-section-title">2026年7月</h2>
-          <span class="month-section-badge">Latest Articles</span>
-        </div>
-
-        <article class="featured-card">
+    <!-- Featured Article Section (Just 1 latest pick) -->
+    <div class="featured-article-container" style="margin-bottom: 60px;">
+      <article class="featured-card">
         <div class="featured-img-wrapper">
           <img src="assets/thumbnail_tlf.png" alt="胸腰筋膜">
         </div>
@@ -216,279 +320,62 @@
           </div>
         </div>
       </article>
+    </div>
 
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_kineticchain.png" alt="上行性・下行性運動連鎖">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">運動学・運動連鎖</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.07.01</div>
-          <h2 class="featured-title">
-            <a href="kinetic-chain-article.html">上行性・下行性運動連鎖 ― 不調は"つながり"を伝って移動する</a>
-          </h2>
-          <p class="featured-excerpt">
-            身体はつながったシステム。ズレは一カ所にとどまらず、下から上へ（上行性）、上から下へ（下行性）と連鎖的に伝播する。それぞれの定義と代表例、なぜ連鎖するのか、崩れる原因と影響までを、トレーナー・セラピスト向けに解説。「連鎖の起点」を探す視点を養う一本。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="kinetic-chain-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-            </a>
+    <!-- Section Title: Monthly Archives -->
+    <div style="margin-bottom: 12px; border-top: 1px solid rgba(212,175,55,0.2); padding-top: 50px;">
+      <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Monthly Archives</span>
+      <h2 style="font-size: 1.8rem; color: var(--text-primary); margin-top: 4px;">月別講義アーカイブ（一覧ページへ移動）</h2>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 8px;">
+        公開月ごとの欄のボタンを押すと、各月に収録された講義記事の一覧ページへと移動します。
+      </p>
+    </div>
+
+    <!-- Monthly Summary Boxes Grid -->
+    <div class="month-summary-grid">
+
+      <!-- 7月分の欄 -->
+      <div class="month-summary-card">
+        <div>
+          <div class="month-summary-header">
+            <h3 class="month-summary-title"><span>2026年7月</span> 講義一覧</h3>
+            <span class="month-count-badge">全2記事</span>
           </div>
-        </div>
-      </article>
-      </section>
-
-      <!-- 2026年6月 記事欄（コンテナ） -->
-      <section class="month-column-box">
-        <div class="month-section-header">
-          <h2 class="month-section-title">2026年6月</h2>
-          <span class="month-section-badge">Archive</span>
-        </div>
-
-        <article class="featured-card">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_jointbyjoint.png" alt="Joint by Joint Theory">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">運動学・Joint by Joint</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.29</div>
-          <h2 class="featured-title">
-            <a href="joint-by-joint-article.html">Joint by Joint Theory ― 身体を"可動性と安定性の交互"で読む</a>
-          </h2>
-          <p class="featured-excerpt">
-            グレイ・クックとマイク・ボイルが提唱した理論。関節は可動性担当と安定性担当が交互に積み重なり、役割が崩れると負担は隣へ飛ぶ。各関節の役割、隣接関節仮説、崩れる原因と影響までを、トレーナー・セラピスト向けに解説。「痛む場所」から視野を広げる一本。
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+            胸腰筋膜の理解と運動連鎖をテーマにした最新講義を収録。
           </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="joint-by-joint-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
+          <ul class="month-summary-highlights">
+            <li>胸腰筋膜の理解 ― 力の中継点</li>
+            <li>上行性・下行性運動連鎖</li>
+          </ul>
         </div>
-      </article>
+        <a href="archive-2026-07.html" class="month-action-btn">
+          <span>7月分の講義を見る</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </a>
+      </div>
 
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_forcecouple.png" alt="フォースカップル">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">運動学・フォースカップル</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.26</div>
-          <h2 class="featured-title">
-            <a href="force-couple-article.html">フォースカップルとは ― 関節を"協調"で動かす力のペア</a>
-          </h2>
-          <p class="featured-excerpt">
-            動きは1つの筋ではなく、異なる方向に働く複数の力のバランスで生まれる。定義と仕組み、代表例（肩甲骨上方回旋・ローテーターカフ・骨盤傾斜）、崩れる原因と影響までを、トレーナー・セラピスト向けに解説。「弱い筋」だけでなく「引き勝つ筋」まで見るための一本。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="force-couple-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
+      <!-- 6月分の欄 -->
+      <div class="month-summary-card">
+        <div>
+          <div class="month-summary-header">
+            <h3 class="month-summary-title"><span>2026年6月</span> 講義一覧</h3>
+            <span class="month-count-badge">全10記事</span>
           </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_innerunit.png" alt="インナーユニット">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">解剖学・体幹</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.25</div>
-          <h2 class="featured-title">
-            <a href="inner-unit-article.html">インナーユニットとは ― 体幹を内側から支える"天然のコルセット"</a>
-          </h2>
-          <p class="featured-excerpt">
-            横隔膜・腹横筋・多裂筋・骨盤底筋がつくる体幹の深層システム。その構成と重要性（フィードフォワード制御）、働かない人の特徴、アウターユニットとの違いまでを、トレーナー・セラピスト向けに解説。鍛える前に"働いているか"を問い直すための一本。
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+            Joint by Joint、フォースカップル、インナーユニットなど基礎理論を網羅。
           </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="inner-unit-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
+          <ul class="month-summary-highlights">
+            <li>Joint by Joint Theory / フォースカップル</li>
+            <li>インナーユニット / 横隔膜と呼吸</li>
+            <li>解剖学・生理学・神経学・東洋医学の基礎</li>
+          </ul>
         </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_diaphragm.png" alt="横隔膜と呼吸">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">解剖学・呼吸</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.24</div>
-          <h2 class="featured-title">
-            <a href="diaphragm-breathing-article.html">横隔膜と呼吸の基礎 ― 身体を整える"第一の筋肉"</a>
-          </h2>
-          <p class="featured-excerpt">
-            横隔膜は単なる呼吸の筋肉ではなく、体幹安定（腹腔内圧）と自律神経への唯一の随意の入口を兼ねる結節点だ。解剖、呼吸の仕組み、インナーユニット、機能低下の連鎖、そして現場で押さえたい基本原則までを、トレーナー・セラピスト向けに解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="diaphragm-breathing-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_sacrum.png" alt="仙骨の角度">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">解剖学・骨盤/脊柱</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.22</div>
-          <h2 class="featured-title">
-            <a href="sacrum-angle-article.html">なぜ仙骨は前に倒れているのか</a>
-          </h2>
-          <p class="featured-excerpt">
-            仙骨底が約30°前傾しているのは異常ではなく、直立し、衝撃を吸収し、荷重を仙腸関節へ安定して伝えるための設計だ。仙骨角・腰仙角の意味、ニューテーション、骨盤前後傾との連動、そして角度の破綻が腰部〜全身に及ぼす影響を、トレーナー・セラピスト向けに解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="sacrum-angle-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_serratus.png" alt="前鋸筋の考え方">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">解剖学・前鋸筋</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.20</div>
-          <h2 class="featured-title">
-            <a href="serratus-anterior-article.html">前鋸筋の考え方 ― 上部・中部・下部と機能低下の影響</a>
-          </h2>
-          <p class="featured-excerpt">
-            肩甲骨を胸郭につなぎとめ、上肢挙上を支える前鋸筋。上部・中部・下部の線維ごとの役割、上方回旋のフォースカップル、そして機能低下が引き起こす翼状肩甲・肩インピンジメント・頸肩部の代償までを、評価とエクササイズ選択に直結する形で解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="serratus-anterior-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_oriental.png" alt="東洋医学の基礎">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">東洋医学・基礎知識</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.19</div>
-          <h2 class="featured-title">
-            <a href="oriental-medicine-article.html">東洋医学の基礎 ― 身体を"巡り"として読む</a>
-          </h2>
-          <p class="featured-excerpt">
-            部分を分けて見る西洋に対し、東洋は全体の関係性と巡りで身体を読む。気血水、陰陽五行、経絡経穴、四診、未病という基本概念を、現代医学と対比しながら、トレーナー・セラピスト・国家資格者が"もう一つの評価レンズ"として臨床に組み込めるよう解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="oriental-medicine-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_neurology.png" alt="神経学の基礎">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">神経学・基礎知識</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.19</div>
-          <h2 class="featured-title">
-            <a href="neurology-article.html">神経学の基礎 ― 身体を"支配する仕組み"を読む</a>
-          </h2>
-          <p class="featured-excerpt">
-            筋緊張も可動域も痛みも、最終決定を下しているのは神経系だ。中枢〜末梢の構成、運動制御、感覚入力、自律神経、痛みの神経科学、神経可塑性まで。トレーナー・セラピスト・国家資格者が評価とアプローチに直結させるための基礎を解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="neurology-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_physiology.png" alt="生理学の基礎">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">生理学・基礎知識</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.18</div>
-          <h2 class="featured-title">
-            <a href="physiology-article.html">生理学の基礎 ― 身体を"動かす仕組み"を読む</a>
-          </h2>
-          <p class="featured-excerpt">
-            解剖学が身体の「地図」なら、生理学はその上で起きる電気と流れの仕組みだ。細胞とエネルギー、神経と自律神経、呼吸と循環――身体が本来どう働くようにできているのかを、臨床に活かせる形でわかりやすく解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="physiology-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="featured-card" style="margin-top: 40px;">
-        <div class="featured-img-wrapper">
-          <img src="assets/thumbnail_anatomy.png" alt="解剖学の基礎">
-        </div>
-        <div class="featured-content">
-          <span class="featured-badge">解剖学・基礎知識</span>
-          <div class="card-date" style="margin-bottom: 8px;">2026.06.17</div>
-          <h2 class="featured-title">
-            <a href="free-article.html">解剖学の基礎 ― 身体を"地図"として読む</a>
-          </h2>
-          <p class="featured-excerpt">
-            「解剖学」と聞くと、骨や筋肉の名前を暗記する退屈な勉強――そんなイメージを持つ人は多い。でも本来の解剖学は、身体という地図の読み方を学ぶことだ。痛みやコリの原因を見極め、臨床に活かすための基礎知識をわかりやすく解説。
-          </p>
-          <div class="card-footer" style="padding-top: 0; border-top: none; margin-top: 0;">
-            <a href="free-article.html" class="read-more-btn" style="font-size: 0.95rem;">
-              記事を読む
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </a>
-          </div>
-        </div>
-      </article>
-      </section>
+        <a href="archive-2026-06.html" class="month-action-btn">
+          <span>6月分の講義を見る</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </a>
+      </div>
 
     </div>
 
