@@ -25,15 +25,22 @@
       color: var(--text-secondary);
       font-size: 1rem;
     }
-    .featured-card {
+    .archive-articles-list {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .featured-card {
+      display: flex;
+      flex-direction: column;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 12px;
       overflow: hidden;
       transition: var(--transition-smooth);
-      margin-bottom: 40px;
+      margin-bottom: 0;
+      height: 100%;
     }
     .featured-card:hover {
       transform: translateY(-6px);
@@ -43,7 +50,7 @@
     .featured-img-wrapper {
       position: relative;
       overflow: hidden;
-      aspect-ratio: 16/10;
+      aspect-ratio: 16/9;
       background: #1a1e24;
     }
     .featured-img-wrapper img {
@@ -56,10 +63,10 @@
       transform: scale(1.03);
     }
     .featured-content {
-      padding: 40px;
+      padding: 28px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      flex: 1;
     }
     .featured-badge {
       align-self: flex-start;
@@ -71,13 +78,13 @@
       font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 0.05em;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
     .featured-title {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       font-weight: 700;
-      line-height: 1.4;
-      margin-bottom: 16px;
+      line-height: 1.45;
+      margin-bottom: 12px;
       color: var(--text-primary);
       transition: var(--transition-fast);
     }
@@ -86,19 +93,28 @@
     }
     .featured-excerpt {
       color: var(--text-secondary);
-      font-size: 0.95rem;
-      line-height: 1.8;
-      margin-bottom: 32px;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    @media (max-width: 992px) {
-      .featured-card {
+    .card-footer {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    @media (max-width: 768px) {
+      .archive-articles-list {
         grid-template-columns: 1fr;
       }
       .featured-content {
-        padding: 30px;
-      }
-      .featured-title {
-        font-size: 1.35rem;
+        padding: 22px;
       }
     }
   </style>
