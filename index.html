@@ -125,6 +125,29 @@
       font-size: 0.75rem;
       font-weight: 600;
     }
+
+    /* Month Column Box / Container */
+    .month-column-box {
+      background: rgba(26, 30, 36, 0.45);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 16px;
+      padding: 36px;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+    .month-column-box:last-of-type {
+      margin-bottom: 0;
+    }
+    .month-column-box .month-section-header {
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 992px) {
+      .month-column-box {
+        padding: 24px 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -163,13 +186,14 @@
     <!-- Featured Article Section -->
     <div class="featured-article-container">
 
-      <!-- 2026年7月 記事グループ -->
-      <div class="month-section-header">
-        <h2 class="month-section-title">2026年7月</h2>
-        <span class="month-section-badge">Latest Articles</span>
-      </div>
+      <!-- 2026年7月 記事欄（コンテナ） -->
+      <section class="month-column-box">
+        <div class="month-section-header">
+          <h2 class="month-section-title">2026年7月</h2>
+          <span class="month-section-badge">Latest Articles</span>
+        </div>
 
-      <article class="featured-card">
+        <article class="featured-card">
         <div class="featured-img-wrapper">
           <img src="assets/thumbnail_tlf.png" alt="胸腰筋膜">
         </div>
@@ -213,17 +237,20 @@
                 <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
               </svg>
             </a>
+            </a>
           </div>
         </div>
       </article>
+      </section>
 
-      <!-- 2026年6月 記事グループ -->
-      <div class="month-section-header" style="margin-top: 60px;">
-        <h2 class="month-section-title">2026年6月</h2>
-        <span class="month-section-badge">Archive</span>
-      </div>
+      <!-- 2026年6月 記事欄（コンテナ） -->
+      <section class="month-column-box">
+        <div class="month-section-header">
+          <h2 class="month-section-title">2026年6月</h2>
+          <span class="month-section-badge">Archive</span>
+        </div>
 
-      <article class="featured-card">
+        <article class="featured-card">
         <div class="featured-img-wrapper">
           <img src="assets/thumbnail_jointbyjoint.png" alt="Joint by Joint Theory">
         </div>
@@ -457,11 +484,11 @@
               記事を読む
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                 <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              </svg>
             </a>
           </div>
         </div>
       </article>
+      </section>
 
     </div>
 
