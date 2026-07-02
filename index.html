@@ -97,6 +97,34 @@
         font-size: 1.5rem;
       }
     }
+
+    /* Month Section Header */
+    .month-section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 40px 0 30px 0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .month-section-header:first-of-type {
+      margin-top: 0;
+    }
+    .month-section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      letter-spacing: 0.05em;
+    }
+    .month-section-badge {
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold-primary);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -134,6 +162,12 @@
 
     <!-- Featured Article Section -->
     <div class="featured-article-container">
+
+      <!-- 2026年7月 記事グループ -->
+      <div class="month-section-header">
+        <h2 class="month-section-title">2026年7月</h2>
+        <span class="month-section-badge">Latest Articles</span>
+      </div>
 
       <article class="featured-card">
         <div class="featured-img-wrapper">
@@ -183,7 +217,13 @@
         </div>
       </article>
 
-      <article class="featured-card" style="margin-top: 40px;">
+      <!-- 2026年6月 記事グループ -->
+      <div class="month-section-header" style="margin-top: 60px;">
+        <h2 class="month-section-title">2026年6月</h2>
+        <span class="month-section-badge">Archive</span>
+      </div>
+
+      <article class="featured-card">
         <div class="featured-img-wrapper">
           <img src="assets/thumbnail_jointbyjoint.png" alt="Joint by Joint Theory">
         </div>
