@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026年8月 公開講義アーカイブ | 零 -ZERO- BLOG</title>
+  <meta name="description" content="零 -ZERO- 無料コミュニティブログ 2026年8月公開の講義記事一覧。ショルダーパッキングの獲得方法など。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .archive-header {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      margin-bottom: 50px;
+    }
+    .archive-month-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .archive-month-title span {
+      color: var(--gold-primary);
+    }
+    .archive-description {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+    .archive-articles-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .featured-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+      margin-bottom: 0;
+      height: 100%;
+    }
+    .featured-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 175, 55, 0.4);
+      box-shadow: var(--gold-glow), 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    .featured-img-wrapper {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      background: #1a1e24;
+    }
+    .featured-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+    .featured-card:hover .featured-img-wrapper img {
+      transform: scale(1.03);
+    }
+    .featured-content {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .featured-badge {
+      align-self: flex-start;
+      background: rgba(20, 184, 166, 0.15);
+      border: 1px solid var(--free-accent-light);
+      color: var(--free-accent-light);
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    .featured-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.45;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      transition: var(--transition-fast);
+    }
+    .featured-card:hover .featured-title {
+      color: var(--gold-primary);
+    }
+    .featured-excerpt {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-footer {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    @media (max-width: 768px) {
+      .archive-articles-list {
+        grid-template-columns: 1fr;
+      }
+      .featured-content {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span>零 -ZERO-</span> <div class="logo-badge">BLOG</div>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="index.html" class="active">講義アーカイブ</a></li>
+        </ul>
+      </nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <header class="archive-header">
+      <h1 class="archive-month-title"><span>2026年8月</span> 公開講義アーカイブ</h1>
+      <p class="archive-description">2026年8月に公開された講義記事（全1件）の一覧です。</p>
+    </header>
+
+    <div class="archive-articles-list">
+
+      <article class="featured-card">
+        <div class="featured-img-wrapper">
+          <img src="assets/thumbnail_shoulderpacking.png" alt="ショルダーパッキングの獲得方法">
+        </div>
+        <div class="featured-content">
+          <span class="featured-badge">トレーニング・肩の安定</span>
+          <div class="card-date" style="margin-bottom: 8px; font-size:0.8rem; color:var(--text-muted);">2026.08.01</div>
+          <h2 class="featured-title">
+            <a href="shoulder-packing-article.html">筋トレの質を上げる「ショルダーパッキング」の獲得方法</a>
+          </h2>
+          <p class="featured-excerpt">
+            ショルダーパッキングは肩甲骨を寄せて下げて固めることではない。種目と負荷に応じて肩甲骨・上腕骨・胸郭・体幹を協調させる動的安定性として解説。セルフチェック、STEP別エクササイズ、ベンチ・懸垂・デッド・オーバーヘッドの種目別の使い分けまで。
+          </p>
+          <div class="card-footer" style="padding-top: 16px; margin-top:auto;">
+            <a href="shoulder-packing-article.html" class="read-more-btn" style="font-size: 0.9rem; display:flex; align-items:center; gap:8px;">記事を読む
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin: 20px 0 60px;">
+      <a href="index.html" class="sidebar-back-btn" style="justify-content:center;">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        トップページへ戻る
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="archive-2026-08.html">2026年8月講義一覧</a></li>
+          <li><a href="archive-2026-07.html">2026年7月講義一覧</a></li>
+          <li><a href="archive-2026-06.html">2026年6月講義一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; 2026 零 -ZERO- All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
