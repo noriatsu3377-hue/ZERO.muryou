@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮腫・むくみを訴える人への評価と運動支援 ― 流せばよいと判断する前に確認したいこと | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・整体師・セラピスト向け。浮腫の基礎、背景の広さ、最初に聞く質問、観察項目、運動支援の考え方、そして揉んではいけないレッドフラッグ（深部静脈血栓症など）まで。流す前に確認すべき臨床の土台を解説します。">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/edema-support-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="浮腫・むくみを訴える人への評価と運動支援 ― 流せばよいと判断する前に確認したいこと">
+  <meta property="og:description" content="むくみを見てすぐ「流す」前に。触ってはいけないサインと、安全な運動支援の考え方。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/edema-support-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_edema.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-fact{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-theory{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-clin{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .sp-callout{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.98rem;line-height:1.85}
+    .sp-callout .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .red-flag{border:1px solid rgba(220,90,80,0.5);background:rgba(180,60,50,0.08);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.92rem;line-height:1.85}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .case-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-left:3px solid var(--free-accent-light);border-radius:10px;padding:20px 22px;margin:22px 0}
+    .case-card .box-title{font-weight:700;color:var(--text-primary);font-size:1.04rem;margin:0 0 12px 0}
+    .case-card .cs-step{font-size:0.93rem;line-height:1.8;margin-bottom:12px;color:#d1d5db}
+    .case-card .cs-step b{color:var(--gold-light);display:block;margin-bottom:2px}
+    .series-band{display:flex;align-items:center;gap:14px;background:linear-gradient(90deg,rgba(212,175,55,0.10),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.25);border-radius:10px;padding:14px 18px;margin-bottom:28px;font-size:0.9rem;flex-wrap:wrap}
+    .series-band .sb-tag{background:var(--gold-gradient);color:#000;font-weight:700;font-size:0.72rem;padding:4px 10px;border-radius:4px;white-space:nowrap}
+    .series-nav{display:flex;justify-content:space-between;gap:12px;margin:34px 0 10px;flex-wrap:wrap}
+    .series-nav a{flex:1;min-width:200px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.88rem;color:var(--text-secondary);transition:var(--transition-fast)}
+    .series-nav a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .series-nav .sn-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .ref-list{font-size:0.86rem;line-height:1.8;color:var(--text-muted);padding-left:20px}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    @media (max-width:768px){.series-nav a{min-width:100%}.check-card,.case-card{padding:16px 16px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>2026.08.18</span>
+        <span>読了目安：約15分</span>
+      </div>
+      <h1 class="article-main-title">浮腫・むくみを訴える人への評価と運動支援</h1>
+      <p class="article-subtitle">― 流せばよいと判断する前に確認したいこと ―</p>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_edema.png" alt="浮腫・むくみを訴える人への評価と運動支援のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <div class="series-band">
+          <span class="sb-tag">シリーズ｜症状を見て、すぐに施術しないための臨床基礎</span>
+          <span>第1回：顔面神経麻痺 ／ 第2回：腹部の怒張・膨隆 ／ 第3回：多汗 ／ 第4回：浮腫</span>
+        </div>
+
+        <section id="intro">
+          <h2>はじめに</h2>
+          <p>
+            「脚がむくむんです」と言われたら、あなたは何をしますか。
+          </p>
+          <p>
+            多くの現場で、次の瞬間には手が動いています。<strong>「リンパを流しましょう」「揉んでほぐしましょう」</strong>――そして残念ながら、これがシリーズ全4回のなかで<strong>最も危険な反射</strong>です。
+          </p>
+          <p>
+            なぜなら、むくみの背景には<strong>絶対に揉んではいけない病態</strong>が含まれているからです。深部静脈血栓症（DVT）はその代表で、下肢の静脈にできた血の塊が剥がれて肺の血管に詰まると、肺塞栓症という命に関わる状態を引き起こす可能性があります。片脚だけの急なむくみに、痛みと熱感がある――その脚を揉むという行為が、どれほどの意味を持つか。ここは絶対に外せません。
+          </p>
+          <p>
+            今回は、<strong>「流す」と判断する前に何を確認するのか</strong>を、順番どおりに整理していきます。
+          </p>
+          <div class="key-box">
+            <p class="box-title">この記事で学べること</p>
+            <ul>
+              <li>浮腫という現象の基礎（毛細血管・静脈・リンパの関係）</li>
+              <li>「むくみ＝リンパの流れが悪い」で片づけられない理由</li>
+              <li>最初に聞くべき質問と、現場で観察する項目</li>
+              <li>圧痕の確認だけでは原因を断定できないということ</li>
+              <li>医学的に運動が許可された場合の、一般的な運動支援の考え方</li>
+              <li>揉んではいけない・流してはいけないレッドフラッグ</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="conclusion">
+          <h2>1. 最初に結論</h2>
+          <div class="sp-callout">
+            <p class="box-title">臨床のポイント</p>
+            むくみを見たとき、最初に確認するのは<strong>①いつからか（急か、慢性か）</strong>、<strong>②片側か両側か</strong>、<strong>③痛み・熱感・発赤を伴わないか</strong>、<strong>④息切れ・胸痛はないか</strong>の4点です。<br><br>
+            とりわけ<strong>「片脚だけ」「急に」「痛みや熱感を伴う」</strong>――この組み合わせは、深部静脈血栓症を疑うべきサインとして広く知られています。<strong>この場合、揉む・流す・運動させることを行わず、速やかに医療につないでください。</strong><br><br>
+            また<strong>両脚に強く出る全身性のむくみに、息切れや急な体重増加を伴う場合</strong>も、心臓・腎臓・肝臓などの全身性の病態が背景にある可能性があり、医療機関での評価が必要です。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="basics">
+          <h2>2. 浮腫の基礎 ― なぜ水がたまるのか</h2>
+          <p>
+            <span class="ev-label ev-fact">医学的に確立された基礎知識</span><br>
+            浮腫とは、<strong>組織と組織のあいだ（間質）に水分が過剰にたまった状態</strong>を指します。私たちの身体では、毛細血管から水分がしみ出し、その大部分が毛細血管の静脈側に戻り、残りをリンパ系が回収するという流れが常に起きています。この<strong>「出る量」と「戻る量」のバランス</strong>が崩れると、水分が組織に残ってむくみになります。
+          </p>
+          <p>
+            バランスが崩れる要因は、ひとつではありません。ここが重要です。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>背景の種類</th><th>主な例</th><th>私たちの立ち位置</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><strong>生活・活動に関連するもの</strong></td>
+                  <td>長時間の立位や座位、運動不足による下腿の筋ポンプ作用の低下、同一姿勢の持続、塩分摂取</td>
+                  <td>観察でき、生活・運動の面から支援を検討できる可能性があります</td>
+                </tr>
+                <tr>
+                  <td><strong>循環に関連するもの</strong></td>
+                  <td>静脈還流の障害、下肢静脈瘤など静脈の病態</td>
+                  <td>医療機関での評価が前提になります</td>
+                </tr>
+                <tr>
+                  <td><strong>全身性の病態</strong></td>
+                  <td>心臓、腎臓、肝臓、甲状腺などに関わる病態、低栄養</td>
+                  <td><strong>私たちが判断する領域ではありません</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>薬剤によるもの</strong></td>
+                  <td>一部の降圧薬、ホルモン製剤、鎮痛薬などがむくみに関わることが知られています</td>
+                  <td>服薬状況を確認し、気になれば処方元への相談をすすめます</td>
+                </tr>
+                <tr>
+                  <td><strong>リンパ系に関連するもの</strong></td>
+                  <td>リンパ浮腫（がん治療、リンパ節郭清、放射線治療などの後に生じることがある）</td>
+                  <td><strong>専門的な管理が必要な領域</strong>です。自己判断で強い圧を加えないでください</td>
+                </tr>
+                <tr>
+                  <td><strong>緊急性が高い可能性のあるもの</strong></td>
+                  <td>深部静脈血栓症、感染（蜂窩織炎など）、炎症・外傷</td>
+                  <td><strong>触らない。運動させない。すぐ医療へ。</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>「むくみ＝リンパの流れが悪い」ではありません。</strong>この一言で説明を終えてしまうと、上の表にある他のすべての可能性が視界から消えます。<br><br>
+            <strong>「リンパの詰まり」</strong>という表現も、現場で非常に安易に使われますが、何かを説明しているようで、実は何も説明していません。使うのをやめて、<strong>「何を観察して、どう考えたのか」を言葉にする習慣</strong>に切り替えてください。それが専門職の説明です。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="questions">
+          <h2>3. 最初に聞くべき質問</h2>
+          <div class="check-card">
+            <p class="box-title">発症と経過</p>
+            <ul>
+              <li>いつから始まりましたか</li>
+              <li>急に起きましたか、徐々にですか</li>
+              <li>片脚だけですか、両脚ですか（あるいは顔や手にも出ますか）</li>
+              <li>朝と夜で変化しますか（朝は引いているか）</li>
+              <li>だんだん強くなっていますか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">随伴する症状（ここが最重要です）</p>
+            <ul>
+              <li>痛み、熱感、赤みはありませんか</li>
+              <li>息切れはありませんか。安静にしていても苦しくないですか</li>
+              <li>胸の痛みはありませんか</li>
+              <li>横になると苦しくなることはありませんか</li>
+              <li>体重が急に増えていませんか</li>
+              <li>尿の量が減っていませんか</li>
+              <li>発熱、皮膚の変化はありませんか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">背景情報</p>
+            <ul>
+              <li>けが、手術を受けたことはありますか（最近のものは特に）</li>
+              <li>がんの治療歴、リンパ節を取る手術や放射線治療を受けたことはありますか</li>
+              <li>飲んでいる薬はありますか（最近変わったものはありますか）</li>
+              <li>持病、治療中の病気はありますか</li>
+              <li>長時間の移動や、長く安静にしていた期間はありませんでしたか</li>
+            </ul>
+          </div>
+          <p>
+            <span class="ev-label ev-clin">臨床上の位置づけ</span><br>
+            最後の<strong>「長時間の移動、長期の安静」</strong>は、必ず聞いてください。長時間動かない状態は、下肢の静脈血栓のリスク要因として広く知られています。長距離のフライト、入院、ギプス固定、体調不良で寝込んでいた期間――こうした背景が、片脚のむくみと結びつくとき、<strong>私たちの対応は施術から受診勧奨へ切り替わります</strong>。<br><br>
+            また<strong>がん治療歴・リンパ節郭清歴</strong>も必須の確認項目です。リンパ浮腫は専門的な管理が必要な領域で、自己流の強い圧は避けるべきものとされています。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="observe">
+          <h2>4. 現場で観察する項目</h2>
+          <h3>局所の観察</h3>
+          <ul>
+            <li><strong>左右差</strong>：どちらか一方だけか、両側か。周径に明らかな差はないか</li>
+            <li><strong>範囲</strong>：足首だけか、下腿全体か、大腿まで及んでいるか</li>
+            <li><strong>皮膚の色</strong>：赤み、色素沈着、青白さ、まだら</li>
+            <li><strong>熱感</strong>：左右で触れて比較する（明らかに熱い側はないか）</li>
+            <li><strong>圧痕</strong>：指で押したあとにへこみが残るか、戻り方はどうか</li>
+            <li><strong>皮膚の硬さ</strong>：柔らかいか、線維化したように硬いか</li>
+            <li><strong>痛み</strong>：安静時か、押したときか、歩いたときか</li>
+          </ul>
+          <h3>機能・全身の観察</h3>
+          <ul>
+            <li><strong>足関節の運動</strong>：底屈・背屈の可動域と、動かす頻度</li>
+            <li><strong>下腿の筋ポンプ</strong>：歩行時にふくらはぎが働いているか</li>
+            <li><strong>1日の歩行量・座位時間</strong></li>
+            <li><strong>呼吸の状態</strong>：安静時の息切れ、会話中の息継ぎ</li>
+            <li><strong>体重の変化</strong>：短期間での増加はないか</li>
+            <li><strong>顔や手のむくみ</strong>：下肢だけか、全身性か（朝のまぶたのむくみなど）</li>
+          </ul>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>圧痕の有無だけで、原因を断定することはできません。</strong><br><br>
+            「圧痕が残るタイプかどうか」は教科書的によく取り上げられる所見ですが、<strong>経過や病期によって現れ方は変わります</strong>。たとえばリンパ浮腫でも、初期には圧痕が残ることがあるとされています。<strong>ひとつの観察材料にはなりますが、それ以上ではありません。</strong><br><br>
+            私たちが所見を取る目的は、分類することではなく、<strong>「今、運動や施術を行ってよい状態か」を確認すること</strong>です。ここを見失わないでください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="exercise">
+          <h2>5. 運動支援の基礎</h2>
+          <p>
+            <strong>前提条件を先に置きます。</strong>ここから書くことは、<strong>医学的に運動が許可されており、レッドフラッグがない場合に限って</strong>検討されるものです。この前提が崩れているなら、以下はすべて実施しません。
+          </p>
+          <div class="key-box">
+            <p class="box-title">一般的に検討される方向性</p>
+            <ul>
+              <li><strong>同一姿勢を避ける</strong>：長時間の座位・立位を区切り、こまめに姿勢を変える</li>
+              <li><strong>軽い歩行</strong>：日常の活動量そのものを増やす</li>
+              <li><strong>足関節の運動</strong>：底屈・背屈をゆっくり繰り返す</li>
+              <li><strong>下腿の筋ポンプを使う運動</strong>：ふくらはぎの収縮と弛緩を伴う動き</li>
+              <li><strong>呼吸運動</strong>：静脈還流には呼吸に伴う胸腔内圧の変化も関わるとされています</li>
+              <li><strong>強度は段階的に</strong>：いきなり負荷を上げず、反応を見ながら調整する</li>
+              <li><strong>運動前後で状態を比較する</strong>：周径、自覚症状、皮膚の状態、疲労感</li>
+            </ul>
+          </div>
+          <div class="sp-callout">
+            <p class="box-title">臨床のポイント</p>
+            <strong>回数や時間を、一律に決めないでください。</strong>「1日30回」「毎日20分」といった数字を機械的に当てはめることに、意味はありません。<strong>背景となっている病態も、生活も、体力も、人それぞれ違う</strong>からです。<br><br>
+            大切なのは、<strong>やってみて、比べて、調整すること</strong>。運動前後で何がどう変わったのか、悪化していないか。この確認をセットにして初めて、運動支援が成立します。
+          </div>
+          <div class="no-box">
+            <p class="box-title">してはいけない判断・介入</p>
+            <ul>
+              <li><strong>レッドフラッグがある状態で、揉む・流す・運動させる</strong>。特に片脚の急なむくみに痛みや熱感がある場合、これは絶対に行いません。</li>
+              <li><strong>「水を抜く」「老廃物を流す」といった表現で説明する</strong>。何を意味しているのか説明できない言葉は使わないでください。</li>
+              <li><strong>リンパ浮腫の方に、専門的な管理の枠外で自己流の強い圧を加える</strong>。</li>
+              <li><strong>圧迫（着圧ソックスなど）を、医療的な確認なしに一律にすすめる</strong>。背景となる病態によっては適さない場合があります。</li>
+              <li><strong>「歩けば治ります」と言い切る</strong>。原因によって、運動で変わるものと変わらないものがあります。</li>
+              <li><strong>むくみが強くなっているのに、経過を見続ける</strong>。悪化は受診のサインです。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="tcm">
+          <h2>6. 東洋医学から見るための基礎</h2>
+          <div class="tcm-box">
+            <p class="box-title">東洋医学から見る基礎</p>
+            東洋医学では、むくみを<strong>「水分が体内でうまく巡らず、偏って停滞している状態」</strong>として整理し、その背景を身体全体の働きと結びつけて考えます。水分の巡りに関わる働きとして、伝統的に<strong>肺・脾・腎</strong>という3つの臓腑が挙げられます。<br><br>
+            ・<strong>肺</strong>：呼吸に関わるとともに、<strong>水分を身体の表面や上部へ行き渡らせ、下へ降ろす働き</strong>を担うと考えます<br>
+            ・<strong>脾</strong>：飲食物から必要なものを取り出し、<strong>水分を運ぶ働き</strong>を担うと考えます<br>
+            ・<strong>腎</strong>：身体を温める力の源であり、<strong>水分の最終的な調整と排泄</strong>に関わると考えます<br><br>
+            東洋医学では、このいずれかの働きが低下したり、<strong>冷えや疲労</strong>によって全体の巡りが落ちたりすると、水分が停滞しやすくなると捉えます。
+          </div>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>ここでいう「肺」「脾」「腎」は、西洋医学の肺・脾臓・腎臓と完全に同じものではありません。</strong>名前は重なっていますが、東洋医学の臓腑は<strong>解剖学的な臓器そのものではなく、身体の働きをまとめて捉えるための機能概念</strong>です。<br><br>
+            したがって、「東洋医学で腎の働きが弱っている」ことと「腎臓に病気がある」ことは、まったく別の話です。<strong>これを混同した説明は、クライアントに深刻な誤解を与えます。</strong>絶対に避けてください。<br><br>
+            そして繰り返します。<strong>東洋医学的な体質分類だけで、医学的評価を省略してはいけません。</strong>心臓・腎臓・肝臓の病態や深部静脈血栓症を「冷えと水の停滞」で説明してしまえば、必要な受診が遅れます。
+          </div>
+          <p>
+            それでもこの視点に価値があるのは、<strong>むくみを「脚だけの問題」として見なくなるから</strong>です。呼吸はどうか。消化と食欲はどうか。冷えていないか。疲れが抜けているか。排泄はどうか。<strong>症状同士のつながりを観察する</strong>――東洋医学の本当の実用性は、そこにあると私は考えています。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="integrate">
+          <h2>7. 西洋医学と東洋医学を併用するときの注意点</h2>
+          <ul>
+            <li><strong>安全確認が先。絶対に順番を変えない</strong>。むくみのテーマでは、これが命に直結します。</li>
+            <li><strong>臓腑と臓器を同一視しない</strong>。特に「腎」は誤解を招きやすいので、説明のたびに前置きしてください。</li>
+            <li><strong>症状ひとつで証を決めない</strong>。むくんでいるという事実だけでは、何も決まりません。</li>
+            <li><strong>治療中の方の方針を変えない</strong>。利尿薬などの服薬に関する判断は、医療機関のものです。</li>
+            <li><strong>病名が同じでも、支援方法は同じとは限りません</strong>。同じ「むくみやすい」でも、立ち仕事の方と長時間座っている方では、関わり方がまったく変わります。</li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>8. レッドフラッグ</h2>
+          <div class="red-flag">
+            <p class="box-title">次のいずれかがある場合、揉む・流す・運動させることを行わず、速やかな医療対応を優先してください</p>
+            <ul>
+              <li>片脚だけに急に起こった腫れ</li>
+              <li>痛み、熱感、発赤を伴う</li>
+              <li>胸痛</li>
+              <li>突然の呼吸困難</li>
+              <li>血痰</li>
+              <li>失神、失神しそうになる</li>
+              <li>短期間での急激な体重増加</li>
+              <li>横になると苦しい</li>
+              <li>安静にしていても息切れがある</li>
+              <li>尿量の著しい減少</li>
+              <li>全身に強く出ているむくみ</li>
+              <li>感染を疑う発熱や皮膚の変化</li>
+            </ul>
+            <p style="margin:0">
+              <strong>片脚の急な腫れに痛みや熱感を伴う場合は、深部静脈血栓症の可能性を考えます。この脚を揉んだり、強く動かしたりしないでください。</strong>血栓が移動して肺の血管を詰まらせる肺塞栓症につながる可能性が指摘されており、これは命に関わる状態です。<br><br>
+              さらに<strong>胸痛、突然の呼吸困難、血痰、失神</strong>がある場合は、すでに肺塞栓症が疑われる状況です。<strong>その場で救急要請を検討してください。</strong><br><br>
+              私たちが判断するのは病名ではありません。<strong>「今すぐ医療につなぐべきか」だけ</strong>です。迷ったら、触らない。呼ぶ。それで構いません。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="checklist">
+          <h2>9. 現場で使える観察チェックリスト</h2>
+          <div class="check-card">
+            <p class="box-title">□ 発症時期と経過</p>
+            <ul>
+              <li>いつからか、急性か慢性か</li>
+              <li>朝と夜での変化（朝には引いているか）</li>
+              <li>進行しているか、横ばいか</li>
+              <li>直前に長時間の移動・安静がなかったか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ 医療機関での診断・治療状況</p>
+            <ul>
+              <li>受診の有無、診断名の説明を受けているか</li>
+              <li>心臓・腎臓・肝臓・甲状腺などの既往</li>
+              <li>がん治療歴、リンパ節郭清歴、放射線治療歴</li>
+              <li>服薬状況（最近の変更を含む）、手術歴・外傷歴</li>
+              <li>運動に関する主治医からの指示や制限</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ 局所の状態</p>
+            <ul>
+              <li>片側か両側か、範囲はどこまでか、周径の左右差</li>
+              <li>皮膚の色、熱感（左右で比較）、皮膚の硬さ</li>
+              <li>圧痕の有無と戻り方（これだけで断定しない）</li>
+              <li>安静時・圧迫時・歩行時の痛み</li>
+              <li>足関節の可動域、下腿筋ポンプの働き</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ 全身症状と随伴症状</p>
+            <ul>
+              <li>息切れ、胸痛、横になったときの苦しさ</li>
+              <li>短期間での体重増加、尿量の変化</li>
+              <li>顔や手のむくみ（全身性かどうか）</li>
+              <li>発熱、皮膚の変化、疲労感</li>
+              <li>歩行量、座位時間、生活リズム</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ レッドフラッグと医療連携</p>
+            <ul>
+              <li>片脚の急な腫れに、痛み・熱感・発赤はないか</li>
+              <li>胸痛、呼吸困難、血痰、失神はないか</li>
+              <li>安静時の息切れ、臥位での苦しさはないか</li>
+              <li>急激な体重増加、尿量減少はないか</li>
+              <li>該当した場合、揉まない・動かさない・すぐつなぐを徹底できているか</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="case">
+          <h2>10. 初心者向けミニケース</h2>
+          <div class="case-card">
+            <p class="box-title">ケース｜60代女性・「夕方になると両脚がむくむ」</p>
+            <div class="cs-step"><b>1. 主訴</b>1年ほど前から、夕方になると両脚のふくらはぎから足首がむくむ。朝はほぼ引いている。立ち仕事。「リンパを流してほしい」との希望。</div>
+            <div class="cs-step"><b>2. 追加で確認したい情報</b>始まりは急か徐々か。片側差はないか。痛み・熱感・発赤の有無。息切れや胸痛、横になったときの苦しさ。短期間での体重増加。尿量の変化。既往歴（心臓・腎臓・肝臓・甲状腺）。手術歴、がん治療歴、リンパ節郭清歴。服薬状況と最近の変更。長時間の移動や安静の有無。受診の有無。</div>
+            <div class="cs-step"><b>3. 観察する項目</b>両側の周径と左右差、範囲、皮膚の色と熱感、圧痕の有無と戻り方、皮膚の硬さ、痛みの有無。足関節の可動域、歩行時の下腿筋ポンプの働き、1日の座位・立位時間。安静時の呼吸と会話時の息継ぎ。顔や手のむくみ。</div>
+            <div class="cs-step"><b>4. 考えられる複数の可能性</b>長時間の立位と下腿筋ポンプの働きに関連する、活動性の要素が関わっている可能性があります。一方で、静脈の病態、薬剤の影響、心臓・腎臓・肝臓などに関わる全身性の病態が背景にある可能性も、この段階では否定できません。<strong>どれとも判断できません。</strong></div>
+            <div class="cs-step"><b>5. 見逃してはいけない状態</b>左右差のある急な腫れ、痛みや熱感、息切れ、胸痛、横になったときの苦しさ、急な体重増加、尿量の減少。ひとつでもあれば、施術ではなく医療です。</div>
+            <div class="cs-step"><b>6. 医療連携の必要性</b>1年の経過があり、60代で、まだ受診していない。この状況なら、<strong>まず一度、医療機関での評価を受けていただくのが妥当</strong>です。「むくみの背景を確認しておくと、安全に運動を組めます」と、不安を煽らずに伝えます。リンパを流してほしいという希望に、その場で応じないこと。ここが専門職としての線引きです。</div>
+            <div class="cs-step"><b>7. 支援できる範囲</b>受診で問題が指摘されず、運動が許可された場合に限り――立ち仕事中の姿勢を変える頻度の提案、足関節運動と下腿筋ポンプを使う動き、歩行量の確保、呼吸を含めた全身の調整、強度の段階的な設定。</div>
+            <div class="cs-step"><b>8. 介入した場合に再評価する項目</b>同じ時刻・同じ部位で測った周径、夕方の自覚症状の程度、朝の引き具合、皮膚の状態、歩行量、疲労感。<strong>悪化していないかの確認</strong>を必ず含めます。左右差の出現、痛みや熱感の出現があれば、その時点で中止して受診につなぎます。</div>
+            <div class="cs-step"><b>この事例の結論</b>クライアントが「流してほしい」と言っているとき、その希望に応えないのは勇気が要ります。でも、<strong>希望に応えることと、安全を守ることは別</strong>です。<strong>「この情報だけでは判断できないので、まず確認しましょう」と言えること</strong>――それが専門職の仕事です。</div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>11. 今回の要点</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>浮腫は「出る量」と「戻る量」のバランスが崩れた結果で、背景は循環・全身性疾患・薬剤・リンパ系など多岐にわたります。</li>
+              <li>「むくみ＝リンパの流れが悪い」「リンパの詰まり」で説明を終わらせないでください。</li>
+              <li>片脚・急性・痛み・熱感――この組み合わせは揉まない、動かさない、すぐ医療へ。</li>
+              <li>圧痕の有無は一つの観察材料にすぎず、それだけで原因は断定できません。</li>
+              <li>運動支援は、医学的に許可されレッドフラッグがない場合に限り、回数を一律に決めず反応を見ながら進めます。</li>
+              <li>東洋医学の「肺・脾・腎」は西洋医学の臓器と同じものではありません。混同した説明をしないでください。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="series-end">
+          <h2>12. シリーズを終えて</h2>
+          <p>
+            全4回を通してお伝えしてきたのは、たったひとつの順番でした。
+          </p>
+          <div class="sp-callout">
+            <p class="box-title">このシリーズの中心メッセージ</p>
+            <strong>訴えを聞く → 発症時期と経過を確認する → 左右差・局所性・全身性を観察する → 随伴症状を確認する → レッドフラッグを除外する → 医療連携が必要か判断する → 関与できる範囲を決める → 安全な範囲で支援する → 反応を再評価する</strong><br><br>
+            そして、3つの原則――<br>
+            ・<strong>症状がある場所に、原因があるとは限らない</strong><br>
+            ・<strong>東洋医学的な体質分類だけで、医学的評価を省略してはいけない</strong><br>
+            ・<strong>病名が同じでも、背景や支援方法が同じとは限らない</strong>
+          </div>
+          <p>
+            この順番を守ることは、地味です。すぐに手を出すほうが、クライアントには喜ばれるかもしれません。でも、<strong>私たちの仕事は、目の前の人を安全に次へ進めること</strong>です。触らない判断ができる人が、本当に信頼される専門職だと私は思っています。
+          </p>
+          <p>― 零 -ZERO-</p>
+        </section>
+
+        <hr>
+
+        <section id="next">
+          <h2>13. 応用編で学ぶこと</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              今回の無料記事では、<span>浮腫の基礎、最初に確認すべきこと、揉んではいけないレッドフラッグ、私たちが関われる範囲</span>を整理しました。<br><br>
+              実際の臨床では、ここから先が問われます。集めた情報をどうつなぎ、循環・呼吸・姿勢・活動量の関連をどう読み、西洋医学的な病態理解と東洋医学的な身体の見方をどう統合して、その人に必要な関わり方を選ぶのか。<span>有料会員向けの応用編では、内臓の不調や冷えを含む具体的なケースをもとに、評価・仮説構築・介入の選択・介入後の再評価・中止基準までの臨床推論</span>を扱います。<br><br>
+              無料版は「基礎と安全管理」、有料版は「統合と臨床推論、具体的な介入」。この役割分担で進めています。
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考にした主な情報源</h2>
+          <ul class="ref-list">
+            <li>日本循環器学会ほか『肺血栓塞栓症および深部静脈血栓症の診断、治療、予防に関するガイドライン』</li>
+            <li>日本リンパ浮腫学会『リンパ浮腫診療ガイドライン』における評価と管理の考え方</li>
+            <li>厚生労働省 e-ヘルスネットおよび各大学病院の一般向け解説（浮腫の原因、下肢静脈血栓のリスク要因）</li>
+            <li>NICE Guideline: Venous thromboembolic diseases — diagnosis, management and thrombophilia testing</li>
+            <li>標準的な生理学の教科書（毛細血管における体液の移動、静脈還流、リンパ系の役割）</li>
+          </ul>
+          <p style="font-size:0.86rem;color:var(--text-muted);line-height:1.8">
+            東洋医学に関する記述は、上記の医学的情報源とは性質が異なる<strong>伝統医学上の理論</strong>です。両者を混同しないよう、本文中でも区別して記載しています。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責・安全上の注意</strong><br>
+            本記事は、トレーナー・整体師・セラピストが安全に業務を行うための教育目的の情報提供であり、医師による診断・治療の代替となるものではありません。記載した観察項目は、疾患を診断するためのものではなく、<strong>「運動や施術を行ってよい状態かを確認し、支援方法を考えるために情報を整理する」</strong>ためのものです。<br><br>
+            症状がある方には、必ず医療機関での評価を受けていただくようご案内ください。すでに治療中の方については、主治医の方針を確認したうえで、その範囲内で支援してください。本記事の内容によって、医師の診断や治療を中断・変更することは意図していません。<br><br>
+            また、私たちの業務範囲を超える医療行為（診断、投薬の指示、疾患の治療を目的とした介入など）は行わないでください。判断に迷う場合は、介入しないこと・医療につなぐことが、常に最も安全な選択です。
+          </div>
+        </section>
+
+<div class="series-nav"><a href="hyperhidrosis-support-article.html"><span class="sn-label">前の記事</span>第3回｜多汗・過剰な発汗</a></div>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#intro">はじめに／学べること</a></li>
+            <li><a href="#conclusion">1. 最初に結論</a></li>
+            <li><a href="#basics">2. 浮腫の基礎</a></li>
+            <li><a href="#questions">3. 最初に聞く質問</a></li>
+            <li><a href="#observe">4. 観察する項目</a></li>
+            <li><a href="#exercise">5. 運動支援の基礎</a></li>
+            <li><a href="#tcm">6. 東洋医学の基礎</a></li>
+            <li><a href="#integrate">7. 併用時の注意</a></li>
+            <li><a href="#redflag">8. レッドフラッグ</a></li>
+            <li><a href="#checklist">9. チェックリスト</a></li>
+            <li><a href="#case">10. ミニケース</a></li>
+            <li><a href="#summary">11. 今回の要点</a></li>
+            <li><a href="#series-end">12. シリーズを終えて</a></li>
+            <li><a href="#next">13. 応用編への導線</a></li>
+            <li><a href="#refs">参考情報源</a></li>
+            <li><a href="#disclaimer">免責・安全上の注意</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">シリーズ全4回</h3>
+          <ul class="toc-list">
+            <li><a href="facial-palsy-support-article.html">第1回｜顔面神経麻痺への支援</a></li>
+            <li><a href="abdominal-distension-article.html">第2回｜腹部の怒張・膨隆</a></li>
+            <li><a href="hyperhidrosis-support-article.html">第3回｜多汗・過剰な発汗</a></li>
+            <li><a href="edema-support-article.html">第4回｜浮腫・むくみ（この記事）</a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>
