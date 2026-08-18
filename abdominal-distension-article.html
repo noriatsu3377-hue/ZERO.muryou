@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>腹部の怒張・膨隆を見たときの臨床判断 ― 「お腹が張っている」だけで終わらせない観察の基礎 | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・整体師・セラピスト向け。怒張・膨隆・膨満感の違い、膨らんで見える背景の仕分け、最初に聞く質問、観察項目、触ってはいけないレッドフラッグまで。お腹に手を当てる前に確認すべき臨床の土台を解説します。">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/abdominal-distension-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="腹部の怒張・膨隆を見たときの臨床判断 ― 「お腹が張っている」だけで終わらせない観察の基礎">
+  <meta property="og:description" content="腹部の膨らみを「腹筋が弱い」で終わらせない。触る前に確認すべきことを現場目線で整理。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/abdominal-distension-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_abdodistension.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-fact{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-theory{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-clin{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .sp-callout{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.98rem;line-height:1.85}
+    .sp-callout .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .red-flag{border:1px solid rgba(220,90,80,0.5);background:rgba(180,60,50,0.08);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.92rem;line-height:1.85}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .case-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-left:3px solid var(--free-accent-light);border-radius:10px;padding:20px 22px;margin:22px 0}
+    .case-card .box-title{font-weight:700;color:var(--text-primary);font-size:1.04rem;margin:0 0 12px 0}
+    .case-card .cs-step{font-size:0.93rem;line-height:1.8;margin-bottom:12px;color:#d1d5db}
+    .case-card .cs-step b{color:var(--gold-light);display:block;margin-bottom:2px}
+    .series-band{display:flex;align-items:center;gap:14px;background:linear-gradient(90deg,rgba(212,175,55,0.10),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.25);border-radius:10px;padding:14px 18px;margin-bottom:28px;font-size:0.9rem;flex-wrap:wrap}
+    .series-band .sb-tag{background:var(--gold-gradient);color:#000;font-weight:700;font-size:0.72rem;padding:4px 10px;border-radius:4px;white-space:nowrap}
+    .series-nav{display:flex;justify-content:space-between;gap:12px;margin:34px 0 10px;flex-wrap:wrap}
+    .series-nav a{flex:1;min-width:200px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.88rem;color:var(--text-secondary);transition:var(--transition-fast)}
+    .series-nav a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .series-nav .sn-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .ref-list{font-size:0.86rem;line-height:1.8;color:var(--text-muted);padding-left:20px}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    @media (max-width:768px){.series-nav a{min-width:100%}.check-card,.case-card{padding:16px 16px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>2026.08.18</span>
+        <span>読了目安：約14分</span>
+      </div>
+      <h1 class="article-main-title">腹部の怒張・膨隆を見たときの臨床判断</h1>
+      <p class="article-subtitle">― 「お腹が張っている」だけで終わらせない観察の基礎 ―</p>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_abdodistension.png" alt="腹部の怒張・膨隆を見たときの臨床判断のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <div class="series-band">
+          <span class="sb-tag">シリーズ｜症状を見て、すぐに施術しないための臨床基礎</span>
+          <span>第1回：顔面神経麻痺 ／ 第2回：腹部の怒張・膨隆 ／ 第3回：多汗 ／ 第4回：浮腫</span>
+        </div>
+
+        <section id="intro">
+          <h2>はじめに</h2>
+          <p>
+            「お腹だけぽっこり出てるんです。腹筋が弱いんですかね」――この相談、現場では毎週のように受けます。
+          </p>
+          <p>
+            そして多くの場合、そこから話は「腹筋が弱い」「反り腰だ」「内臓が下がっている」「ガスがたまっている」といった方向へ一気に流れていきます。私自身、若い頃はそうでした。でも今は違います。<strong>腹部が膨らんで見える状態には、私たちが関われる範囲のものと、医療的な検査が必要なものが混ざっている</strong>からです。
+          </p>
+          <p>
+            腹部は、身体の中でいちばん<strong>「触ってはいけない状態」が隠れやすい場所</strong>でもあります。今回は、お腹に手を当てる前に何を確認するのか、その順番を一緒に整理していきましょう。
+          </p>
+          <div class="key-box">
+            <p class="box-title">この記事で学べること</p>
+            <ul>
+              <li>「怒張」「膨隆」「膨満感」という言葉の違い</li>
+              <li>腹部が膨らんで見える背景の広さと、その仕分け方</li>
+              <li>最初に聞くべき質問、現場で観察する項目</li>
+              <li>腹部だけを見ないという視点（呼吸・胸郭・骨盤・生活）</li>
+              <li>東洋医学が「張り」を複数方向から整理する考え方の入口</li>
+              <li>触ってはいけないサイン＝レッドフラッグ</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="conclusion">
+          <h2>1. 最初に結論</h2>
+          <div class="sp-callout">
+            <p class="box-title">臨床のポイント</p>
+            腹部の膨らみを見たとき、最初にすることは<strong>お腹を触ることではありません</strong>。<br><br>
+            <strong>①いつからか（急性か慢性か）</strong>、<strong>②痛みがあるか</strong>、<strong>③便とガスは出ているか</strong>、<strong>④嘔吐・発熱・体重減少はないか</strong>。この4つを確認するまで、腹部への徒手的な介入は保留してください。<br><br>
+            特に<strong>「急に膨らんだ」「強い痛みがある」「便もガスも出ない」「吐いている」</strong>――この組み合わせは、腸閉塞をはじめとする<strong>緊急性の高い病態</strong>を疑う必要があります。この場合、私たちの仕事は施術ではなく、医療につなぐことです。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="terms">
+          <h2>2. 言葉を整理する ― 怒張・膨隆・膨満感</h2>
+          <p>
+            現場でも文献でも混同されやすい3つです。指しているものが違うので、最初に揃えておきましょう。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>用語</th><th>指している内容</th><th>現場での確認の仕方</th></tr></thead>
+              <tbody>
+                <tr><td><strong>膨隆</strong>（ぼうりゅう）</td><td>腹部が外へ盛り上がって見える<strong>他覚的な所見</strong>。全体的なものと、局所的なものがある。</td><td>見る。全体か局所か、左右差はあるか。</td></tr>
+                <tr><td><strong>怒張</strong>（どちょう）</td><td>本来は<strong>血管などが太く浮き出て見える状態</strong>を指す言葉。腹壁静脈の怒張、頸静脈の怒張などと使われる。</td><td>見る。腹壁の表面に血管が浮き出ていないか。</td></tr>
+                <tr><td><strong>膨満感</strong>（ぼうまんかん）</td><td>本人が感じる<strong>「張っている」という自覚症状</strong>。見た目の変化を伴わないこともある。</td><td>聞く。実際に膨らんでいるかどうかとは別に確認する。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <span class="ev-label ev-clin">臨床上の位置づけ</span><br>
+            大切なのは、<strong>「見た目が膨らんでいる」と「本人が張りを感じている」は必ずしも一致しない</strong>ということです。見た目は変わらないのに強い張りを訴える方もいれば、明らかに膨らんでいるのに本人は無自覚という方もいます。両方を別々に確認してください。<br><br>
+            なお<strong>腹壁静脈の怒張</strong>は、見た目の変化としては目立たなくても、医学的には注意すべき所見として扱われるものです。気づいたら、そのまま流さず受診勧奨の材料にしてください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="background">
+          <h2>3. 腹部が膨らんで見える主な背景</h2>
+          <p>
+            ここが今回いちばん伝えたいところです。背景は非常に幅広く、<strong>すべてを同列に扱ってはいけません</strong>。私たちが評価・支援できる領域と、医療的な検査が必要な領域を、はっきり分けて考えます。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>領域</th><th>主な背景</th><th>私たちの立ち位置</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><strong>私たちが観察・支援に関われる可能性がある領域</strong></td>
+                  <td>消化管ガスの貯留、便秘傾向、食事内容や食べ方との関係、腹壁の筋機能と緊張、呼吸と腹圧の使い方、姿勢による見え方の変化、皮下脂肪の分布</td>
+                  <td>観察し、生活・動作・呼吸の面から支援を検討できます。ただし<strong>「これが原因だ」と断定はしません</strong>。</td>
+                </tr>
+                <tr>
+                  <td><strong>医療的な評価・検査が必要な領域</strong></td>
+                  <td>妊娠、腹水の貯留、肝臓や脾臓など臓器の腫大、腫瘤、ヘルニア、腸閉塞、消化管や婦人科領域の疾患、内分泌・代謝性の病態</td>
+                  <td><strong>私たちが判断する領域ではありません</strong>。疑わしい所見や経過があれば、受診につなぎます。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            「腹筋が弱いからお腹が出ている」「内臓下垂だ」「ガスがたまっているだけ」――こうした説明は、<strong>言い切った瞬間に、他の可能性を検討する道を閉じてしまいます</strong>。<br><br>
+            特に<strong>「内臓下垂」</strong>という言葉は、現場で非常に安易に使われがちですが、それだけで説明を終えるべきものではありません。同じように<strong>「自律神経の乱れ」</strong>も、何も説明していないのと同じです。使うなら、<strong>何を観察してそう考えたのか</strong>まで言えるようにしてください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="questions">
+          <h2>4. 最初に聞くべき質問</h2>
+          <div class="check-card">
+            <p class="box-title">発症と経過</p>
+            <ul>
+              <li>いつから膨らんでいますか（日、週、月、年のどの単位ですか）</li>
+              <li>急に起きましたか。それとも徐々にですか</li>
+              <li>食前と食後で変わりますか</li>
+              <li>朝と夜で変わりますか</li>
+              <li>だんだん強くなっていますか、横ばいですか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">随伴する症状</p>
+            <ul>
+              <li>痛みはありますか。どこが、どんなふうに痛みますか</li>
+              <li>便は出ていますか。ガスは出ていますか</li>
+              <li>吐き気や嘔吐はありませんか</li>
+              <li>熱はありませんか</li>
+              <li>便の色に変化はありませんか（黒い、赤いなど）</li>
+              <li>食欲はどうですか。排便の回数や性状に変化はありませんか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">背景情報</p>
+            <ul>
+              <li>体重が急に増えた、あるいは減ったことはありませんか</li>
+              <li>（女性の場合）月経の状況はいかがですか。妊娠の可能性はありませんか</li>
+              <li>これまでの病気、手術を受けたことはありますか</li>
+              <li>飲んでいる薬、サプリメントはありますか</li>
+              <li>医療機関を受診していますか。診断や指示はありますか</li>
+            </ul>
+          </div>
+          <p>
+            <span class="ev-label ev-clin">臨床上の位置づけ</span><br>
+            <strong>手術歴</strong>は特に重要です。開腹手術の既往は、腸の癒着など後の経過に関わる情報として医学的に知られています。「昔のことだから関係ない」と省略しないでください。<br><br>
+            また<strong>妊娠の可能性</strong>の確認は、聞きにくいと感じる方が多い項目ですが、<strong>安全のために必要な情報</strong>です。事務的に、淡々と、他の質問と同じトーンで聞くのがコツです。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="observe">
+          <h2>5. 現場で観察する項目</h2>
+          <h3>腹部そのもの</h3>
+          <ul>
+            <li><strong>全体か、局所か</strong>：お腹全体が膨らんでいるのか、一部だけが盛り上がっているのか</li>
+            <li><strong>左右差</strong>：左右で見え方が違わないか</li>
+            <li><strong>立位と仰臥位での変化</strong>：横になったときに変化するか、しないか</li>
+            <li><strong>皮膚の状態</strong>：血管が浮き出ていないか、色の変化はないか</li>
+            <li><strong>呼吸に伴う動き</strong>：呼吸で腹部が自然に動くか、まったく動かないか</li>
+            <li><strong>無意識に固めていないか</strong>：常に腹部に力が入っている状態になっていないか</li>
+            <li><strong>痛みを避ける姿勢</strong>：かばうような前かがみ、動きたがらない様子はないか</li>
+          </ul>
+          <h3>腹部以外</h3>
+          <ul>
+            <li><strong>胸郭と骨盤の位置関係</strong>：肋骨が開いていないか、骨盤との位置関係はどうか</li>
+            <li><strong>時間帯・食事による変化</strong>：朝と夕方、食前と食後での違い</li>
+            <li><strong>全身の様子</strong>：倦怠感、顔色、むくみ、体重の変化</li>
+          </ul>
+          <div class="sp-callout">
+            <p class="box-title">臨床のポイント</p>
+            <strong>「横になったら変化するか」</strong>は、現場で得られる貴重な情報のひとつです。姿勢や腹壁の使い方に関連するものは、体位で見え方が変わりやすい傾向があります。一方で、<strong>体位を変えても変わらない膨隆、日を追って大きくなる膨隆</strong>は、そのまま経過を見るべきではありません。<br><br>
+            ただし念を押しますが、<strong>この所見だけで原因を断定することはできません</strong>。あくまで「受診をすすめる材料が増えた」という受け取り方をしてください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="notonly">
+          <h2>6. 腹部だけで判断しない</h2>
+          <p>
+            シリーズ共通のメッセージ、<strong>「症状がある場所に原因があるとは限らない」</strong>。腹部はまさにこれが当てはまる部位です。
+          </p>
+          <p>
+            腹部の見え方や張りの感じ方には、次のような要素が<strong>関連する可能性</strong>があります。断定ではなく、確認すべき候補として挙げます。
+          </p>
+          <ul>
+            <li><strong>横隔膜の運動</strong>：呼吸のたびに上下する横隔膜は、腹腔内の圧の変化に関わります</li>
+            <li><strong>胸郭の可動性</strong>：胸郭が硬く動きにくいと、呼吸のパターンが変わる可能性があります</li>
+            <li><strong>骨盤帯のアライメント</strong>：胸郭と骨盤の位置関係が、腹部の見え方に影響することがあります</li>
+            <li><strong>腹圧の調整</strong>：常に力んでいる、あるいはまったく使えていない、どちらも起こりえます</li>
+            <li><strong>自律神経系の働き</strong>：消化管の動きは自律神経の影響を受けますが、<strong>「自律神経の乱れ」という言葉だけで説明を終えないこと</strong></li>
+            <li><strong>食事の内容・量・食べ方</strong>、<strong>排便の習慣</strong>、<strong>睡眠</strong>、<strong>心理的ストレス</strong>、<strong>日常の活動量</strong></li>
+          </ul>
+          <p>
+            これらは、<strong>私たちが観察でき、生活面から関われる可能性がある領域</strong>です。だからこそ価値があります。ただし、医学的な評価を飛ばしてここから入らないでください。順番の問題です。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="scope">
+          <h2>7. 関与できる範囲と、してはいけない介入</h2>
+          <div class="key-box">
+            <p class="box-title">関われる範囲（レッドフラッグがなく、必要な受診が済んでいる場合）</p>
+            <ul>
+              <li>問診と観察による情報整理、経過の記録</li>
+              <li>呼吸のパターン、胸郭・骨盤の位置関係、腹圧の使い方の評価と調整</li>
+              <li>姿勢や動作の面からの支援</li>
+              <li>食事のタイミング、排便習慣、睡眠、活動量についての聞き取りと一般的な生活助言</li>
+              <li>症状の変化を継続的に確認し、悪化があれば受診につなぐこと</li>
+            </ul>
+          </div>
+          <div class="no-box">
+            <p class="box-title">してはいけない判断・介入</p>
+            <ul>
+              <li><strong>レッドフラッグがある状態で、腹部に手を当てない</strong>。強く押す、揉む、内臓を動かそうとする――いずれも行いません。</li>
+              <li><strong>強い腹痛がある方に対して、原因の確認なく腹部への圧を加えない</strong>。</li>
+              <li><strong>「ガスがたまっているだけ」と自分で結論づけない</strong>。</li>
+              <li><strong>体重減少や食欲低下を伴う膨隆を、生活習慣の問題として片づけない</strong>。</li>
+              <li><strong>妊娠の可能性がある状況で、確認せずに腹部への介入をしない</strong>。</li>
+              <li><strong>腹診によって病態を断定しない</strong>。東洋医学の腹部の見方は状態を整理する枠組みであって、診断ではありません。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="tcm">
+          <h2>8. 東洋医学から見るための基礎</h2>
+          <div class="tcm-box">
+            <p class="box-title">東洋医学から見る基礎</p>
+            東洋医学では、腹部の張りを<strong>ひとつの原因に決めつけず、複数の方向から整理します</strong>。代表的な整理の方向は次のとおりです。<br><br>
+            ・<strong>不足していて動かせない状態</strong>：働かせる力そのものが足りず、動きが弱い<br>
+            ・<strong>滞っていて動かない状態</strong>：巡りが停滞して、詰まったような張りが出る<br>
+            ・<strong>余分な水分が停滞した状態</strong>：重だるさ、ぽちゃぽちゃした感じを伴う<br>
+            ・<strong>冷えによって働きが低下した状態</strong>：温めると楽、冷やすとつらい<br>
+            ・<strong>熱や緊張が強い状態</strong>：張って苦しい、押されるのを嫌がる<br><br>
+            大切なのは、<strong>同じ「腹部膨満」でも、全員が同じ状態ではない</strong>という前提です。これは伝統医学上の枠組みであり、現代医学で証明された病態分類ではありません。
+          </div>
+          <p>
+            この整理が現場で役に立つのは、<strong>「押した時の反応」「時間帯による変化」「温冷での変化」を必ず聞くようになる</strong>からです。押されて楽になる張りと、押されるのを嫌がる張りは、明らかに違う。その違いに敏感になれること――それが東洋医学の視点から得られる、いちばん実用的な収穫だと私は思っています。
+          </p>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>証の確定、腹診による断定は、無料記事の範囲を超えるだけでなく、単独で行うべきものではありません。</strong><br><br>
+            そして繰り返しになりますが、<strong>東洋医学的な体質分類だけで、医学的評価を省略してはいけません</strong>。「冷えているタイプだから温めましょう」で済ませた先に、検査が必要な病態が隠れていたら、取り返しがつきません。順番は常に、医学的な安全確認が先です。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="integrate">
+          <h2>9. 西洋医学と東洋医学を併用するときの注意点</h2>
+          <ul>
+            <li><strong>安全確認が先、状態の整理が後</strong>。この順番は動かしません。</li>
+            <li><strong>東洋医学の「脾」「胃」といった臓腑と、西洋医学の脾臓・胃を同一視しない</strong>。名前は重なりますが、指している概念が異なります。</li>
+            <li><strong>症状ひとつで証を決めない</strong>。腹部が張っているという事実だけでは、何も決まりません。</li>
+            <li><strong>クライアントへの説明で、両者の言葉を混ぜない</strong>。「東洋医学ではこう捉えます」と前置きを入れてください。</li>
+            <li><strong>病名が同じでも、支援方法が同じとは限らない</strong>。同じ「機能性の消化管症状」と言われた方でも、生活背景も呼吸の状態も違います。</li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>10. レッドフラッグ</h2>
+          <div class="red-flag">
+            <p class="box-title">次のいずれかがある場合、徒手的な腹部への介入や運動を行わず、医療機関への相談を優先してください</p>
+            <ul>
+              <li>突然の強い腹痛</li>
+              <li>腹部の著しい膨隆</li>
+              <li>板のように硬い腹部、触れられるのを強く嫌がる</li>
+              <li>持続する嘔吐</li>
+              <li>便もガスも出ていない</li>
+              <li>血便、黒色便（タール状の便）</li>
+              <li>吐血</li>
+              <li>高熱</li>
+              <li>黄疸（皮膚や白目が黄色い）</li>
+              <li>意識状態の変化</li>
+              <li>原因のわからない体重減少</li>
+              <li>拍動して触れる腹部の腫瘤</li>
+              <li>妊娠の可能性がある状況での腹痛や出血</li>
+            </ul>
+            <p style="margin:0">
+              特に<strong>「強い腹痛＋嘔吐＋排便・排ガスの停止」</strong>という組み合わせや、<strong>拍動性の腫瘤</strong>は、緊急対応が必要な病態を疑うサインとして知られています。この場合、<strong>お腹に触れること自体を避けてください</strong>。良かれと思った圧が、状況を悪化させる可能性があります。<br><br>
+              判断に迷ったら、介入しない。これがいちばん安全な選択です。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="checklist">
+          <h2>11. 現場で使える観察チェックリスト</h2>
+          <div class="check-card">
+            <p class="box-title">□ 発症時期と経過</p>
+            <ul>
+              <li>いつから膨らんでいるか（急性か慢性か）</li>
+              <li>食前・食後、朝・夜での変化</li>
+              <li>進行しているか、横ばいか</li>
+              <li>体位（立位・仰臥位）による変化</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ 医療機関での診断・治療状況</p>
+            <ul>
+              <li>受診の有無、診断名の説明を受けているか</li>
+              <li>既往歴、手術歴（特に開腹手術）</li>
+              <li>服薬状況、サプリメント</li>
+              <li>運動・施術に関する主治医からの指示</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ 局所の状態</p>
+            <ul>
+              <li>全体か局所か、左右差はあるか</li>
+              <li>腹壁の血管の浮き出し、皮膚の色</li>
+              <li>呼吸に伴う腹部の動き、無意識の固め</li>
+              <li>痛みの有無と、痛みを避ける姿勢</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ 全身症状と随伴症状</p>
+            <ul>
+              <li>便・ガスの状況、食欲、排便の変化</li>
+              <li>吐き気、嘔吐、発熱</li>
+              <li>体重の増減、倦怠感、顔色、むくみ</li>
+              <li>睡眠、活動量、心理的な負荷</li>
+              <li>胸郭・骨盤の位置関係、呼吸のパターン</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">□ レッドフラッグと医療連携</p>
+            <ul>
+              <li>強い腹痛、板状の硬さ、著しい膨隆はないか</li>
+              <li>嘔吐の持続、排便・排ガスの停止はないか</li>
+              <li>血便・黒色便・吐血・高熱・黄疸はないか</li>
+              <li>体重減少、拍動性の腫瘤、妊娠の可能性はないか</li>
+              <li>該当した場合に、誰にどうつなぐかを決めているか</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="case">
+          <h2>12. 初心者向けミニケース</h2>
+          <div class="case-card">
+            <p class="box-title">ケース｜50代女性・「ここ数ヶ月、夕方になるとお腹が張って苦しい」</p>
+            <div class="cs-step"><b>1. 主訴</b>数ヶ月前から、夕方になると下腹部が張って苦しい。朝は比較的楽。デスクワーク中心で、日中ほとんど歩かない。「腹筋が弱いからだと思う」とのこと。</div>
+            <div class="cs-step"><b>2. 追加で確認したい情報</b>始まりは急だったか徐々にか。食前後での変化。便とガスは出ているか、回数と性状の変化。痛みの有無と性質。吐き気、発熱の有無。体重の変化。月経の状況。既往歴・手術歴・服薬。受診の有無。温めると楽か、冷やすと楽か。押されるとどう感じるか。</div>
+            <div class="cs-step"><b>3. 観察する項目</b>膨らみが全体か局所か、左右差。立位と仰臥位での変化。腹壁の血管や皮膚の色。呼吸に伴う腹部の動き。胸郭と骨盤の位置関係。無意識に腹部を固めていないか。顔色、むくみ、倦怠感。</div>
+            <div class="cs-step"><b>4. 考えられる複数の可能性</b>消化管ガスや便通の要素、食事内容や食べ方、日中の活動量の少なさ、呼吸と腹圧の使い方――こうした、私たちが関われる可能性のある要素もあります。一方で、婦人科領域を含む医療的な評価が必要な病態が背景にある可能性も、この段階では否定できません。<strong>どちらとも判断できません。</strong></div>
+            <div class="cs-step"><b>5. 見逃してはいけない状態</b>体重の減少、進行性に増大する膨隆、体位で変わらない膨隆、不正出血、便通の急な変化、血便、持続する痛み。これらがあれば、生活習慣の話に進む前に受診です。</div>
+            <div class="cs-step"><b>6. 医療連携の必要性</b>数ヶ月続いていること、50代であること、まだ受診していないこと――これらを踏まえると、<strong>まず一度、医療機関での評価を受けていただくのが妥当</strong>です。不安を煽らず、「経過が長いので、一度確認しておきましょう」と落ち着いて伝えます。</div>
+            <div class="cs-step"><b>7. 支援できる範囲</b>受診で問題が指摘されなかった場合に限り――呼吸のパターン、胸郭・骨盤の位置関係、腹圧の使い方の評価と調整、日中の活動量を増やす提案、食事のタイミングや排便習慣の聞き取りと一般的な助言、睡眠の確認。</div>
+            <div class="cs-step"><b>8. 介入した場合に再評価する項目</b>張りの強さと出現する時間帯、便通の状況、呼吸に伴う腹部の動き、胸郭と骨盤の位置関係、活動量、睡眠。<strong>同じ項目を同じ条件で</strong>比較し、悪化がないかも必ず確認します。</div>
+            <div class="cs-step"><b>この事例の結論</b><strong>「この情報だけでは判断できない」</strong>――ここで無理に「腹筋の弱さです」と答えを出すことが、いちばん危ない対応です。分からないと認めて必要な情報を集めることは、逃げではなく臨床判断です。</div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>13. 今回の要点</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>「怒張」「膨隆」「膨満感」は別のものです。見た目と自覚は一致しないことがあります。</li>
+              <li>腹部の膨らみの背景は幅広く、私たちが関われる領域と医療的検査が必要な領域が混ざっています。</li>
+              <li>触る前に聞く。いつから、痛みは、便とガスは、嘔吐・発熱・体重減少は。この4点が関門です。</li>
+              <li>「腹筋が弱い」「内臓下垂」「ガスがたまっているだけ」で説明を終えません。</li>
+              <li>東洋医学は張りを複数方向から整理しますが、それだけで医学的評価を省略してはいけません。</li>
+              <li>レッドフラッグがあるときは、腹部に触れないことが最善の対応です。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="next">
+          <h2>14. 応用編で学ぶこと</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              今回の無料記事では、<span>腹部の膨らみを見たときに最初に確認すべきこと、レッドフラッグ、私たちが関われる範囲</span>を整理しました。<br><br>
+              実際の臨床では、ここから先が本番です。集めた情報をどうつなぎ、呼吸・胸郭・骨盤・生活習慣の関連をどう読み、東洋医学的な状態の整理とどう統合して、その人に必要な関わり方を選ぶのか。<span>有料会員向けの応用編では、腹部膨満感の具体的なケースをもとに、評価・仮説構築・介入の選択・再評価・中止基準までの臨床推論</span>を扱います。<br><br>
+              無料版は「基礎と安全管理」、有料版は「統合と臨床推論、具体的な介入」。この役割分担で進めています。
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考にした主な情報源</h2>
+          <ul class="ref-list">
+            <li>日本消化器病学会の各種診療ガイドライン（機能性消化管疾患、慢性便秘症など）における症状評価の考え方</li>
+            <li>日本腹部救急医学会の資料および各大学病院の一般向け解説（急性腹症、腸閉塞の緊急性について）</li>
+            <li>厚生労働省 e-ヘルスネット（消化器の健康、排便と生活習慣に関する解説）</li>
+            <li>NICE Guideline: Suspected cancer - recognition and referral（体重減少・腹部腫瘤などの受診勧奨の考え方）</li>
+            <li>標準的な解剖学・生理学の教科書（腹壁の構造、横隔膜と腹腔内圧、消化管の生理）</li>
+          </ul>
+          <p style="font-size:0.86rem;color:var(--text-muted);line-height:1.8">
+            東洋医学に関する記述は、上記の医学的情報源とは性質が異なる<strong>伝統医学上の理論</strong>です。両者を混同しないよう、本文中でも区別して記載しています。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責・安全上の注意</strong><br>
+            本記事は、トレーナー・整体師・セラピストが安全に業務を行うための教育目的の情報提供であり、医師による診断・治療の代替となるものではありません。記載した観察項目は、疾患を診断するためのものではなく、<strong>「運動や施術を行ってよい状態かを確認し、支援方法を考えるために情報を整理する」</strong>ためのものです。<br><br>
+            症状がある方には、必ず医療機関での評価を受けていただくようご案内ください。すでに治療中の方については、主治医の方針を確認したうえで、その範囲内で支援してください。本記事の内容によって、医師の診断や治療を中断・変更することは意図していません。<br><br>
+            また、私たちの業務範囲を超える医療行為（診断、投薬の指示、疾患の治療を目的とした介入など）は行わないでください。判断に迷う場合は、介入しないこと・医療につなぐことが、常に最も安全な選択です。
+          </div>
+        </section>
+
+<div class="series-nav"><a href="facial-palsy-support-article.html"><span class="sn-label">前の記事</span>第1回｜顔面神経麻痺への支援</a><a href="hyperhidrosis-support-article.html" style="text-align:right"><span class="sn-label">次の記事</span>第3回｜多汗・過剰な発汗</a></div>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#intro">はじめに／学べること</a></li>
+            <li><a href="#conclusion">1. 最初に結論</a></li>
+            <li><a href="#terms">2. 怒張・膨隆・膨満感</a></li>
+            <li><a href="#background">3. 膨らんで見える背景</a></li>
+            <li><a href="#questions">4. 最初に聞く質問</a></li>
+            <li><a href="#observe">5. 観察する項目</a></li>
+            <li><a href="#notonly">6. 腹部だけで判断しない</a></li>
+            <li><a href="#scope">7. 関与できる範囲</a></li>
+            <li><a href="#tcm">8. 東洋医学の基礎</a></li>
+            <li><a href="#integrate">9. 併用時の注意</a></li>
+            <li><a href="#redflag">10. レッドフラッグ</a></li>
+            <li><a href="#checklist">11. チェックリスト</a></li>
+            <li><a href="#case">12. ミニケース</a></li>
+            <li><a href="#summary">13. 今回の要点</a></li>
+            <li><a href="#next">14. 応用編への導線</a></li>
+            <li><a href="#refs">参考情報源</a></li>
+            <li><a href="#disclaimer">免責・安全上の注意</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">シリーズ全4回</h3>
+          <ul class="toc-list">
+            <li><a href="facial-palsy-support-article.html">第1回｜顔面神経麻痺への支援</a></li>
+            <li><a href="abdominal-distension-article.html">第2回｜腹部の怒張・膨隆（この記事）</a></li>
+            <li><a href="hyperhidrosis-support-article.html">第3回｜多汗・過剰な発汗</a></li>
+            <li><a href="edema-support-article.html">第4回｜浮腫・むくみ</a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>
