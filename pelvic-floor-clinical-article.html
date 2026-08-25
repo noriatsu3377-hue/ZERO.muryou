@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>骨盤底筋を臨床でどう扱うか | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。骨盤底筋群の役割、横隔膜・腹横筋との協調、筋力低下だけでなく過緊張もあること、ケーゲル運動を一律に行わせない理由、トレーニング中の腹圧管理、内診の職域と受診の目安を整理します。">
+  <meta name="keywords" content="骨盤底筋、尿失禁、腹圧、呼吸、職域">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/pelvic-floor-clinical-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="骨盤底筋を臨床でどう扱うか">
+  <meta property="og:description" content="締めることだけが目的になっていませんか。収縮・弛緩・呼吸・腹圧をつなげて見るための記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/pelvic-floor-clinical-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_pelvicfloor.png">
+  <meta property="article:section" content="骨盤底・女性の健康">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>骨盤底・女性の健康</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約12分</span>
+      </div>
+      <h1 class="article-main-title">骨盤底筋を臨床でどう扱うか</h1>
+      <p class="article-subtitle">― 「締めればよい筋肉」という枠を外す ―</p>
+      <div class="tag-row"><span>#骨盤底筋</span><span>#尿失禁</span><span>#腹圧</span><span>#呼吸</span><span>#職域</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_pelvicfloor.png" alt="骨盤底筋を臨床でどう扱うかのイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            骨盤底筋と聞いて、まず何を思い浮かべるでしょうか。おそらく「締める」でしょう。ケーゲル運動、骨盤底筋体操、「キュッと引き上げて」。<br><br>
+            けれど現場で実際に困っているのは、<strong>締められない人だけではありません</strong>。<strong>緩められない人</strong>もいます。そして後者に「もっと締めましょう」と指導すると、状況が悪くなる可能性があります。<br><br>
+            この記事では、骨盤底筋を「締めればよい筋肉」という枠から外し、<strong>収縮・弛緩・呼吸・腹圧・症状</strong>の関係として捉え直します。そして、私たちの職域がどこまでかを、はっきりさせます。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>骨盤底筋群の基本的な役割（支持・排泄・性機能・腹圧）</li>
+              <li>横隔膜・腹横筋・多裂筋との協調という考え方</li>
+              <li>筋力低下だけでなく「過緊張」もあるということ</li>
+              <li>全員にケーゲル運動を行わせてはいけない理由</li>
+              <li>呼吸を止めた過剰な腹圧という、トレーニング現場の課題</li>
+              <li>内診・触診を伴う評価の資格と同意の問題</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="anatomy">
+          <h2>基本用語の整理 ― 骨盤底筋群の役割</h2>
+          <p>
+            骨盤底筋群は、骨盤の底を<strong>ハンモックのように支えている筋群</strong>です。担っている役割は、大きく4つあります。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>役割</th><th>内容</th></tr></thead>
+              <tbody>
+                <tr><td><strong>骨盤臓器の支持</strong></td><td>膀胱、腸、（女性では）子宮などを下から支える</td></tr>
+                <tr><td><strong>排尿・排便の制御</strong></td><td>尿道・肛門を締める働きと、排泄時に緩む働きの両方</td></tr>
+                <tr><td><strong>性機能への関与</strong></td><td>性別を問わず関わる</td></tr>
+                <tr><td><strong>腹圧の調整</strong></td><td>腹腔の底として、圧の変化に応じて働く</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜「締める」と「緩める」は同じ重要度</p>
+            上の表を見て気づいてほしいのですが、<strong>排泄の役割には「緩む」ことが含まれています</strong>。締めるだけの筋であれば、排泄はできません。<br><br>
+            つまり骨盤底筋の機能とは、<strong>必要なときに締まり、必要なときに緩む</strong>ことです。この当たり前が、指導の場面では驚くほど抜け落ちます。
+          </div>
+          <h3>横隔膜・腹横筋・多裂筋との協調</h3>
+          <p>
+            <span class="ev-label ev-b">理論として提案されている内容</span><br>
+            骨盤底筋は、<strong>横隔膜（上）、腹横筋（前・側方）、多裂筋（後方）</strong>とともに、腹腔を囲む一つのユニットとして機能すると考えられています。呼吸に伴って、<strong>吸気では横隔膜が下降し骨盤底も下方へ、呼気では逆方向へ</strong>という動きが一般に説明されます。
+          </p>
+          <p>
+            ただし、<strong>この動きには個人差があり、条件によっても変わります</strong>。呼吸のパターン、姿勢、腹圧のかけ方、症状の有無――いずれも影響しうる要素です。「呼吸に合わせて必ずこう動く」と決めつけないでください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="symptoms">
+          <h2>関連しうる症状</h2>
+          <p>
+            骨盤底に関連して語られる症状は幅広く、<strong>そのすべてが「筋力低下」で説明されるわけではありません</strong>。
+          </p>
+          <ul>
+            <li><strong>尿漏れ</strong>：咳やくしゃみ、運動時などに起こるもの、強い尿意に伴うものなど、タイプが異なります</li>
+            <li><strong>骨盤臓器脱</strong>：下に降りてくるような感覚、違和感</li>
+            <li><strong>骨盤の痛み</strong>：持続する骨盤周囲の痛み</li>
+            <li><strong>排尿・排便の症状</strong>：出しにくい、残る感じ、頻度の変化</li>
+            <li><strong>産前産後の変化</strong>：妊娠・出産に伴う身体の変化</li>
+            <li><strong>スポーツ中の症状</strong>：ジャンプや高強度の運動での尿漏れなど</li>
+          </ul>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜男性にも骨盤底の症状はあります</p>
+            骨盤底というと女性のテーマとして扱われがちですが、<strong>男性にも骨盤底筋群はあり、症状も生じます</strong>。前立腺の手術後の尿漏れ、慢性的な骨盤の痛みなどが挙げられます。<br><br>
+            「女性向けの話」として枠を作ってしまうと、<strong>男性の相談が出てこなくなります</strong>。伝え方から見直してください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="hypertonic">
+          <h2>締めればよい、ではない ― 過緊張という状態</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            骨盤底筋トレーニング（PFMT）は、女性の尿失禁に対する保存的アプローチとして<strong>系統的レビューで支持されている</strong>介入です<sup>[1][2]</sup>。これは重要な事実です。
+          </p>
+          <p>
+            ただし、そこには前提があります。<strong>正しく収縮できていること、そして対象者に適していること</strong>です。
+          </p>
+          <div class="no-box">
+            <p class="box-title">やってはいけない対応</p>
+            <ul>
+              <li><strong>全員に一律でケーゲル運動を行わせる。</strong>骨盤底筋が<strong>過緊張</strong>の状態にある方に「もっと締めて」と指導すると、症状が変わらない、あるいは悪化する可能性が指摘されています。</li>
+              <li><strong>「締められているか」を確認せずに回数だけ指導する。</strong>本人は締めているつもりでも、実際には別の筋を使っている、あるいは息を止めていきんでいる場合があります。</li>
+              <li><strong>強く締め続けることを目標にする。</strong>必要なのは、締める力と、緩める力の両方です。</li>
+              <li><strong>痛みがある骨盤底に、収縮トレーニングから入る。</strong></li>
+            </ul>
+          </div>
+          <div class="known-grid">
+            <div class="known-card known-yes">
+              <p class="box-title">比較的支持されている内容</p>
+              <ul>
+                <li>女性の尿失禁に対して、骨盤底筋トレーニングは有効性が報告されている</li>
+                <li>継続（アドヒアランス）が結果に影響する</li>
+                <li>収縮のタイミングや筋の状態が関わりうる</li>
+              </ul>
+            </div>
+            <div class="known-card known-no">
+              <p class="box-title">まだ分かっていない・確立していない内容</p>
+              <ul>
+                <li>過緊張の判定基準と、最適な介入方法</li>
+                <li>呼吸法や体幹トレーニングが骨盤底機能をどこまで変えるか</li>
+                <li>「腹圧が高いから漏れる」という単純な因果</li>
+                <li>スポーツ中の症状に対する最適な介入</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="pressure">
+          <h2>トレーニング現場での腹圧管理</h2>
+          <p>
+            ここは、私たちが最も直接的に関われる領域です。
+          </p>
+          <p>
+            スクワットやデッドリフトなど、高い負荷を扱う場面では腹圧を用います。これ自体は必要な技術です。問題は、<strong>呼吸を止めて過剰に力み続けるパターンが習慣化している場合</strong>です。
+          </p>
+          <div class="check-card">
+            <p class="box-title">現場での確認項目</p>
+            <ul>
+              <li>挙上中、息を完全に止めたまま長く続けていないか</li>
+              <li>力むときに、腹部が外へ強く膨らむだけになっていないか</li>
+              <li>下腹部や骨盤底へ、押し下げるような感覚がないか</li>
+              <li>特定の種目・重量で尿漏れなどの症状が出ていないか</li>
+              <li>セット間で、呼吸と腹部の緊張が抜けているか</li>
+              <li>症状が出る種目を、本人が黙って避けていないか</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜聞かなければ、出てこない</p>
+            尿漏れの症状は、<strong>本人からはまず言い出されません</strong>。恥ずかしさもあれば、「よくあること」と思っている場合もあります。結果として、黙って種目を避けたり、運動そのものをやめてしまったりします。<br><br>
+            だから、<strong>こちらから聞ける形をつくること</strong>が大切です。問診票に一項目入れておく、「運動中に困っていることはありますか」と定期的に尋ねる。断定的に踏み込まず、話しやすい窓口を用意しておく。それだけで拾えるものがあります。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="scope">
+          <h2>私たちの職域 ― 内診・触診をめぐって</h2>
+          <div class="no-box">
+            <p class="box-title">職域と同意について</p>
+            骨盤底の評価には、<strong>内診（膣内・肛門内からの触診）を伴う方法</strong>があります。これは骨盤底の専門的な理学療法などで用いられるものです。<br><br>
+            <strong>この行為には、資格・法的な位置づけ・十分な説明と同意・記録・環境整備が不可欠です。</strong>ご自身の保有資格でその行為が認められるのか、必ず確認してください。「評価のため」は、実施してよい理由になりません。<br><br>
+            また、骨盤底というテーマは<strong>非常にプライベートな領域</strong>です。話題にするだけでも、相手に負担がかかる場合があります。<strong>聞くこと自体にも配慮が必要</strong>だと考えてください。
+          </div>
+          <div class="key-box">
+            <p class="box-title">できること</p>
+            <ul>
+              <li>症状の有無を、配慮ある形で確認できる仕組みをつくること</li>
+              <li>運動中の呼吸と腹圧の使い方を観察し、調整すること</li>
+              <li>症状が出る種目・負荷を把握し、当面の運動内容を調整すること</li>
+              <li>いきみを伴わない呼吸のパターンを一緒に確認すること</li>
+              <li>骨盤底の理学療法、泌尿器科、婦人科などへの受診をすすめること</li>
+              <li>受診中の方について、指導内容と矛盾しない運動を組むこと</li>
+            </ul>
+          </div>
+          <p>
+            <strong>紹介先を具体的に知っておくこと</strong>は、この領域での実力に直結します。「病院に行ってください」ではなく、「骨盤底を専門に扱っている理学療法士や、泌尿器科・婦人科があります」と言えるかどうか。ここで支援の質が変わります。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">次のような場合は、運動指導より医療機関での評価を優先してください</p>
+            <ul>
+              <li>血尿がある</li>
+              <li>原因のわからない出血がある</li>
+              <li>強い骨盤の痛み、持続する痛み</li>
+              <li>排尿困難、尿が出ない、残尿感が強い</li>
+              <li>会陰部・臀部・大腿内側の感覚の異常（しびれ、感覚が鈍い）</li>
+              <li>排尿・排便のコントロールが急に失われた</li>
+              <li>下肢の筋力低下を伴う</li>
+              <li>発熱を伴う排尿時の痛み</li>
+              <li>骨盤内に何かが降りてくるような感覚が急に出現・悪化した</li>
+              <li>産後で、痛みや症状が続いている、あるいは悪化している</li>
+            </ul>
+            <p style="margin:0">
+              特に<strong>会陰部の感覚異常、排尿・排便のコントロールの急な喪失、下肢の筋力低下</strong>が同時にみられる場合は、神経系の緊急性のある病態が疑われるため、<strong>速やかな医療評価が必要</strong>です。運動や施術を行わず、受診につないでください。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">単独で鍛えるのではなく、システムとして見る</p>
+            骨盤底筋を「単独で鍛える筋肉」として扱うと、締めることだけが目的化します。零 -ZERO- では、次の順で見ることを勧めています。
+            <p class="flow">
+              症状はあるか（どんな場面で）<br>
+              → 収縮できるか<br>
+              → 緩められるか<br>
+              → 呼吸と協調しているか<br>
+              → 負荷がかかる場面で、腹圧をどう使っているか<br>
+              → 全身運動のなかでどうなるか
+            </p>
+            <br>
+            この順番の意味は、<strong>「緩められるか」を「収縮できるか」の直後に置いていること</strong>にあります。ここを飛ばすから、締める指導だけになる。<strong>力を抜けることも、能力です。</strong>
+          </div>
+          <p>
+            そして最後に。この領域では、<strong>踏み込みすぎないことが専門性</strong>になります。聞ける窓口をつくり、必要な人を適切な専門職につなぎ、その方針と矛盾しない運動を組む。派手ではありませんが、それが最も価値のある関わり方だと考えています。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>骨盤底筋は「締める」だけでなく「緩む」ことも役割に含みます。</li>
+              <li>骨盤底筋トレーニングは尿失禁に対して支持されていますが、全員に一律ではありません。</li>
+              <li>過緊張の状態に「もっと締めて」と指導すると、状況が悪くなる可能性があります。</li>
+              <li>呼吸に伴う骨盤底の動きには個人差があり、決めつけないでください。</li>
+              <li>男性にも骨盤底の症状はあります。伝え方から見直してください。</li>
+              <li>内診を伴う評価は資格・同意・衛生管理が前提です。職域を確認してください。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>骨盤底を「締める筋肉」の枠から外し、症状・収縮・弛緩・呼吸・腹圧という順で見る土台</span>を整理しました。<br><br>
+              実際の指導では、<span>どの情報から仮説を立て、どの種目をどこまで調整し、いつ専門職につなぐか</span>が問われます。負荷を落とすのか、フォームを変えるのか、呼吸から入るのか。変化が出なかったときに何を見直すのか。<span>ZERO MEMBERS では、評価から仮説設定、運動設計、再評価までをより具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="menstrual-cycle-training-article.html"><span class="rl-label">関連記事</span>月経周期と身体・トレーニング設計</a>
+            <a href="bloating-tcm-modern-article.html"><span class="rl-label">関連記事</span>腹部膨満感を東洋医学と現代医学から読み解く</a>
+            <a href="inner-unit-article.html"><span class="rl-label">関連記事</span>インナーユニットとは ― 支える仕組みを理解する</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Dumoulin C, Cacciari LP, Hay-Smith EJC. Pelvic floor muscle training versus no treatment, or inactive control treatments, for urinary incontinence in women. Cochrane Database Syst Rev. 2018. <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD005654.pub4/full" target="_blank" rel="noopener noreferrer">https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD005654.pub4/full</a></li>
+            <li>Hay-Smith EJC, et al. Comparisons of approaches to pelvic floor muscle training for urinary incontinence in women. Cochrane Database Syst Rev. 2024. <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009508.pub2/full" target="_blank" rel="noopener noreferrer">https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009508.pub2/full</a></li>
+            <li>日本排尿機能学会・日本泌尿器科学会による尿失禁および過活動膀胱に関する診療ガイドライン. <a href="https://www.urol.or.jp/" target="_blank" rel="noopener noreferrer">https://www.urol.or.jp/</a></li>
+            <li>日本産科婦人科学会（産後の身体変化および骨盤臓器脱に関する一般向け情報）. <a href="https://www.jsog.or.jp/" target="_blank" rel="noopener noreferrer">https://www.jsog.or.jp/</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#anatomy">骨盤底筋群の役割</a></li>
+            <li><a href="#symptoms">関連しうる症状</a></li>
+            <li><a href="#hypertonic">締めればよい、ではない</a></li>
+            <li><a href="#pressure">トレーニング現場での腹圧管理</a></li>
+            <li><a href="#scope">私たちの職域</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">骨盤底・女性の健康</p>
+          <div class="tag-row"><span>#骨盤底筋</span><span>#尿失禁</span><span>#腹圧</span><span>#呼吸</span><span>#職域</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

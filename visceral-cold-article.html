@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「内臓の冷え」を現場でどう捉えるか | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。「内臓の冷え」は診断名ではないという前提から、冷感の自覚と皮膚温・深部体温の関係、確認したい生活・医学的背景、東洋医学の寒証や陽虚という枠組みと限界、低温やけどや受診の目安までを整理します。">
+  <meta name="keywords" content="冷え、体温調節、東洋医学、寒熱、生活習慣">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/visceral-cold-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="「内臓の冷え」を現場でどう捉えるか">
+  <meta property="og:description" content="お腹が冷たい＝内臓が冷えている、ではありません。冷感を多層で捉えるための基礎記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/visceral-cold-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_visceralcold.png">
+  <meta property="article:section" content="東洋医学と現代医学">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>東洋医学と現代医学</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約12分</span>
+      </div>
+      <h1 class="article-main-title">「内臓の冷え」を現場でどう捉えるか</h1>
+      <p class="article-subtitle">― 体温調節と寒熱、二つの地図に分けて考える ―</p>
+      <div class="tag-row"><span>#冷え</span><span>#体温調節</span><span>#東洋医学</span><span>#寒熱</span><span>#生活習慣</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_visceralcold.png" alt="「内臓の冷え」を現場でどう捉えるかのイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            「内臓が冷えていますね」。整体やサロンで、一度は耳にしたことのある言葉ではないでしょうか。お腹に手を当てて、そう告げる。言われた側も、なんとなく納得する。<br><br>
+            ただ、少し立ち止まってみてください。<strong>お腹の皮膚が冷たいことは、内臓の温度が低いことを意味するのでしょうか</strong>。そもそも「内臓の冷え」とは、何を指す言葉なのでしょうか。この記事では、この曖昧な表現を、現代医学の体温調節と東洋医学の寒熱という<strong>二つの地図</strong>に分けて整理します。否定するためでも、無条件に肯定するためでもありません。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>「内臓の冷え」は現代医学の診断名ではないということ</li>
+              <li>冷えの「自覚」と、皮膚温・深部体温の関係</li>
+              <li>冷感の背景として確認したい要素（血流・自律神経・筋量・食事・睡眠など）</li>
+              <li>冷えの背後に医学的評価が必要な状態が隠れる可能性</li>
+              <li>東洋医学における寒証・陽虚などの枠組みと、その扱い方</li>
+              <li>「温めて楽になった」ことが意味すること、意味しないこと</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="term">
+          <h2>基本用語の整理 ―「内臓の冷え」は診断名ではない</h2>
+          <p>
+            まず、大前提を共有します。<strong>「内臓の冷え」は、現代医学の正式な診断名ではありません</strong>。国際的な疾患分類に、この名前の病気は存在しません。
+          </p>
+          <p>
+            これは「そんなものは無い」という意味ではありません。<strong>冷えの自覚に困っている人は確実にいます</strong>。ただ、その訴えを説明する枠組みが、現代医学と東洋医学とで異なるということです。日本の伝統医学の文脈では「冷え症」という言葉が広く用いられ、研究の対象にもなってきました。一方、現代医学では冷感という<strong>症状</strong>として扱い、その背景を探るという構図になります。
+          </p>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜言葉の出どころを分ける</p>
+            クライアントに説明するとき、<strong>「東洋医学では、こういう捉え方をします」と前置きを入れる</strong>だけで、誤解の多くは防げます。逆に、東洋医学の概念を現代医学の事実であるかのように話すと、その方の医療判断を歪めかねません。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="modern">
+          <h2>現代医学から見た基礎</h2>
+          <h3>自覚と実測は一致するとは限らない</h3>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            人間の身体は、<strong>深部体温（体の中心の温度）を狭い範囲に保つ</strong>ように働いています。一方、手足や体表の皮膚温は、環境や血流に応じて大きく変動します。つまり、<strong>体表が冷たいことと、身体の中心が冷えていることは別の話</strong>です。
+          </p>
+          <p>
+            さらに、<strong>冷たいという「感覚」も、皮膚温そのものと完全には一致しません</strong>。感覚は皮膚の温度受容器からの入力だけでなく、その処理のされ方にも影響されます。「実測は変わらないのに、つらさは強い」ということは起こりえます。ここでも、<strong>「気のせい」という言葉は使わないでください</strong>。
+          </p>
+          <h3>お腹が冷たく感じることの意味</h3>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>腹部の皮膚が冷たいことから、内臓の温度を判断することはできません。</strong>腹部の皮膚温は、皮下脂肪の厚み、直前の衣類、室温、体位、測定前の活動などで簡単に変わります。<br><br>
+            腹部を触れて得られる冷感は、<strong>一つの観察材料</strong>にはなりますが、それ以上のものではありません。「内臓が冷えています」と言い切ることは、私たちの職域を超えた説明になります。
+          </div>
+          <h3>背景として確認したい要素</h3>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>領域</th><th>確認したいこと</th><th>私たちの立ち位置</th></tr></thead>
+              <tbody>
+                <tr><td>環境・生活</td><td>室温、衣類、入浴習慣、日中の活動量、座位時間</td><td>観察でき、助言もできる領域</td></tr>
+                <tr><td>身体組成・運動</td><td>筋量、運動習慣、日常の身体活動</td><td>私たちの中心的な支援領域</td></tr>
+                <tr><td>食事・栄養</td><td>食事量、欠食、極端な減量、朝食の有無</td><td>一般的な範囲の助言。詳細は管理栄養士へ</td></tr>
+                <tr><td>睡眠・疲労</td><td>睡眠時間と質、疲労の蓄積</td><td>聞き取りと生活調整の提案</td></tr>
+                <tr><td>末梢血流・自律神経</td><td>手足の色調、冷感の左右差、季節変動</td><td>観察は可能。断定はしない</td></tr>
+                <tr><td>医学的背景</td><td>貧血、甲状腺機能、循環器系の状態、服薬</td><td><strong>私たちが判断する領域ではない</strong>。受診をすすめる</td></tr>
+                <tr><td>ホルモン・月経</td><td>月経周期との関連、更年期に関わる変化</td><td>聞き取りは配慮しつつ。判断は婦人科へ</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            この表で伝えたいのは、<strong>冷感という一つの訴えに、これだけ多くの層が関わりうる</strong>ということです。「血流が悪いからです」と一言で説明することが、いかに情報を捨てているか。ここを実感してほしいのです。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="tcm">
+          <h2>東洋医学から見た基礎</h2>
+          <div class="tcm-box">
+            <p class="box-title">東洋医学の観察モデル</p>
+            東洋医学は、身体の状態を<strong>寒と熱</strong>という軸で捉える枠組みを持っています。冷えに関連してよく使われる概念には、次のようなものがあります。<br><br>
+            ・<strong>寒証</strong>：全体として冷えに傾いた状態と捉える<br>
+            ・<strong>虚寒・陽虚</strong>：温める力そのものが不足していると捉える<br>
+            ・<strong>脾胃の働きの低下</strong>：飲食物を処理し身体を養う働きが落ちていると捉える<br><br>
+            東洋医学では、こうした整理を<strong>単一の症状ではなく、複数の所見の組み合わせ</strong>から仮に行います。冷感、温めたときの変化、食欲、便通、睡眠、疲労、時間帯による差――こうした情報を束ねて考える枠組みです。<br><br>
+            これは<strong>伝統医学のなかで発展した観察モデル</strong>であり、現代医学で証明された生理学的機序ではありません。
+          </div>
+          <p>
+            この枠組みの実用的な価値は、やはり<strong>問診の質</strong>にあります。「冷たいですね」で終わらず、いつ・どこが・どんなときに・何をすると変わるのか。そこまで聞く習慣がつく。これは現代医学的な情報収集としても有効です。
+          </p>
+          <div class="no-box">
+            <p class="box-title">やってはいけない対応</p>
+            <ul>
+              <li><strong>「陽虚です」「脾虚です」と断定しない。</strong>症状一つで証は決まりません。</li>
+              <li><strong>東洋医学の「腎」「脾」を、西洋医学の腎臓・脾臓と同一視しない。</strong>指している概念が異なります。</li>
+              <li><strong>東洋医学的な説明で、必要な受診を先送りさせない。</strong>貧血や甲状腺機能の問題が背景にある可能性を、体質論で覆い隠してはいけません。</li>
+              <li><strong>科学的根拠があるかのように装わない。</strong>「東洋医学では」と明示してください。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="warm">
+          <h2>「温めて楽になった」が意味すること</h2>
+          <p>
+            温熱を用いると、多くの方が「楽になった」と言います。これは事実として起こります。ただし、ここに大きな落とし穴があります。
+          </p>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜楽になったことと、原因が冷えだったことは別</p>
+            温めて症状が軽くなったとしても、それは<strong>「原因が冷えだった」ことの証明にはなりません</strong>。<br><br>
+            温熱には、局所の血流変化に加え、<strong>リラックス反応、心地よさ、安心感</strong>といった要素が伴います。これらはいずれも症状の感じ方に影響しうるものです。つまり、変化の理由は一つとは限りません。<br><br>
+            <strong>変化が出たことと、原因を特定できたことを混同しない。</strong>これは零 -ZERO- が繰り返し伝えている姿勢です。
+          </div>
+          <p>
+            もちろん、温めることに意味がないという話ではありません。心地よく、症状が緩和され、生活の質が上がるなら、それは十分な価値があります。ただし<strong>説明を誤らないこと</strong>。「これで内臓の冷えが取れました」ではなく、「温めると楽になる方ですね。その傾向を記録しておきましょう」。この言い方の差が、専門職の差です。
+          </p>
+          <div class="no-box">
+            <p class="box-title">安全上の注意｜低温やけど</p>
+            温熱を用いる場合、<strong>低温やけど</strong>に注意してください。比較的低い温度でも、長時間の接触で皮膚障害が起こりえます。特に<strong>感覚が鈍くなっている方、睡眠中、糖尿病などで末梢の感覚に変化がある方</strong>では注意が必要です。直接長時間当てない、就寝時に使わない、定期的に皮膚を確認する。基本ですが、事故はここで起きます。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="observe">
+          <h2>現場で観察したいポイント</h2>
+          <div class="check-card">
+            <p class="box-title">冷感そのものについて</p>
+            <ul>
+              <li>いつから気になっているか、季節による差はあるか</li>
+              <li>どこが冷たいと感じるか（手足・腹部・腰・全身）</li>
+              <li>左右差はないか</li>
+              <li>時間帯による差はあるか</li>
+              <li>温めるとどう変わるか、動くとどう変わるか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">皮膚と末梢の状態</p>
+            <ul>
+              <li>皮膚の色調（蒼白、紫がかる、まだら）</li>
+              <li>触れたときの温度の左右差</li>
+              <li>しびれ、痛み、感覚の変化はないか</li>
+              <li>皮膚の傷や潰瘍、治りにくさはないか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">全身症状と生活背景</p>
+            <ul>
+              <li>強い倦怠感、立ちくらみ、動悸、息切れ</li>
+              <li>体重の変化、食欲、便通</li>
+              <li>睡眠時間と質</li>
+              <li>食事量、欠食、減量中でないか</li>
+              <li>運動習慣、日中の座位時間</li>
+              <li>月経周期との関連（該当する場合、配慮して確認）</li>
+              <li>既往歴、服薬状況</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="scope">
+          <h2>トレーナー・セラピストができること</h2>
+          <div class="key-box">
+            <p class="box-title">できること</p>
+            <ul>
+              <li>冷感の出方を丁寧に聞き取り、記録して経過を追うこと</li>
+              <li>運動習慣・活動量・筋量の面からの支援</li>
+              <li>睡眠、食事のリズム、衣類や室温といった生活環境の助言</li>
+              <li>心地よさを伴う温熱の活用（安全に配慮したうえで）</li>
+              <li>医学的評価が必要な兆候に気づき、受診をすすめること</li>
+            </ul>
+          </div>
+          <p>
+            <strong>「筋量と活動量」は、私たちが最も貢献しやすい領域</strong>です。ここを地道に支えることは、冷感の訴えに対して現実的な意味を持ちます。ただしこれも、<strong>「運動すれば冷えは治ります」と断定してはいけません</strong>。個人差が大きく、背景も一様ではないからです。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">次のような場合は、施術や運動より医療機関での評価を優先してください</p>
+            <ul>
+              <li><strong>片側だけに急に生じた冷感</strong>、あるいは明らかな左右差</li>
+              <li>皮膚の色が白くなる、紫色になる、まだらになるといった変化</li>
+              <li>強い痛み、しびれ、感覚の低下</li>
+              <li>筋力の低下、動かしにくさ</li>
+              <li>治りにくい傷や潰瘍がある</li>
+              <li>強い倦怠感、立ちくらみ、動悸、息切れ（貧血などの可能性）</li>
+              <li>体重の急な変化、脱毛、むくみ、便通の大きな変化</li>
+              <li>全身の強い寒気に発熱を伴う</li>
+              <li>意識状態の変化、反応が鈍い</li>
+            </ul>
+            <p style="margin:0">
+              特に<strong>「片側だけ」「急に」「痛みやしびれを伴う」</strong>冷感は、循環や神経に関わる問題の可能性があり、体質の話として扱ってはいけません。<br><br>
+              また<strong>全身の強い寒気と発熱、意識状態の変化</strong>を伴う場合は、緊急性のある病態が疑われます。この場合は救急対応を含めた判断が必要です。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">「冷たい＝血流が悪い＝温めれば解決」を一本道にしない</p>
+            この三段論法は、あまりにも滑らかで、あまりにも早く結論に着きます。だからこそ危ない。零 -ZERO- では、次のように層を分けて考えます。
+            <p class="flow">
+              本人の感覚（いつ・どこが・どんなとき）<br>
+              → 皮膚の状態（色・温度差・左右差）<br>
+              → 全身症状（倦怠感・体重・動悸・便通）<br>
+              → 生活背景（食事・睡眠・活動量・環境）<br>
+              → 運動と休養で関われる範囲<br>
+              → 医療評価の必要性
+            </p>
+            <br>
+            この層のどこで説明を止めるかで、専門職としての深さが変わります。<strong>「冷えていますね」で止まるのか、六つの層を通過してから言葉を選ぶのか</strong>。同じ時間の中でも、できることです。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>「内臓の冷え」は現代医学の診断名ではなく、冷感という訴えの背景は多層です。</li>
+              <li>腹部の皮膚が冷たいことから、内臓の温度を判断することはできません。</li>
+              <li>冷感の自覚と実測値は一致しないことがありますが、「気のせい」ではありません。</li>
+              <li>東洋医学の寒証・陽虚などは観察モデルであり、単一症状で断定してはいけません。</li>
+              <li>温めて楽になったことは、原因が冷えだったことの証明にはなりません。</li>
+              <li>片側性・急性・痛みやしびれを伴う冷感、強い倦怠感や発熱は受診を優先します。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>「冷え」という言葉を二つの地図に分けて整理し、確認すべき層と受診の目安</span>をまとめました。<br><br>
+              実際の臨床では、集めた情報の<span>どれを優先し、どんな仮説を立て、何から関わるか</span>が問われます。生活背景と運動、そして東洋医学的な整理をどう組み合わせるのか。介入して変化が出なかったとき、何を見直すのか。<span>ZERO MEMBERS では、内臓の不調や冷えを題材に、評価から仮説、介入、再評価までの流れをより具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="bloating-tcm-modern-article.html"><span class="rl-label">関連記事</span>腹部膨満感を東洋医学と現代医学から読み解く</a>
+            <a href="menstrual-cycle-training-article.html"><span class="rl-label">関連記事</span>月経周期と身体・トレーニング設計</a>
+            <a href="tcm-field-basics-article.html"><span class="rl-label">関連記事</span>東洋医学を現場に落とし込むための第一歩</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>厚生労働省 e-ヘルスネット（体温調節、身体活動と健康に関する解説）. <a href="https://www.e-healthnet.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">https://www.e-healthnet.mhlw.go.jp/</a></li>
+            <li>日本東洋医学会（漢方・東洋医学の一般向け解説および学術情報）. <a href="https://www.jsom.or.jp/" target="_blank" rel="noopener noreferrer">https://www.jsom.or.jp/</a></li>
+            <li>MSDマニュアル プロフェッショナル版：体温調節および低体温・末梢循環に関する項目. <a href="https://www.msdmanuals.com/ja-jp/professional" target="_blank" rel="noopener noreferrer">https://www.msdmanuals.com/ja-jp/professional</a></li>
+            <li>日本皮膚科学会：熱傷（低温熱傷を含む）に関する一般向け情報. <a href="https://www.dermatol.or.jp/" target="_blank" rel="noopener noreferrer">https://www.dermatol.or.jp/</a></li>
+            <li>標準的な生理学の教科書（体温調節、皮膚血流と自律神経支配に関する章）</li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#term">「内臓の冷え」は診断名ではない</a></li>
+            <li><a href="#modern">現代医学から見た基礎</a></li>
+            <li><a href="#tcm">東洋医学から見た基礎</a></li>
+            <li><a href="#warm">「温めて楽になった」の意味</a></li>
+            <li><a href="#observe">現場で観察したいポイント</a></li>
+            <li><a href="#scope">トレーナー・セラピストができること</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">東洋医学と現代医学</p>
+          <div class="tag-row"><span>#冷え</span><span>#体温調節</span><span>#東洋医学</span><span>#寒熱</span><span>#生活習慣</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

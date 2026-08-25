@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>気管支拡張症を持つクライアントへの支援 | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。気管支拡張症の基礎、増悪という判断軸、運動が推奨される理由、自覚的運動強度と会話テストの使い方、呼吸困難感と酸素化の違い、排痰の職域と中止基準までを整理します。">
+  <meta name="keywords" content="気管支拡張症、呼吸器、運動支援、医療連携、安全管理">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/bronchiectasis-support-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="気管支拡張症を持つクライアントへの支援">
+  <meta property="og:description" content="呼吸器疾患があっても運動は重要。増悪を見逃さず、安全に支えるための基礎と医療連携の考え方。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/bronchiectasis-support-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_bronchiectasis.png">
+  <meta property="article:section" content="呼吸・内臓">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>呼吸・内臓</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約12分</span>
+      </div>
+      <h1 class="article-main-title">気管支拡張症を持つクライアントへの支援</h1>
+      <p class="article-subtitle">― 疾患を治すのではなく、安全に運動を支えるために ―</p>
+      <div class="tag-row"><span>#気管支拡張症</span><span>#呼吸器</span><span>#運動支援</span><span>#医療連携</span><span>#安全管理</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_bronchiectasis.png" alt="気管支拡張症を持つクライアントへの支援のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            「気管支拡張症と診断されているのですが、運動していいですか」。こう聞かれたとき、あなたはどう答えるでしょうか。<br><br>
+            断ってしまうのは簡単です。でも、それが本人にとって最善とは限りません。呼吸器疾患のある方にとって、<strong>適切な運動はむしろ重要な位置を占めます</strong>。同時に、私たちは病気を治療する立場ではなく、増悪のサインを見逃せば危険もある。この記事は、その両方を踏まえて<strong>「安全に支える側に回る」</strong>ための基礎です。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>気管支拡張症とはどういう状態か（不可逆的な気管支の拡張という特徴）</li>
+              <li>「増悪」とは何を指し、なぜ最重要の判断軸になるのか</li>
+              <li>呼吸器疾患があっても運動が重要とされる理由</li>
+              <li>強度を一律に決めず、自覚的運動強度や会話テストを使う考え方</li>
+              <li>呼吸困難感と酸素化を混同してはいけない理由</li>
+              <li>排痰・気道クリアランスの位置づけと、私たちの職域の線</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="what">
+          <h2>気管支拡張症とは何か</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            気管支拡張症は、<strong>気管支が不可逆的に拡張してしまった状態</strong>を指します。「不可逆的」というのがポイントです。広がった気道は元の形には戻りません。
+          </p>
+          <p>
+            広がった気道には分泌物（痰）が溜まりやすくなります。溜まった分泌物は感染を招きやすく、感染は炎症を起こし、炎症はさらに気道を傷める。この<strong>悪循環</strong>が、この疾患の中心的な考え方として整理されています<sup>[1]</sup>。
+          </p>
+          <p>
+            典型的な症状は、<strong>慢性的な咳、痰、息切れ、そして反復する気道感染</strong>です。ただし現れ方には幅があり、日常生活にほとんど支障のない方から、頻繁に増悪を繰り返す方までさまざまです。<strong>診断名が同じでも、状態は同じではありません。</strong>
+          </p>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜「増悪」という言葉を覚える</p>
+            <strong>増悪（exacerbation）</strong>とは、症状が普段の状態より明らかに悪化し、治療の変更が必要になる状態を指します。咳や痰の量・性状の変化、息切れの悪化、倦怠感、発熱などが目安になります。<br><br>
+            私たちにとって、増悪は<strong>「今日は通常のトレーニングを行わない」と判断するための最重要の軸</strong>です。診断はできませんが、<strong>「普段と違う」に気づくことはできます</strong>。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="exercise">
+          <h2>呼吸器疾患があっても、運動が重要とされる理由</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            呼吸器疾患があると、息切れを避けるために活動量が減ります。活動量が減れば筋力と全身持久力が落ち、同じ動作でより息が切れるようになる。すると、さらに動かなくなる。この<strong>下向きのらせん</strong>は、呼吸器リハビリテーションの領域で古くから指摘されてきました。
+          </p>
+          <p>
+            気管支拡張症に関する国際的な診療ガイドラインでも、<strong>運動能力が低下している患者に対する呼吸リハビリテーションが推奨されています</strong><sup>[1][2]</sup>。つまり運動は「やってもよいもの」ではなく、<strong>管理の一部として位置づけられている</strong>ということです。
+          </p>
+          <p>
+            ここが大事です。私たちの役割は、運動を止めることではありません。<strong>医療者の方針の枠内で、安全に続けられる形を設計すること</strong>です。
+          </p>
+          <h3>基本的な構成要素</h3>
+          <ul>
+            <li><strong>有酸素運動</strong>：歩行など、日常につながる形から</li>
+            <li><strong>筋力トレーニング</strong>：特に下肢。日常動作の負担そのものを下げる意味があります</li>
+            <li><strong>日常活動量</strong>：セッション中よりも、週全体の活動量が実は重要です</li>
+          </ul>
+          <div class="no-box">
+            <p class="box-title">やってはいけない対応</p>
+            <ul>
+              <li><strong>強度を一律に決めない。</strong>「呼吸器疾患だから軽めに」も「運動が大事だから頑張らせる」も、どちらも評価を飛ばしています。</li>
+              <li><strong>呼吸を無理に深くさせない。</strong>「もっと大きく吸って」という指示は、咳を誘発したり、かえって呼吸の効率を落としたりする可能性があります。呼吸のパターンへの介入は、医療者の指導内容を確認したうえで行ってください。</li>
+              <li><strong>増悪が疑われる日に、通常のトレーニングを続けない。</strong></li>
+              <li><strong>疾患そのものを改善する目的で施術や運動を行わない。</strong>私たちが関わるのは、あくまで安全な範囲のコンディショニングと運動支援です。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="intensity">
+          <h2>強度をどう決めるか</h2>
+          <p>
+            心拍数だけを頼りにすると、呼吸器疾患のある方では実態と合わないことがあります。そこで、複数の指標を組み合わせます。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>指標</th><th>使い方</th><th>注意点</th></tr></thead>
+              <tbody>
+                <tr><td><strong>自覚的運動強度</strong><br>（Borgスケールなど）</td><td>「どのくらいきついか」「息切れはどの程度か」を本人の言葉と数値で確認する</td><td>主観なので、日によってブレます。だからこそ毎回聞きます</td></tr>
+                <tr><td><strong>会話テスト</strong></td><td>運動中に会話が続けられるかどうかで負荷の目安をとる</td><td>簡便ですが大まかです。他の指標と併用します</td></tr>
+                <tr><td><strong>SpO₂</strong><br>（経皮的酸素飽和度）</td><td><strong>医療者から具体的な基準を指定されている場合に</strong>、その基準に従って使用する</td><td>基準値を私たちが自分で設定してはいけません。測定条件でも変動します</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜呼吸困難感と酸素化は同じではない</p>
+            これは必ず押さえてください。<strong>「苦しい」と感じることと、「酸素が足りていない」ことはイコールではありません</strong>。<br><br>
+            SpO₂が保たれていても強い息切れを感じる方はいますし、逆に本人の自覚が乏しくても数値が下がることもあります。<strong>どちらか一方だけを見て安心も判断もしない</strong>――これが原則です。そして数値の解釈基準は、必ず医療者から示されたものを使ってください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="airway">
+          <h2>排痰・気道クリアランスの位置づけ</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            気管支拡張症の管理において、<strong>気道クリアランス（排痰）は中心的な位置を占めます</strong>。国際的なガイドラインでも、多くの患者に対して推奨される項目として挙げられています<sup>[1][2]</sup>。
+          </p>
+          <p>
+            ただし、ここに明確な線があります。<strong>排痰法は、対象者ごとに適した方法が異なり、専門職による個別の指導が前提となる領域です</strong>。呼吸療法に習熟した理学療法士や医療者が、状態を評価したうえで選択・指導します。
+          </p>
+          <p>
+            私たちが行うべきことは、代わりに実施することではなく、<strong>「排痰の指導を受けていますか」「その方法は続けられていますか」と確認し、指導内容と矛盾しない形で運動を組むこと</strong>です。この線を踏み越えないでください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="observe">
+          <h2>現場で観察したいポイント</h2>
+          <div class="check-card">
+            <p class="box-title">セッション前（毎回）</p>
+            <ul>
+              <li>咳・痰の量と性状は、普段と比べてどうか（色の変化、量の増加）</li>
+              <li>息切れは普段と比べてどうか</li>
+              <li>発熱、悪寒、強い倦怠感はないか</li>
+              <li>睡眠はとれているか、食欲はどうか</li>
+              <li>水分はとれているか</li>
+              <li>直近で医療機関を受診したか、指示に変更はないか</li>
+              <li>服薬・吸入は普段どおり行えているか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">運動中</p>
+            <ul>
+              <li>自覚的な息切れの程度（開始時と比べた変化）</li>
+              <li>会話の続けやすさ</li>
+              <li>咳の増加、痰の増加</li>
+              <li>顔色、発汗、ふらつき</li>
+              <li>医療者から指定されている場合は、その基準に沿ったSpO₂の推移</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">運動後</p>
+            <ul>
+              <li>どのくらいで息切れが落ち着いたか</li>
+              <li>翌日に強い疲労が残っていないか</li>
+              <li>咳や痰が増えていないか</li>
+              <li>次回に向けて強度を上げるか、保つか、下げるか</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">現場での確認</p>
+            この疾患の支援では、<strong>「絶対値」より「普段との差」</strong>が判断材料になります。だから記録が要になります。同じ項目を、同じ聞き方で、毎回。地味な作業ですが、これが増悪の早期発見につながります。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="collab">
+          <h2>医療との連携</h2>
+          <p>
+            この領域は、私たちが単独で完結できるものではありません。連携する相手を具体的に把握しておいてください。
+          </p>
+          <ul>
+            <li><strong>主治医（呼吸器内科など）</strong>：運動の可否、強度の上限、SpO₂の基準、増悪時の対応</li>
+            <li><strong>理学療法士・呼吸療法に関わる専門職</strong>：排痰法、呼吸パターンの指導内容</li>
+            <li><strong>看護師・薬剤師</strong>：服薬や吸入の管理状況</li>
+          </ul>
+          <p>
+            「主治医の先生から、運動について何か言われていますか」――この一言を初回に聞けるかどうかで、その後の安全性が大きく変わります。必要なら、本人を通じて確認してもらうよう依頼してください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">次のいずれかがある場合、運動や施術を行わず、医療機関の受診（状況により救急対応）を優先してください</p>
+            <ul>
+              <li>血痰・喀血がある</li>
+              <li>発熱がある</li>
+              <li>普段と明らかに違う、急激な息切れの悪化</li>
+              <li>安静にしていても息苦しい</li>
+              <li>胸痛</li>
+              <li>意識状態の変化、反応が鈍い、言動がおかしい</li>
+              <li>唇や指先の色が悪い</li>
+              <li>痰の量・色が急に変化した</li>
+              <li>強い倦怠感を伴う体調の変化</li>
+            </ul>
+            <p style="margin:0">
+              <strong>血痰・喀血、急激な呼吸困難、胸痛、意識状態の変化</strong>は、その場での対応が必要になりうる状態です。運動を中止し、状況に応じて救急要請を検討してください。<br><br>
+              また、<strong>増悪が疑われる段階では「軽めにやる」という選択もとりません</strong>。この日は運動を行わず、医療機関につなぐ。それが正しい判断です。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">「呼吸が浅いから胸郭を広げる」の前に</p>
+            呼吸器疾患のある方を前にすると、私たちはつい<strong>「呼吸が浅い→胸郭を広げよう」</strong>という発想に飛びつきます。しかしこの疾患において、その一手は優先順位の上位ではありません。零 -ZERO- では、次の流れを勧めています。
+            <p class="flow">
+              安静時の状態を知る<br>
+              → 今日は普段と比べてどうか<br>
+              → 増悪の兆候はないか<br>
+              → 医療者からの指示は何か<br>
+              → 今日は運動してよい日か<br>
+              → 運動中の反応はどうか<br>
+              → 運動後の回復はどうか
+            </p>
+            <br>
+            胸郭や呼吸の話が出てくるのは、この流れを通過したあとです。<strong>順番を守ることそのものが、この疾患における最大の専門性</strong>だと考えています。
+          </div>
+          <p>
+            そしてもう一つ。<strong>「呼吸が楽になった気がします」という感想は、疾患が改善したことを意味しません</strong>。一時的な感覚の変化と、疾患の経過は別の層にあります。ここを混同した説明をしないこと。それが、この方の治療を守ることにつながります。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>気管支拡張症は気管支が不可逆的に拡張した状態で、分泌物・感染・炎症の悪循環が中心にあります。</li>
+              <li>運動は避けるものではなく、ガイドライン上も管理の一部として位置づけられています。</li>
+              <li>強度は一律に決めず、自覚的運動強度・会話テスト・医療者指定の基準を組み合わせます。</li>
+              <li>呼吸困難感と酸素化は同じではありません。片方だけで判断しないでください。</li>
+              <li>排痰法は専門職による個別指導が前提です。私たちは確認し、矛盾しない運動を組みます。</li>
+              <li>増悪が疑われる日は「軽めに」ではなく「行わない」。血痰・発熱・急な息切れは受診優先です。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>疾患の基礎、増悪という判断軸、強度の考え方、そして中止すべきサイン</span>を整理しました。<br><br>
+              実際の支援では、ここから先に判断が続きます。医療者の指示と現場の観察をどう突き合わせるか、運動後の反応をどう読んで次回の強度に反映するか、体調の波が大きい方の計画をどう設計するか。<span>ZERO MEMBERS では、評価から仮説設定、介入、再評価、そして中止基準の運用までを、より具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="diaphragm-breathing-article.html"><span class="rl-label">関連記事</span>横隔膜と呼吸 ― 呼吸から身体を組み立て直す</a>
+            <a href="tcm-zangfu-article.html"><span class="rl-label">関連記事</span>五臓六腑を解剖学だけで考えない ― 肺・脾・腎から学ぶつながり</a>
+            <a href="edema-support-article.html"><span class="rl-label">関連記事</span>浮腫・むくみを訴える人への評価と運動支援</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>European Respiratory Society clinical practice guideline for the management of adult bronchiectasis. Eur Respir J. 2025. <a href="https://publications.ersnet.org/content/erj/66/6/2501126" target="_blank" rel="noopener noreferrer">https://publications.ersnet.org/content/erj/66/6/2501126</a></li>
+            <li>The European Respiratory Society guideline for management of adult bronchiectasis: clinical summary. Breathe. <a href="https://publications.ersnet.org/content/breathe/22/2/260001" target="_blank" rel="noopener noreferrer">https://publications.ersnet.org/content/breathe/22/2/260001</a></li>
+            <li>European Lung Foundation. Managing bronchiectasis in adults (患者・一般向け解説). <a href="https://europeanlung.org/en/information-hub/guidelines/managing-bronchiectasis-in-adults-2025/" target="_blank" rel="noopener noreferrer">https://europeanlung.org/en/information-hub/guidelines/managing-bronchiectasis-in-adults-2025/</a></li>
+            <li>Bronchiectasis management in adults: state of the art and future directions. Eur Respir J. 2024. <a href="https://publications.ersnet.org/content/erj/63/6/2400518" target="_blank" rel="noopener noreferrer">https://publications.ersnet.org/content/erj/63/6/2400518</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#what">気管支拡張症とは何か</a></li>
+            <li><a href="#exercise">運動が重要とされる理由</a></li>
+            <li><a href="#intensity">強度をどう決めるか</a></li>
+            <li><a href="#airway">排痰・気道クリアランス</a></li>
+            <li><a href="#observe">現場で観察したいポイント</a></li>
+            <li><a href="#collab">医療との連携</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">呼吸・内臓</p>
+          <div class="tag-row"><span>#気管支拡張症</span><span>#呼吸器</span><span>#運動支援</span><span>#医療連携</span><span>#安全管理</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

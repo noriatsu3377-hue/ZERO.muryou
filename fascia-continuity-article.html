@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋膜の連続性は本当か ― アナトミートレインの科学的位置づけ | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。筋膜連結の解剖学的研究が示したこと、「つながっている」と「原因である」の差、解剖標本と生体の違い、経絡との類似を語る注意、遠隔介入後の変化を説明する複数の候補を整理します。">
+  <meta name="keywords" content="筋膜、アナトミートレイン、身体連鎖、エビデンス、評価仮説">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/fascia-continuity-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="筋膜の連続性は本当か ― アナトミートレインの科学的位置づけ">
+  <meta property="og:description" content="事実としても疑似科学としても扱わない。連続性の研究が示したことと、その先の距離を測る記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/fascia-continuity-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_fascia.png">
+  <meta property="article:section" content="筋膜・身体連鎖">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>筋膜・身体連鎖</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約12分</span>
+      </div>
+      <h1 class="article-main-title">筋膜の連続性は本当か ― アナトミートレインの科学的位置づけ</h1>
+      <p class="article-subtitle">― 解剖学的なつながりと、臨床解釈の距離を測る ―</p>
+      <div class="tag-row"><span>#筋膜</span><span>#アナトミートレイン</span><span>#身体連鎖</span><span>#エビデンス</span><span>#評価仮説</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_fascia.png" alt="筋膜の連続性は本当か ― アナトミートレインの科学的位置づけのイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            アナトミートレインという言葉を、現場で聞かない日はありません。「スーパーフィシャル・バックラインが」「ラテラルラインが」――便利な共通言語として、すっかり定着しました。<br><br>
+            一方で、こんな説明も同じくらい聞きます。<strong>「足裏が硬いから、首が痛いんです」</strong>。ここで一度、立ち止まりたいのです。組織が連続していることと、離れた場所の症状の原因であることは、<strong>同じことを言っているのでしょうか</strong>。この記事は、筋膜連結を否定するためでも、擁護するためでもありません。<strong>どこまでが確認されていて、どこからが解釈なのか</strong>を、はっきりさせるためのものです。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>筋膜とは何か、どこまでが連続しているのか</li>
+              <li>解剖学的な連続性を検証した系統的レビューが示したこと</li>
+              <li>「つながっている」と「原因である」の決定的な差</li>
+              <li>解剖標本と生体での力の伝達の違い</li>
+              <li>経絡との類似を語るときの注意点</li>
+              <li>遠隔介入で変化が出たとき、他に考えられる説明</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="what">
+          <h2>基本用語の整理 ― 筋膜とは何か</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            筋膜は、筋や臓器を包み、隔て、つなぐ<strong>結合組織のネットワーク</strong>です。筋を包む膜だけを指すのか、腱・腱膜・靱帯・筋間中隔まで含めるのか――実は<strong>定義そのものが研究者間で完全には一致していません</strong>。文献を読むときは、その論文が「筋膜」を何と呼んでいるかを確認する必要があります。
+          </p>
+          <p>
+            確実に言えるのは、<strong>身体の局所組織は完全に独立して存在しているわけではない</strong>ということです。筋は腱へ、腱は骨膜へ、筋間中隔は隣接構造へと、連続的に移行しています。この意味で「つながっている」のは、解剖学的な事実です。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="evidence">
+          <h2>解剖学的連続性はどこまで確認されているか</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            Myersが提唱した筋膜経線（myofascial meridians）について、解剖学的研究を集めて検証した系統的レビューがあります<sup>[1]</sup>。この研究は、<strong>提唱されたラインの移行部が、解剖研究でどの程度確認されているか</strong>を評価しました。
+          </p>
+          <p>
+            結果として、<strong>ラインによって支持の程度が異なる</strong>ことが示されています。移行部がよく確認されたラインもあれば、支持が中等度のもの、乏しいものもありました<sup>[1]</sup>。同じ研究チームは、<strong>筋膜経線に沿った筋間の力の伝達</strong>についても系統的レビューを行っています<sup>[2]</sup>。
+          </p>
+          <div class="known-grid">
+            <div class="known-card known-yes">
+              <p class="box-title">比較的支持されている内容</p>
+              <ul>
+                <li>身体の多くの骨格筋が結合組織を介して直接つながっている</li>
+                <li>提唱されたラインのうち、いくつかは解剖研究で移行部が確認されている</li>
+                <li>筋から隣接構造への力の伝達は、条件によって生じうる</li>
+              </ul>
+            </div>
+            <div class="known-card known-no">
+              <p class="box-title">まだ分かっていない・確立していない内容</p>
+              <ul>
+                <li>解剖学的な連続性が、臨床的な因果関係を意味するかどうか</li>
+                <li>生体内で、実際にどれほどの力が線に沿って伝わるのか</li>
+                <li>遠隔部位への介入が症状を変える機序</li>
+                <li>すべてのラインが同等に支持されているわけではない</li>
+              </ul>
+            </div>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜レビューの結論を正確に読む</p>
+            この系統的レビューが示したのは、<strong>「解剖学的な連続性の存在」</strong>であって、<strong>「臨床的な機能的意義」ではありません</strong>。実際、レビュー自体が「機能的な意義の検討こそが今後の最重要課題である」と述べています<sup>[1]</sup>。<br><br>
+            つまり現時点で言えるのは、<strong>「つながりはある。だが、それが臨床で何を意味するかは、これから」</strong>ということです。ここを飛ばして語らないでください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="gap">
+          <h2>「つながっている」と「原因である」の距離</h2>
+          <p>
+            ここが本記事の核心です。丁寧に分けます。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>主張</th><th>どこまで言えるか</th></tr></thead>
+              <tbody>
+                <tr><td>足底と後面の構造は連続している</td><td>解剖研究で移行が確認されている報告がある</td></tr>
+                <tr><td>足底に張力をかけると、離れた部位の組織も動く</td><td>条件によって観察されうるが、生体では程度が異なる</td></tr>
+                <tr><td>足底への介入後、首の可動域が変わった</td><td>観察として起こりうる。ただし理由は一つとは限らない</td></tr>
+                <tr><td><strong>足底が硬いことが、首の痛みの原因である</strong></td><td><strong>この飛躍は、現時点で支持されていない</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            一行ずつ下るごとに、主張は強くなります。そして最後の一行で、<strong>観察が原因の断定に化けています</strong>。この化け方が、現場でもっとも頻繁に起きている誤りです。
+          </p>
+          <h3>解剖標本と生体は違う</h3>
+          <p>
+            解剖研究の多くは、<strong>ご遺体の標本</strong>で行われます。これは連続性を確認するうえで貴重な方法ですが、生体とは条件が異なります。<strong>筋の収縮状態、組織の水分量、神経系による調整、荷重条件</strong>――いずれも生きている身体にしかない要素です。標本で観察された張力の伝達が、生体でそのまま同じ規模で起きているとは限りません。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="meridian">
+          <h2>経絡との類似を語るときの注意</h2>
+          <div class="tcm-box">
+            <p class="box-title">東洋医学の観察モデルとの関係</p>
+            筋膜のラインと経絡の走行を並べて「似ている」と論じられることがあります。実際、見た目の走行に重なりを見出す議論は存在します。<br><br>
+            ただし、ここで慎重になってください。<strong>見た目が似ていることは、同一の構造であることや、同じ機序で働いていることの証明にはなりません</strong>。経絡は東洋医学のなかで組み立てられた<strong>観察モデル</strong>であり、筋膜は解剖学的に確認できる<strong>組織</strong>です。<strong>成り立ちも、扱われ方も異なります。</strong><br><br>
+            「経絡は筋膜のことだったんですね」という説明は、両方に対して不誠実です。東洋医学の枠組みを現代解剖学に還元してしまうと、東洋医学が本来持っている全体を見る視点も失われます。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="other">
+          <h2>遠隔介入で変化が出たとき、他に何が考えられるか</h2>
+          <p>
+            足部に介入したあと、頸部の可動域が変わることは実際に起こります。では、その変化を筋膜の連続性だけで説明してよいのでしょうか。<strong>他の候補を並べてみます。</strong>
+          </p>
+          <ul>
+            <li><strong>神経系の反応</strong>：感覚入力の変化に伴う、全身的な筋緊張の調整</li>
+            <li><strong>痛みの調節</strong>：触覚刺激そのものが、痛みの感じ方に影響しうる</li>
+            <li><strong>期待と文脈</strong>：介入を受けたことによる期待、安心感、施術者との関係</li>
+            <li><strong>運動学習</strong>：介入前後に動きを反復すること自体による変化</li>
+            <li><strong>測定の変動</strong>：可動域測定には、そもそも一定の誤差幅がある</li>
+            <li><strong>時間経過</strong>：ウォームアップ効果や、単純な経過による変化</li>
+          </ul>
+          <p>
+            これだけの候補があるなかで、<strong>「筋膜がつながっているからです」と断定するのは、他の可能性を検討しなかったということ</strong>にすぎません。誠実な言い方はこうです。「変わりましたね。何が効いたかは断定できませんが、この反応は記録しておきましょう」。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="use">
+          <h2>モデルを、どう使うか</h2>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜地図として使い、答えとして使わない</p>
+            アナトミートレインの価値は、<strong>「離れた部位も見てみよう」と発想させてくれること</strong>にあります。局所だけを見る癖から抜け出すきっかけとして、これは大きな貢献です。<br><br>
+            だから、こう使ってください。<strong>「このラインに沿って確認してみよう」という評価の仮説として</strong>。そして、確認した結果が合わなければ、<strong>仮説のほうを捨てる</strong>。
+          </div>
+          <div class="no-box">
+            <p class="box-title">やってはいけない対応</p>
+            <ul>
+              <li><strong>モデルに人を当てはめる。</strong>「このラインが問題のはずだから、所見もそうなっているはずだ」という順序は逆です。</li>
+              <li><strong>一つの理論で全身の症状を説明する。</strong>説明できてしまうモデルは、反証もできません。</li>
+              <li><strong>「足裏を緩めれば首が治る」と断定する。</strong>期待を持たせすぎることは、外れたときの不信につながります。</li>
+              <li><strong>「筋膜がねじれている」「癒着している」と、確認できない状態を断定する。</strong>これは次の記事で扱う<strong>ノセボ</strong>の問題にも直結します。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">遠隔部位の関連を考える前に、次のような症状がないかを確認してください</p>
+            <ul>
+              <li>しびれ、感覚の低下、筋力の低下がある</li>
+              <li>安静時や夜間に強くなる痛み</li>
+              <li>原因のわからない体重減少、発熱を伴う</li>
+              <li>外傷の直後で、腫脹・変形・荷重困難がある</li>
+              <li>痛みが日ごとに悪化していく</li>
+              <li>排尿・排便の異常を伴う（腰背部症状の場合）</li>
+              <li>介入のたびに症状が悪化する</li>
+            </ul>
+            <p style="margin:0">
+              <strong>連鎖の視点は、医学的な評価の代わりにはなりません。</strong>「離れた場所に原因があるはずだ」と探し続けることが、必要な受診を遅らせる場合があります。まず、これらを除外してください。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">答えではなく、仮説地図として</p>
+            零 -ZERO- は「身体を部分ではなく全体として見る」ことを大切にしています。その意味で、筋膜連結のモデルは相性がよい。ただし、<strong>全体で見ることと、一つの理論で全体を説明することは、まったく別</strong>です。
+            <p class="flow">
+              症状と機能を評価する<br>
+              → 局所で説明できるかを検討する<br>
+              → 説明しきれない部分について、連鎖を仮説として立てる<br>
+              → 実際に確認する（所見は一致するか）<br>
+              → 介入して再評価する<br>
+              → 合わなければ仮説を捨てる
+            </p>
+            <br>
+            最後の一行が、いちばん難しく、いちばん大切です。<strong>自分の好きなモデルを手放せるかどうか</strong>。それが、臨床家としての誠実さだと考えています。
+          </div>
+          <p>
+            分からないことを「分からない」と言えること。それは弱さではありません。<strong>分からない領域があると認めているからこそ、評価と学習を続けられる</strong>のです。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>身体の組織が結合組織を介してつながっていること自体は、解剖学的に支持されています。</li>
+              <li>ただし、提唱されたラインごとに支持の程度は異なります。</li>
+              <li>連続性の確認は、遠隔部位の症状の原因を証明するものではありません。</li>
+              <li>解剖標本と生体では、力の伝達の条件が異なります。</li>
+              <li>経絡との見た目の類似は、同一構造・同一機序の証明にはなりません。</li>
+              <li>遠隔介入後の変化には、神経系・期待・運動学習など複数の説明候補があります。</li>
+              <li>モデルは評価仮説として使い、合わなければ手放してください。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>筋膜連結について何が確認されていて、どこからが解釈なのか</span>を整理しました。<br><br>
+              実際の臨床で問われるのは、その先です。局所で説明できるかをどう検討し、どの時点で連鎖を疑い、仮説が外れたときに何をどう修正するのか。複数のモデルを持っているとき、どれを優先するのか。<span>ZERO MEMBERS では、評価から仮説の優先順位づけ、介入、再評価による分岐までを、より具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="stretching-science-article.html"><span class="rl-label">関連記事</span>ストレッチの科学 ― 静的・動的・PNFの使い分け</a>
+            <a href="manual-therapy-context-article.html"><span class="rl-label">関連記事</span>徒手療法はなぜ効くのか ― 文脈効果・期待・治療関係</a>
+            <a href="meridian-fascia-article.html"><span class="rl-label">関連記事</span>経絡と筋膜ライン ― 二つの地図を重ねて見る</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Wilke J, Krause F, Vogt L, Banzer W. What Is Evidence-Based About Myofascial Chains: A Systematic Review. Arch Phys Med Rehabil. 2016. <a href="https://pubmed.ncbi.nlm.nih.gov/26281953/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/26281953/</a></li>
+            <li>Krause F, Wilke J, Vogt L, Banzer W. Intermuscular force transmission along myofascial chains: a systematic review. J Anat. 2016. <a href="https://pubmed.ncbi.nlm.nih.gov/27001027/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/27001027/</a></li>
+            <li>Wilke J, et al. Myofascial chains of the upper limb: A systematic review of anatomical studies. Clin Anat. 2019. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ca.23424" target="_blank" rel="noopener noreferrer">https://onlinelibrary.wiley.com/doi/abs/10.1002/ca.23424</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#what">筋膜とは何か</a></li>
+            <li><a href="#evidence">連続性はどこまで確認されているか</a></li>
+            <li><a href="#gap">「つながっている」と「原因である」</a></li>
+            <li><a href="#meridian">経絡との類似を語る注意</a></li>
+            <li><a href="#other">他に考えられる説明</a></li>
+            <li><a href="#use">モデルをどう使うか</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">筋膜・身体連鎖</p>
+          <div class="tag-row"><span>#筋膜</span><span>#アナトミートレイン</span><span>#身体連鎖</span><span>#エビデンス</span><span>#評価仮説</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

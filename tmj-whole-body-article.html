@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顎関節と全身 ― 咬合・頭頸部・呼吸のつながり | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。顎関節の構造、DC/TMDによる顎関節症の整理、関節音の扱い方、頭頸部姿勢との関連についての研究と限界、咬合と全身をめぐる主張の位置づけ、職域と受診の目安をまとめます。">
+  <meta name="keywords" content="顎関節症、咬合、頭頸部、呼吸、職域">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/tmj-whole-body-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="顎関節と全身 ― 咬合・頭頸部・呼吸のつながり">
+  <meta property="og:description" content="「噛み合わせを直せば全身が整う」は本当か。相関と因果を分け、職域の線を確認する記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/tmj-whole-body-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_tmj.png">
+  <meta property="article:section" content="顎関節・頭頸部">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>顎関節・頭頸部</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約12分</span>
+      </div>
+      <h1 class="article-main-title">顎関節と全身 ― 咬合・頭頸部・呼吸のつながり</h1>
+      <p class="article-subtitle">― 関連が観察されることと、原因であることを分けて考える ―</p>
+      <div class="tag-row"><span>#顎関節症</span><span>#咬合</span><span>#頭頸部</span><span>#呼吸</span><span>#職域</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_tmj.png" alt="顎関節と全身 ― 咬合・頭頸部・呼吸のつながりのイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            「噛み合わせを直せば、全身が整います」。この主張を、一度は目にしたことがあるでしょう。逆に「顎と姿勢は関係ない」と切り捨てる意見もあります。<br><br>
+            現場の実感としては、顎の不調を抱えた方に頸部の緊張や呼吸の変化が見られることは、確かにあります。ただ、<strong>「関連が観察される」ことと「一方が他方の原因である」ことの間には、大きな隔たりがあります</strong>。この記事は、その隔たりを埋めずに、正確に測るためのものです。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>顎関節の基本構造と、周囲の筋の役割</li>
+              <li>顎関節症の代表的な症状と、関節音の扱い方</li>
+              <li>頭頸部姿勢との関連について、研究が示していることと限界</li>
+              <li>咬合と全身の関係をめぐる主張の位置づけ</li>
+              <li>私たちが絶対に踏み込んではいけない領域</li>
+              <li>歯科・口腔外科などへの連携の判断</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="anatomy">
+          <h2>基本用語の整理 ― 顎関節の構造</h2>
+          <p>
+            顎関節は、<strong>下顎骨の下顎頭（関節突起の先端）と、側頭骨のくぼみ</strong>との間につくられる関節です。両者の間には<strong>関節円板</strong>という線維性の組織が挟まっています。
+          </p>
+          <p>
+            この関節の面白いところは、<strong>単純な蝶番運動ではない</strong>ことです。口を開けるとき、下顎頭は回転しながら前方へ滑っていきます。回転と滑走の組み合わせ。しかも<strong>左右の関節が同時に動く</strong>ため、片側だけを切り離して考えることができません。
+          </p>
+          <h3>関わる筋</h3>
+          <ul>
+            <li><strong>咀嚼筋</strong>：咬筋、側頭筋、内側翼突筋、外側翼突筋。噛む力を生み、下顎の位置を制御します</li>
+            <li><strong>舌骨上筋群</strong>：下顎と舌骨の間にあり、開口や嚥下に関わります</li>
+            <li><strong>舌骨下筋群</strong>：舌骨を下方に安定させ、上記の働きを支えます</li>
+          </ul>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            舌骨周囲の筋群は、<strong>下顎・舌骨・胸骨・肩甲骨</strong>といった構造に付着しており、頸部の筋群と機能的に隣接しています。<strong>顎の運動と頸部の状態が無関係ではありえない</strong>という解剖学的な基盤は、ここにあります。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="tmd">
+          <h2>顎関節症の基礎</h2>
+          <p>
+            顎関節とその周囲に生じる症候群は、国際的には<strong>DC/TMD</strong>という診断基準の枠組みで整理されています<sup>[1]</sup>。この枠組みでは、大きく<strong>筋の障害、関節円板の位置の異常、関節の痛みや炎症性の変化</strong>といった区分が置かれています。
+          </p>
+          <h3>代表的な症状</h3>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>症状</th><th>内容</th><th>私たちの扱い方</th></tr></thead>
+              <tbody>
+                <tr><td><strong>痛み</strong></td><td>顎、こめかみ、耳の前あたり。噛むとき、開けるときに増悪することが多い</td><td>部位と誘発動作を記録する。診断はしない</td></tr>
+                <tr><td><strong>開口障害</strong></td><td>口が開きにくい、開ける途中で引っかかる</td><td>経過を確認する。進行するものは受診へ</td></tr>
+                <tr><td><strong>関節音</strong></td><td>開閉時のカクッ、ジャリジャリという音</td><td><strong>音だけでは介入の対象と決まらない</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜関節音だけで治療対象と考えない</p>
+            顎関節の音は、<strong>症状のない人にもしばしば認められます</strong>。音があること自体は、必ずしも治療や介入の対象を意味しません。<br><br>
+            重要なのは、<strong>痛みがあるか、日常生活（食事・会話）に支障があるか、開口が制限されているか、悪化しているか</strong>です。音を消すことを目標にしないでください。
+          </div>
+          <h3>歯ぎしり・食いしばりと生活背景</h3>
+          <p>
+            歯ぎしりや食いしばりは、顎関節症と関連して語られる要素です。これらには<strong>睡眠、心理的ストレス、日中の習慣</strong>などが関わりうると議論されており、単一の原因では説明されていません<sup>[1][3]</sup>。<strong>日中の食いしばりに本人が気づいていない</strong>ことも多く、そこに気づいてもらうこと自体が支援になる場合があります。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="posture">
+          <h2>頭頸部姿勢との関連 ― 相関と因果を分ける</h2>
+          <p>
+            <span class="ev-label ev-b">理論として提案されている内容</span><br>
+            顎関節症と姿勢の関連については、系統的レビューとメタ解析が行われ、<strong>両者に関連が認められたとする報告</strong>があります<sup>[2]</sup>。解剖学的にも、頸部と顎の筋群は隣接し、神経支配の面でも近い関係にあります。
+          </p>
+          <p>
+            ただし、ここからが重要です。<strong>関連が観察されたことは、どちらが原因かを教えてくれません。</strong>考えられる解釈は複数あります。
+          </p>
+          <ul>
+            <li>頭頸部の姿勢が、顎の負担に影響している</li>
+            <li>顎の痛みや不快感が、頭頸部の緊張や姿勢を変えている</li>
+            <li>両者に共通の要因（心理的ストレス、睡眠、全身の緊張）がある</li>
+            <li>痛みそのものが、両方の測定値に影響している</li>
+          </ul>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>「猫背だから顎関節症になった」</strong>――この断定は、現時点の知見からは支持されません。関連の報告があることと、姿勢を変えれば症状が改善することは、別の主張です。<br><br>
+            同様に、<strong>咬合と全身の姿勢・筋力の関係</strong>を扱った研究についても、方法論の限界が指摘されており、結論は一致していません。スプリント（マウスピース）などの装置が姿勢に及ぼす影響を検討した系統的レビューでも、確定的な結論には至っていません<sup>[4]</sup>。<br><br>
+            <strong>「噛み合わせを変えれば全身が整う」という主張は、現時点で確立された知見ではありません。</strong>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="breathing">
+          <h2>呼吸・舌位について ― 分かっていることと不明なこと</h2>
+          <div class="known-grid">
+            <div class="known-card known-yes">
+              <p class="box-title">比較的支持されている内容</p>
+              <ul>
+                <li>顎関節症と姿勢の関連を報告した研究がある</li>
+                <li>顎関節症の背景には心理社会的要因が関わりうる</li>
+                <li>舌骨周囲筋は下顎・頸部と機能的に隣接する</li>
+                <li>睡眠時の呼吸の問題は、専門的な評価の対象である</li>
+              </ul>
+            </div>
+            <div class="known-card known-no">
+              <p class="box-title">まだ分かっていない・確立していない内容</p>
+              <ul>
+                <li>口呼吸が顎や姿勢にどこまで影響するか、その因果</li>
+                <li>「正しい舌位」の指導が症状をどれだけ変えるか</li>
+                <li>咬合の調整が全身の姿勢や筋力を変えるか</li>
+                <li>頸部への介入が顎の症状をどこまで変えるか</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            舌の位置や口呼吸については、近年とくに話題になりやすい領域です。関心を持つこと自体は良いのですが、<strong>SNSなどで語られる断定的な主張と、確認されている知見との間には距離があります</strong>。「舌の位置を直せばすべて解決する」という説明は避けてください。
+          </p>
+          <p>
+            なお、<strong>いびきや睡眠中の呼吸停止が疑われる場合</strong>は、私たちが扱う領域ではありません。医療機関での評価につないでください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="scope">
+          <h2>私たちの職域 ― ここから先には行かない</h2>
+          <div class="no-box">
+            <p class="box-title">やってはいけない対応</p>
+            <ul>
+              <li><strong>噛み合わせを診断・評価・調整する。</strong>咬合の診断と治療は歯科の領域です。トレーナーやセラピストが行うことはできません。</li>
+              <li><strong>「あなたの噛み合わせが原因です」と説明する。</strong>診断的な断定であり、職域を超えています。</li>
+              <li><strong>マウスピースの要否や使い方について指示する。</strong>歯科の判断です。</li>
+              <li><strong>口腔内へ手指を入れる介入を、資格・同意・衛生管理なしに行う。</strong>これは特に重大です。次項で述べます。</li>
+              <li><strong>関節音を消すことを目標にする。</strong></li>
+              <li><strong>強い力で顎を動かす、無理に開口させる。</strong></li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">口腔内への介入について</p>
+            口腔内に触れる手技は、<strong>資格と法的な位置づけ、明確な説明と同意、そして厳格な衛生管理</strong>が前提となる領域です。ご自身の保有資格でその行為が認められるのか、必ず確認してください。<br><br>
+            「効果があるから」は、実施してよい理由になりません。<strong>職域を超えた行為は、その方を守る枠組みの外に出るということ</strong>です。
+          </div>
+          <div class="key-box">
+            <p class="box-title">できること</p>
+            <ul>
+              <li>症状の出方、誘発する動作、経過を丁寧に記録する</li>
+              <li>日中の食いしばりの習慣に気づいてもらうための声かけ</li>
+              <li>睡眠、心理的な負荷、生活リズムの聞き取りと環境調整の助言</li>
+              <li>頸部・胸郭・呼吸の状態を評価し、無理のない範囲で整えること</li>
+              <li>歯科・口腔外科などへの受診をすすめること</li>
+            </ul>
+            ただし<strong>頸部や呼吸への介入が、顎の症状をどれだけ変えるかは確立していません</strong>。「これで顎が良くなります」ではなく、「頸部の緊張は確認しておきましょう」という位置づけで扱ってください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">次のような場合は、施術や運動より医療機関（歯科・口腔外科・耳鼻咽喉科など）の受診を優先してください</p>
+            <ul>
+              <li>外傷後の顎の痛み、噛み合わせの急な変化</li>
+              <li>脱臼が疑われる（口が閉じられない、開いたまま戻らない）</li>
+              <li>強い腫脹、発赤、熱感、発熱（感染の可能性）</li>
+              <li>進行する開口障害、日ごとに開かなくなっている</li>
+              <li>食事や会話に明らかな支障が出ている</li>
+              <li>顔面のしびれ、感覚の異常</li>
+              <li>片側の急な難聴、耳漏、強い耳の痛み</li>
+              <li>原因不明の体重減少、夜間に強くなる痛み</li>
+              <li>いびきや睡眠中の呼吸停止が指摘されている</li>
+            </ul>
+            <p style="margin:0">
+              特に<strong>外傷後、感染の徴候、進行する開口障害</strong>は、時間を置かずに医療機関での評価が必要です。顎の症状を「筋の緊張」として扱い続けることが、必要な受診を遅らせる場合があります。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">顎だけを見ない。全身の歪みで説明もしない</p>
+            この領域には、二つの極端があります。<strong>顎の中だけで完結させる見方</strong>と、<strong>全身の歪みですべてを説明する見方</strong>。零 -ZERO- は、そのどちらも取りません。複数の層に分けて、それぞれを確認します。
+            <p class="flow">
+              顎の局所症状（痛み・開口・音・食事への影響）<br>
+              → 頭頸部の状態<br>
+              → 呼吸と睡眠<br>
+              → 心理的な負荷<br>
+              → 日常の習慣（食いしばり・姿勢・作業環境）<br>
+              → 歯科的な評価の必要性
+            </p>
+            <br>
+            この層のどれか一つが「原因」とは限りません。むしろ、<strong>複数が絡んでいることのほうが多い</strong>。だから、一つの層で説明を打ち切らないことが大切です。
+          </div>
+          <p>
+            そして、この領域では特に<strong>言葉に注意してください</strong>。「顎がズレています」「噛み合わせが崩れています」といった説明は、確認できないうえに不安を強めます。顎関節症には心理社会的な要因が関わりうるとされている以上、<strong>私たちの言葉が症状の経過に影響する可能性がある</strong>ことを、忘れないでください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>顎関節は回転と滑走を組み合わせ、左右が同時に動く関節です。</li>
+              <li>関節音があること自体は、介入の対象を意味しません。</li>
+              <li>顎関節症と姿勢の関連は報告されていますが、因果の方向は確定していません。</li>
+              <li>「噛み合わせを変えれば全身が整う」は、確立された知見ではありません。</li>
+              <li>咬合の診断・調整、口腔内への介入は職域と資格を厳格に確認してください。</li>
+              <li>外傷後・感染徴候・進行する開口障害は、速やかに歯科・口腔外科などへ。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>顎関節の基礎、関連と因果の違い、そして職域の線引き</span>を整理しました。<br><br>
+              実際の臨床では、複数の層のうち<span>どこから関わり、どう優先順位をつけ、何をもって「関わるべきでない」と判断するか</span>が問われます。頸部や呼吸への介入をどう位置づけ、変化が出なかったときに何を見直すのか。<span>ZERO MEMBERS では、評価から仮説設定、介入、再評価までの流れをより具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="manual-therapy-context-article.html"><span class="rl-label">関連記事</span>徒手療法はなぜ効くのか ― 文脈効果・期待・治療関係</a>
+            <a href="diaphragm-breathing-article.html"><span class="rl-label">関連記事</span>横隔膜と呼吸 ― 呼吸から身体を組み立て直す</a>
+            <a href="kinetic-chain-article.html"><span class="rl-label">関連記事</span>上行性・下行性運動連鎖 ― 不調はつながりを伝って移動する</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Schiffman E, et al. Diagnostic Criteria for Temporomandibular Disorders (DC/TMD) for Clinical and Research Applications. J Oral Facial Pain Headache. 2014. <a href="https://pubmed.ncbi.nlm.nih.gov/24482784/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/24482784/</a></li>
+            <li>Correlation between Temporomandibular Disorders (TMD) and Posture Evaluated through the DC/TMD: A Systematic Review with Meta-Analysis. 2023. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10095000/" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10095000/</a></li>
+            <li>INfORM / International RDC-TMD Consortium Network: DC/TMD 診断プロトコル資料. <a href="https://ubwp.buffalo.edu/rdc-tmdinternational/" target="_blank" rel="noopener noreferrer">https://ubwp.buffalo.edu/rdc-tmdinternational/</a></li>
+            <li>Effects of Occlusal Splints on Spinal Posture in Patients with Temporomandibular Disorders: A Systematic Review. 2022. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9027546/" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9027546/</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#anatomy">顎関節の構造</a></li>
+            <li><a href="#tmd">顎関節症の基礎</a></li>
+            <li><a href="#posture">頭頸部姿勢との関連</a></li>
+            <li><a href="#breathing">呼吸・舌位について</a></li>
+            <li><a href="#scope">私たちの職域</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">顎関節・頭頸部</p>
+          <div class="tag-row"><span>#顎関節症</span><span>#咬合</span><span>#頭頸部</span><span>#呼吸</span><span>#職域</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

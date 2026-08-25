@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月経周期と身体・トレーニング設計 | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。月経周期の基本、暦だけでは局面を判定できないこと、集団平均を個人に当てはめる問題、月経随伴症状、REDsと無月経の扱い、記録を活かした負荷調整とプライバシー配慮を整理します。">
+  <meta name="keywords" content="月経周期、トレーニング設計、REDs、個人差、プライバシー">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/menstrual-cycle-training-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="月経周期と身体・トレーニング設計">
+  <meta property="og:description" content="「周期の何日目だからこのメニュー」を疑う。個人差と記録から負荷を設計するための基礎。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/menstrual-cycle-training-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_menstrual.png">
+  <meta property="article:section" content="骨盤底・女性の健康">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>骨盤底・女性の健康</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約13分</span>
+      </div>
+      <h1 class="article-main-title">月経周期と身体・トレーニング設計</h1>
+      <p class="article-subtitle">― カレンダーではなく、その人のデータで決める ―</p>
+      <div class="tag-row"><span>#月経周期</span><span>#トレーニング設計</span><span>#REDs</span><span>#個人差</span><span>#プライバシー</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_menstrual.png" alt="月経周期と身体・トレーニング設計のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            「月経周期に合わせたトレーニング」という言葉が、ここ数年で一気に広まりました。卵胞期は高強度、黄体期は軽めに――そんな図解を見たことがある方も多いでしょう。<br><br>
+            関心が向くこと自体は、とても良い変化です。長いあいだ、この領域は指導の場でほとんど語られてきませんでした。ただ、<strong>「周期の何日目だから、必ずこのメニュー」という運用</strong>には、大きな問題があります。それは科学的にも、実務的にも、そして本人の主体性という点でも。<br><br>
+            この記事では、分かっていることと分かっていないことを分けたうえで、<strong>現場でどう扱うか</strong>を整理します。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>月経周期の基本と、主なホルモンの動き</li>
+              <li>周期には個人差・周期差があり、暦だけでは判断できないこと</li>
+              <li>集団の平均差を、目の前の個人に当てはめることの問題</li>
+              <li>月経随伴症状（月経痛・PMS・PMDD）の基礎</li>
+              <li>相対的エネルギー不足（REDs）と、無月経を「普通」と扱わないこと</li>
+              <li>記録をどう活用し、負荷をどう調整するか</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="basics">
+          <h2>基本用語の整理 ― 月経周期</h2>
+          <p>
+            月経周期は、一般に次の局面で説明されます。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>局面</th><th>主な内容</th><th>主なホルモンの傾向</th></tr></thead>
+              <tbody>
+                <tr><td><strong>卵胞期</strong></td><td>月経の開始から排卵まで</td><td>エストロゲンが後半にかけて上昇していく</td></tr>
+                <tr><td><strong>排卵</strong></td><td>卵胞から卵子が放出される時期</td><td>ホルモンの急激な変動が起こる</td></tr>
+                <tr><td><strong>黄体期</strong></td><td>排卵から次の月経まで</td><td>プロゲステロンが上昇し、後半に低下する</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <strong>エストロゲン</strong>と<strong>プロゲステロン</strong>は、生殖機能だけでなく、体温、水分の保持、睡眠、気分など、さまざまな生理機能と関連が報告されているホルモンです。
+          </p>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜暦だけでは、局面は分からない</p>
+            ここが、実務上いちばん重要な点です。<br><br>
+            周期の長さには<strong>個人差</strong>があり、さらに<strong>同じ人でも周期ごとに変動</strong>します。排卵の時期も一定とは限りません。つまり、<strong>ホルモン濃度を測定していない状況で、カレンダーの日数だけから「今は黄体期の中盤」と断定することはできません</strong>。<br><br>
+            この前提が崩れると、「周期に合わせた指導」の土台そのものが崩れます。ここは押さえておいてください。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="performance">
+          <h2>周期とパフォーマンス ― 平均と個人</h2>
+          <p>
+            <span class="ev-label ev-b">現時点で結論が一致していない領域</span><br>
+            筋力、持久力、体温、睡眠、食欲、気分――これらと月経周期の関連は、多くの研究で検討されてきました。ただし現時点で、<strong>「この局面では必ずこうなる」と言えるほどの一貫した結論は得られていません</strong>。研究間で方法（局面の判定方法、対象者、測定項目）にばらつきがあることも指摘されています。
+          </p>
+          <p>
+            仮に集団の平均として小さな差が示されたとしても、そこから先が問題です。
+          </p>
+          <div class="no-box">
+            <p class="box-title">断定してはいけないこと</p>
+            <strong>集団の平均差は、目の前の個人にそのまま当てはまるとは限りません。</strong><br><br>
+            これは統計と臨床の間にある、古典的で重要な断絶です。「平均すると黄体期にわずかに低下する傾向がある」という結果があったとしても、その方が黄体期に強い日もあれば、卵胞期に不調な日もあります。<strong>平均は個人の予測に使えるとは限らない</strong>のです。<br><br>
+            そして、<strong>症状の出方の個人差は、平均差よりはるかに大きい</strong>。ある人は月経初日に動けず、ある人はまったく影響を感じない。この差のほうが、現場では圧倒的に実務的です。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="symptoms">
+          <h2>月経随伴症状の基礎</h2>
+          <ul>
+            <li><strong>月経痛（月経困難症）</strong>：下腹部痛、腰痛などが月経に伴って生じるもの。日常生活に支障が出るほどの痛みは、我慢するものではなく<strong>婦人科での相談対象</strong>です</li>
+            <li><strong>PMS（月経前症候群）</strong>：月経前に、身体的・精神的な症状が現れ、月経開始とともに軽快するもの</li>
+            <li><strong>PMDD（月経前不快気分障害）</strong>：PMSのうち、精神症状が特に強く、生活への影響が大きいもの。<strong>専門的な評価と対応が必要な状態</strong>です</li>
+            <li><strong>月経量</strong>：極端に多い、長く続く場合は医学的評価の対象になります</li>
+            <li><strong>疲労</strong>：周期に伴う変化を訴える方は多くいます</li>
+          </ul>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜「みんなつらいから」と流さない</p>
+            月経に伴う症状は、<strong>「あるのが当たり前」として扱われすぎてきました</strong>。その結果、治療で軽減できる可能性のある症状が、放置されることがあります。<br><br>
+            私たちにできるのは、診断でも治療でもありません。ただ、<strong>「それは相談していい症状ですよ」と伝えること</strong>はできます。これは、意外なほど大きな支援になります。
+          </div>
+          <h3>ホルモン製剤を使用している場合</h3>
+          <p>
+            経口避妊薬などのホルモン製剤を使用している場合、<strong>内因性のホルモン動態は、使用していない場合と異なります</strong>。したがって、「周期に合わせた」という考え方の前提も変わります。使用の有無は、<strong>プライバシーに配慮しつつ</strong>把握しておきたい情報です。ただし、<strong>服薬に関する助言や判断は、私たちの領域ではありません</strong>。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="reds">
+          <h2>相対的エネルギー不足（REDs）</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            この記事で、最も強く伝えたい部分です。
+          </p>
+          <p>
+            <strong>相対的エネルギー不足（Relative Energy Deficiency in Sport, REDs）</strong>は、運動によるエネルギー消費に対して摂取が不足する状態が続くことで、<strong>健康とパフォーマンスの広い範囲に影響が及びうる</strong>という考え方です。国際オリンピック委員会（IOC）の合意声明として整理されています<sup>[1][2]</sup>。
+          </p>
+          <p>
+            2023年の合意声明では、<strong>男性やパラアスリートを含む理解の進展</strong>、<strong>炭水化物摂取の不足が果たす役割</strong>、<strong>オーバートレーニング症候群との重なり</strong>などが取り上げられています<sup>[1]</sup>。つまり<strong>これは「女性選手だけの問題」ではありません</strong>。
+          </p>
+          <div class="red-flag">
+            <p class="box-title">無月経を「競技者なら普通」と扱わないでください</p>
+            <ul>
+              <li>月経が止まっている、極端に不規則になっている</li>
+              <li>減量中、あるいは食事量が明らかに少ない</li>
+              <li>疲労骨折を繰り返している</li>
+              <li>体重が急に減った</li>
+              <li>強い疲労、パフォーマンスの持続的な低下</li>
+              <li>食事に対する強い不安、罪悪感、極端な制限</li>
+            </ul>
+            <p style="margin:0">
+              競技現場では、<strong>「試合期に月経が止まるのは普通」という誤った常識</strong>が根強く残っています。これは正しくありません。無月経は、<strong>医学的な評価が必要な状態</strong>です。<br><br>
+              トレーナーとして関わる私たちが、この点を正確に理解し、<strong>受診をすすめられる立場にいること</strong>には大きな意味があります。指導者が「普通だ」と言ってしまえば、その選手は相談する機会を失います。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="practice">
+          <h2>現場でどう扱うか</h2>
+          <div class="no-box">
+            <p class="box-title">やってはいけない対応</p>
+            <ul>
+              <li><strong>カレンダーの日数だけでメニューを決める。</strong>局面の判定が不確実である以上、根拠が弱くなります。</li>
+              <li><strong>「黄体期だから必ず負荷を下げる」と一律に運用する。</strong>症状がない方の機会を奪うことにもなります。</li>
+              <li><strong>本人が話していないのに、ホルモン状態を推測して決めつける。</strong></li>
+              <li><strong>周期や症状の情報を、他者に共有する。</strong>これは重大なプライバシーの問題です。</li>
+              <li><strong>「女性なんだから仕方ない」と症状を流す。</strong></li>
+              <li><strong>妊娠の可能性を考慮せず、一律に負荷や介入を進める。</strong></li>
+            </ul>
+          </div>
+          <div class="key-box">
+            <p class="box-title">できること</p>
+            <ul>
+              <li>症状とトレーニングの<strong>記録</strong>を、本人が続けられる形で提案する</li>
+              <li>その記録から、<strong>その人固有のパターン</strong>を一緒に見つけていく</li>
+              <li>当日の症状・睡眠・疲労・主観的コンディションから負荷を調整する</li>
+              <li>症状が強い日の代替メニューを、あらかじめ用意しておく</li>
+              <li>相談していい症状であることを伝え、婦人科の受診をすすめる</li>
+              <li>プライバシーに配慮した聞き方と情報の扱いを徹底する</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜記録が、平均を超える</p>
+            集団の平均が個人に当てはまらないなら、どうするか。答えはシンプルです。<strong>その人自身のデータを集めること</strong>。<br><br>
+            周期の記録、症状の記録、睡眠、そしてトレーニングの反応。これを数ヶ月続けると、<strong>一般論よりはるかに精度の高い、その人固有のパターン</strong>が見えてきます。しかも、本人が自分の身体を理解していく過程そのものに価値があります。<br><br>
+            「教科書に書いてあるから」ではなく「あなたの記録がこう示しているから」。この転換が、この領域では特に大きな意味を持ちます。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="privacy">
+          <h2>伝え方とプライバシー</h2>
+          <p>
+            この領域は、<strong>聞くこと自体に配慮が必要</strong>です。いくつか実務的な原則を挙げます。
+          </p>
+          <ul>
+            <li><strong>強制しない</strong>：話したくない情報は、話さなくてよいと明示する</li>
+            <li><strong>目的を伝える</strong>：なぜその情報が役立つのかを説明したうえで尋ねる</li>
+            <li><strong>共有しない</strong>：本人の同意なく、他のスタッフやチーム関係者に伝えない</li>
+            <li><strong>決めつけない</strong>：性別や年齢から、月経の有無や状態を推測しない</li>
+            <li><strong>記録の管理</strong>：誰が見られる状態にあるかを把握しておく</li>
+          </ul>
+          <p>
+            <strong>安心して話せる関係があって初めて、この領域の支援は成立します。</strong>技術より先に、そこです。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">次のような場合は、婦人科などの医療機関への相談をすすめてください</p>
+            <ul>
+              <li>日常生活や仕事に支障が出るほどの月経痛</li>
+              <li>市販薬を使っても改善しない痛み</li>
+              <li>月経量が非常に多い、長く続く、明らかに増えた</li>
+              <li>月経以外の時期の出血</li>
+              <li>3ヶ月以上月経がない、極端に不規則になった</li>
+              <li>失神、強い立ちくらみ、動悸を伴う</li>
+              <li>気分の落ち込みが強く、生活に支障が出ている（PMDDの可能性）</li>
+              <li>妊娠中の出血、強い腹痛</li>
+              <li>疲労骨折を繰り返している、体重が急に減った</li>
+            </ul>
+            <p style="margin:0">
+              <strong>妊娠中の出血や強い腹痛</strong>は、速やかな医療評価が必要です。また<strong>失神を伴う場合</strong>は、その場で運動を中止してください。<br><br>
+              なお、妊娠の可能性がある場合や妊娠中の方の運動については、<strong>主治医の方針を確認したうえで</strong>設計してください。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">カレンダーではなく、その人を見る</p>
+            「周期に合わせる」という発想は、一見すると個別対応のように見えます。しかし、<strong>暦の日数でメニューを決めることは、実は個別化ではありません</strong>。それは、一般化された図表を当てはめているだけです。零 -ZERO- では、次の統合を勧めています。
+            <p class="flow">
+              周期の情報（本人が把握している範囲で）<br>
+              ＋ 当日の症状<br>
+              ＋ 睡眠<br>
+              ＋ 疲労の蓄積<br>
+              ＋ 直近のトレーニング反応<br>
+              ＋ 本人の希望と目的
+            </p>
+            <br>
+            周期の情報は、<strong>六つのうちの一つ</strong>です。それ以上でも以下でもない。そして最後の<strong>「本人の希望」</strong>を必ず入れてください。これは私たちが決めることではなく、<strong>本人が自分の身体について選択していく</strong>ための支援だからです。
+          </div>
+          <p>
+            分かっていないことが多い領域です。だからこそ、断定を避け、記録を積み、その人と一緒に学んでいく。<strong>不完全であることを認めたうえで関わり続ける</strong>――この姿勢が、いちばん誠実だと考えています。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>周期には個人差・周期差があり、暦の日数だけで局面を断定することはできません。</li>
+              <li>集団の平均差は、目の前の個人にそのまま当てはまるとは限りません。</li>
+              <li>月経随伴症状は「あって当たり前」ではなく、相談していい症状です。</li>
+              <li>ホルモン製剤の使用時は、前提そのものが変わります。</li>
+              <li>REDsは女性だけの問題ではなく、無月経を「普通」と扱ってはいけません。</li>
+              <li>周期情報は判断材料の一つ。当日の症状・睡眠・疲労・反応・本人の希望と統合します。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>月経周期をめぐる知見と限界、REDsという重要な視点、そして情報の扱い方</span>を整理しました。<br><br>
+              実際の指導では、<span>集めた記録をどう読み、どのタイミングで負荷をどう変え、代替メニューをどう設計するか</span>が問われます。症状の強い時期にトレーニングをどう組み替え、シーズン全体でどう計画するのか。<span>ZERO MEMBERS では、記録の読み方から仮説設定、負荷設計、再評価までをより具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="pelvic-floor-clinical-article.html"><span class="rl-label">関連記事</span>骨盤底筋を臨床でどう扱うか</a>
+            <a href="visceral-cold-article.html"><span class="rl-label">関連記事</span>「内臓の冷え」を現場でどう捉えるか</a>
+            <a href="recovery-training-article.html"><span class="rl-label">関連記事</span>「追い込まない」時代の身体づくり</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Mountjoy M, Ackerman KE, et al. 2023 International Olympic Committee’s (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). Br J Sports Med. 2023. <a href="https://www.researchgate.net/publication/374201706" target="_blank" rel="noopener noreferrer">https://www.researchgate.net/publication/374201706</a></li>
+            <li>International Olympic Committee. IOC publishes new Consensus Statement on Relative Energy Deficiency in Sport (REDs). <a href="https://www.olympics.com/ioc/news/ioc-publishes-new-consensus-statement-on-relative-energy-deficiency-in-sport-reds-to-protect-athlete-health" target="_blank" rel="noopener noreferrer">https://www.olympics.com/ioc/news/ioc-publishes-new-consensus-statement-on-relative-energy-deficiency-in-sport-reds-to-protect-athlete-health</a></li>
+            <li>日本産科婦人科学会（月経困難症、月経前症候群などに関する一般向け情報）. <a href="https://www.jsog.or.jp/" target="_blank" rel="noopener noreferrer">https://www.jsog.or.jp/</a></li>
+            <li>日本スポーツ協会・日本女性医学学会等による、女性アスリートの健康支援に関する資料. <a href="https://www.japan-sports.or.jp/" target="_blank" rel="noopener noreferrer">https://www.japan-sports.or.jp/</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#basics">月経周期の基本</a></li>
+            <li><a href="#performance">周期とパフォーマンス</a></li>
+            <li><a href="#symptoms">月経随伴症状の基礎</a></li>
+            <li><a href="#reds">相対的エネルギー不足（REDs）</a></li>
+            <li><a href="#practice">現場でどう扱うか</a></li>
+            <li><a href="#privacy">伝え方とプライバシー</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">骨盤底・女性の健康</p>
+          <div class="tag-row"><span>#月経周期</span><span>#トレーニング設計</span><span>#REDs</span><span>#個人差</span><span>#プライバシー</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

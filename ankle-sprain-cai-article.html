@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>足関節捻挫のその後 ― 慢性足関節不安定症と再発予防 | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・セラピスト向け。外側靱帯損傷の基礎、Ottawa Ankle Rulesの位置づけと限界、急性期の考え方、慢性足関節不安定症、機械的・機能的不安定性の違い、PAASSによる復帰判断と再発予防を整理します。">
+  <meta name="keywords" content="足関節捻挫、慢性足関節不安定症、再発予防、競技復帰、PAASS">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/ankle-sprain-cai-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="足関節捻挫のその後 ― 慢性足関節不安定症と再発予防">
+  <meta property="og:description" content="再発率の高い足関節捻挫。「痛くない」だけで復帰を決めないための基礎と段階の考え方。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/ankle-sprain-cai-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_anklesprain.png">
+  <meta property="article:section" content="足関節・スポーツ障害">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .ev-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;padding:3px 10px;border-radius:4px;margin-bottom:8px}
+    .ev-a{border:1px solid var(--free-accent-light);color:var(--free-accent-light);background:rgba(20,184,166,0.08)}
+    .ev-b{border:1px solid var(--gold-primary);color:var(--gold-primary);background:rgba(212,175,55,0.06)}
+    .ev-c{border:1px solid #9ca3af;color:#cbd5e1;background:rgba(156,163,175,0.08)}
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.9}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.85}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .tcm-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.96rem;line-height:1.85}
+    .tcm-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--gold-primary);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.94rem;line-height:1.85}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .known-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+    .known-card{border-radius:10px;padding:16px 20px;font-size:0.92rem;line-height:1.8}
+    .known-yes{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3)}
+    .known-no{background:rgba(156,163,175,0.05);border:1px dashed rgba(156,163,175,0.45)}
+    .known-card .box-title{font-weight:700;margin:0 0 10px 0;font-size:0.96rem}
+    .known-yes .box-title{color:var(--free-accent-light)}
+    .known-no .box-title{color:#cbd5e1}
+    .known-card ul{margin:0;padding-left:18px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.93rem;line-height:1.85;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.04rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.92rem;line-height:1.8;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:4px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .zero-box{background:linear-gradient(90deg,rgba(212,175,55,0.08),rgba(20,22,27,0));border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px 24px;margin:26px 0;font-size:0.97rem;line-height:1.9}
+    .zero-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--gold-primary);font-size:1.04rem}
+    .flow{font-size:0.93rem;line-height:2;color:var(--gold-light);margin:10px 0 0 0}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:520px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.65}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.86rem;line-height:1.85;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    @media (max-width:768px){.known-grid{grid-template-columns:1fr}.check-card,.zero-box{padding:16px}table.sp-table{min-width:460px}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>足関節・スポーツ障害</span>
+        <span>2026.09.02</span>
+        <span>読了目安：約13分</span>
+      </div>
+      <h1 class="article-main-title">足関節捻挫のその後 ― 慢性足関節不安定症と再発予防</h1>
+      <p class="article-subtitle">― 「腫れが引いた」は「機能が戻った」ではない ―</p>
+      <div class="tag-row"><span>#足関節捻挫</span><span>#慢性足関節不安定症</span><span>#再発予防</span><span>#競技復帰</span><span>#PAASS</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_anklesprain.png" alt="足関節捻挫のその後 ― 慢性足関節不安定症と再発予防のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="lead">
+          <div class="lead-box">
+            「捻挫なんて、放っておけば治る」。スポーツ現場でいまだに聞く言葉です。そして実際、多くの人は数週間で痛みも腫れも引きます。<br><br>
+            問題は、そこからです。<strong>足関節捻挫は、再発率が非常に高い外傷</strong>として知られています。そして一定の割合の人が、慢性的な不安定感を抱えたまま過ごすことになります。<br><br>
+            「腫れが引いた」は、「機能が戻った」ではありません。この記事では、その差を埋めるための基礎を整理します。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>外側靱帯損傷の基本と、他の損傷との違い</li>
+              <li>骨折を見逃さないための考え方（Ottawa Ankle Rulesの位置づけと限界）</li>
+              <li>急性期に「完全安静」だけを選ばない現在の考え方</li>
+              <li>慢性足関節不安定症（CAI）とは何か</li>
+              <li>機械的不安定性と機能的不安定性の違い</li>
+              <li>復帰判断を「痛くない」だけで決めないための枠組み（PAASS）</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="basics">
+          <h2>基本用語の整理 ― 何が損傷されるのか</h2>
+          <p>
+            足関節捻挫の多くは、<strong>足首が内側に捻れる形（内反）で外側の靱帯が損傷される</strong>ものです。主に関わるのは次の靱帯です。
+          </p>
+          <ul>
+            <li><strong>前距腓靱帯（ATFL）</strong>：最も損傷されやすい靱帯。外くるぶしの前方にあります</li>
+            <li><strong>踵腓靱帯（CFL）</strong>：外くるぶしから踵骨へ。ATFLに次いで損傷されやすいとされます</li>
+          </ul>
+          <h3>混同してはいけない損傷</h3>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>損傷</th><th>特徴</th><th>注意点</th></tr></thead>
+              <tbody>
+                <tr><td><strong>外側靱帯損傷</strong></td><td>いわゆる「足首の捻挫」。外くるぶし周辺の痛みと腫脹</td><td>頻度は高いが、程度に幅がある</td></tr>
+                <tr><td><strong>脛腓靱帯結合の損傷</strong><br>（syndesmosis injury／高位捻挫）</td><td>脛骨と腓骨をつなぐ部分の損傷。足首のやや上方、前方に痛みが出やすい</td><td><strong>回復に時間を要することが多い</strong>とされ、通常の捻挫と同じ経過をたどらない</td></tr>
+                <tr><td><strong>骨折</strong></td><td>受傷機転が同じでも起こりうる</td><td><strong>画像評価が必要。私たちが除外することはできない</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜Ottawa Ankle Rulesの位置づけと限界</p>
+            <strong>Ottawa Ankle Rules</strong>は、足関節・足部の外傷において、X線撮影が必要かどうかを判断するために医療現場で用いられる<strong>臨床判断ルール</strong>です。特定部位の圧痛と荷重の可否を組み合わせて評価します。<br><br>
+            知っておく価値はありますが、<strong>限界も明確です</strong>。第一に、これは<strong>医療機関で撮影の要否を判断するためのツール</strong>であり、私たちが骨折を否定するための道具ではありません。第二に、腫脹が強い時期や、小児、他の外傷を合併している場合などでは、解釈に注意が必要とされます。<br><br>
+            <strong>「ルールに当てはまらないから骨折はない」と結論しないでください。</strong>迷えば受診です。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="acute">
+          <h2>急性期をどう考えるか</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            かつては「安静・固定」が中心でしたが、現在は<strong>保護しながら、適切な範囲で動かし荷重していく</strong>という考え方が主流になっています。長期の完全安静は、可動域の低下や筋機能の低下を招きうるためです。
+          </p>
+          <p>
+            ただし「動かせばよい」でもありません。判断の材料になるのは次の3つです。
+          </p>
+          <ul>
+            <li><strong>痛み</strong>：安静時か、荷重時か、特定の動きか</li>
+            <li><strong>腫脹</strong>：増えているか、引いてきているか</li>
+            <li><strong>荷重能力</strong>：体重をかけられるか、歩けるか</li>
+          </ul>
+          <p>
+            <strong>これらを毎回同じ形で確認し、記録すること</strong>。この地道な作業が、後の判断の質を決めます。なお、受傷直後で骨折が否定されていない段階では、まず医療機関での評価が優先されます。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="cai">
+          <h2>慢性足関節不安定症（CAI）とは何か</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            捻挫のあと、一定の割合の方に<strong>持続する症状や機能低下</strong>が残ることが知られています。これを整理する枠組みが<strong>慢性足関節不安定症（Chronic Ankle Instability, CAI）</strong>です。国際的な研究グループが、研究上の選択基準を提示しています<sup>[1][2]</sup>。
+          </p>
+          <p>
+            そこで重視されているのは、次のような情報です。
+          </p>
+          <ul>
+            <li><strong>過去の捻挫の回数</strong></li>
+            <li><strong>giving way（膝折れならぬ「足首が抜ける」感覚）の有無と頻度</strong></li>
+            <li><strong>不安定感（自分の足首が信用できない感じ）の有無と頻度</strong></li>
+            <li><strong>妥当性の検証された自己記入式の質問票のスコア</strong></li>
+          </ul>
+          <div class="point-box">
+            <p class="box-title">臨床のポイント｜機械的不安定性と機能的不安定性</p>
+            この二つを区別すると、見え方が変わります。<br><br>
+            <strong>機械的不安定性</strong>：靱帯の構造的なゆるみなど、<strong>構造の問題</strong>として捉えられるもの。<br>
+            <strong>機能的不安定性</strong>：構造的なゆるみでは説明しきれない、<strong>「抜ける感じ」「信用できない感じ」</strong>。感覚や神経筋の制御が関わると考えられています。<br><br>
+            重要なのは、<strong>この二つが必ずしも一致しないこと</strong>です。画像や徒手検査で明らかなゆるみがなくても、強い不安定感を訴える方はいます。逆もあります。<strong>「構造に問題がないから大丈夫」とは言えない</strong>のです。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="assess">
+          <h2>現場で観察したいポイント</h2>
+          <div class="check-card">
+            <p class="box-title">病歴・訴え</p>
+            <ul>
+              <li>これまでの捻挫の回数と、直近の受傷時期</li>
+              <li>giving way の有無、頻度、どんな場面で起きるか</li>
+              <li>不安定感の程度と、避けている動作</li>
+              <li>医療機関での評価の有無と診断内容</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">可動域と筋機能</p>
+            <ul>
+              <li><strong>足関節背屈可動域</strong>と左右差（荷重下での評価も含めて）</li>
+              <li>腓骨筋群を含む足関節周囲の筋力</li>
+              <li>反復動作での持久性（一回できることと、続けられることは別）</li>
+              <li>足部の内在筋、股関節周囲の機能（近位の関与）</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">感覚・バランス・動作</p>
+            <ul>
+              <li>片脚立位の安定性（目を開けた状態・閉じた状態）</li>
+              <li>動的なバランス（リーチ動作など）</li>
+              <li>ホップの着地の質、着地時のコントロール</li>
+              <li>方向転換動作での、恐れや回避の有無</li>
+              <li>本人が「大丈夫だ」と感じているかどうか（心理的な準備）</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="rts">
+          <h2>復帰判断を「痛くない」だけで決めない</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            急性の外側足関節捻挫からのスポーツ復帰について、国際的な多職種の合意として提案されているのが<strong>PAASSフレームワーク</strong>です<sup>[3]</sup>。これは、復帰の判断を<strong>5つの領域</strong>から総合的に考えるという枠組みです。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>領域</th><th>内容</th></tr></thead>
+              <tbody>
+                <tr><td><strong>P</strong>ain（痛み）</td><td>スポーツ参加中の痛み、直近24時間の痛み</td></tr>
+                <tr><td><strong>A</strong>nkle impairments（足関節の機能障害）</td><td>可動域、筋力、持久力、パワー</td></tr>
+                <tr><td><strong>A</strong>thlete perception（本人の認識）</td><td>足首への自信・安心感、不安定感の自覚、心理的な準備</td></tr>
+                <tr><td><strong>S</strong>ensorimotor control（感覚運動制御）</td><td>固有感覚、動的な姿勢制御・バランス</td></tr>
+                <tr><td><strong>S</strong>port/functional performance（競技・機能的パフォーマンス）</td><td>ホップ、ジャンプ、アジリティ、競技特異的動作、フルセッションを完遂できるか</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            この枠組みの示唆は明確です。<strong>「痛くない」は5領域のうちの一つにすぎない</strong>。そして、<strong>本人の認識（自信・心理的な準備）が独立した領域として置かれている</strong>ことに注目してください。「客観的には問題ないのに、本人が怖がっている」という状態を、軽視してはいけないということです。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="prevention">
+          <h2>再発予防の基本</h2>
+          <p>
+            <span class="ev-label ev-a">比較的支持されている知見</span><br>
+            足関節捻挫の再発予防としては、<strong>バランス・神経筋トレーニング</strong>と、<strong>装具・テーピング</strong>が主に検討されてきました<sup>[1][2]</sup>。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>手段</th><th>位置づけ</th><th>注意点</th></tr></thead>
+              <tbody>
+                <tr><td>バランス・神経筋トレーニング</td><td>再発予防の中心的な要素として広く検討されている</td><td>継続が前提。単発では意味を持ちにくい</td></tr>
+                <tr><td>テーピング・ブレース</td><td>特に既往のある選手で、再発予防の選択肢として用いられる</td><td><strong>装具は根本的な機能を代替しない</strong>。トレーニングと併用する位置づけ</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            無料記事では、種目の紹介は基本的な例に留めます。<strong>片脚立位から始め、目を閉じる・不安定面・動きを加える・跳ぶ・方向を変える</strong>といった段階づけが基本的な考え方になります。ただし、<strong>どの段階へいつ進むかの基準は、対象者の状態によって変わります</strong>。一律に決められるものではありません。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>医療機関への相談を優先するサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">次のような場合は、運動やコンディショニングより医療機関での評価を優先してください</p>
+            <ul>
+              <li>受傷後、患部に体重をかけて歩けない</li>
+              <li>特定の骨の部位に強い圧痛がある</li>
+              <li>明らかな変形がある</li>
+              <li>強い腫脹、皮下出血が急速に広がる</li>
+              <li>しびれ、感覚の低下、足先の色が悪い（神経・血管の症状）</li>
+              <li>足首より上方（脛骨と腓骨の間）の痛み ― 脛腓靱帯結合損傷の可能性</li>
+              <li>時間が経っても腫脹や痛みが引かない、悪化する</li>
+              <li>発熱、熱感、発赤を伴う</li>
+              <li>繰り返す giving way がある</li>
+            </ul>
+            <p style="margin:0">
+              特に<strong>荷重不能、骨の圧痛、変形、神経・血管症状</strong>は、骨折を含む評価が必要な所見です。<strong>骨折の否定は私たちにはできません。</strong>迷ったら受診をすすめる。それが正解です。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="zero">
+          <h2>ZEROの臨床視点</h2>
+          <div class="zero-box">
+            <p class="box-title">「痛くない」からの先を、段階で考える</p>
+            捻挫のリハビリが途中で止まってしまう最大の理由は、<strong>痛みが消えた時点で目標が消えるから</strong>です。零 -ZERO- では、段階を明示することを勧めています。
+            <p class="flow">
+              組織の回復（保護と適切な負荷）<br>
+              → 可動域（特に背屈と左右差）<br>
+              → 筋出力（腓骨筋群を含む・持久性も）<br>
+              → 感覚とバランス（静的から動的へ）<br>
+              → 着地のコントロール<br>
+              → 方向転換<br>
+              → 競技特異的な負荷
+            </p>
+            <br>
+            この段階を言葉にして共有するだけで、「まだ途中である」ことが本人にも伝わります。<strong>ゴールが見えれば、人は続けられる。</strong>
+          </div>
+          <p>
+            もう一つ。<strong>足関節だけを見ないでください。</strong>着地や方向転換の質には、股関節や体幹の関与があります。逆に、足関節の背屈制限が近位に影響する可能性も議論されています。ただし、これも<strong>「だから股関節が原因だ」と飛躍しない</strong>こと。評価して、確かめてから言う。この順番です。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>足関節捻挫は再発率が高く、「腫れが引いた」は「機能が戻った」ではありません。</li>
+              <li>Ottawa Ankle Rulesは医療機関で用いられる判断ルールで、私たちが骨折を否定する道具ではありません。</li>
+              <li>脛腓靱帯結合の損傷は、通常の捻挫と同じ経過をたどらないとされます。</li>
+              <li>機械的不安定性と機能的不安定性は一致しないことがあります。</li>
+              <li>復帰判断は「痛くない」だけでなく、PAASSの5領域から総合的に考えます。</li>
+              <li>荷重不能・骨の圧痛・変形・神経血管症状があれば、まず受診です。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>損傷の基礎、CAIという考え方、復帰判断の枠組み、そして受診の目安</span>を整理しました。<br><br>
+              実際の現場で問われるのは、<span>「いつ、次の段階へ進めてよいか」</span>です。何を満たせば不安定面へ、跳躍へ、方向転換へ進むのか。競技ごとに何を追加するのか。進めた結果、症状が戻ったときにどこまで下げるのか。<span>ZERO MEMBERS では、段階的な進行基準と競技別の考え方、再評価による分岐をより具体的に解説しています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="ankle-dorsiflexion-article.html"><span class="rl-label">関連記事</span>なぜ足関節は背屈できなければならないのか</a>
+            <a href="stretching-science-article.html"><span class="rl-label">関連記事</span>ストレッチの科学 ― 静的・動的・PNFの使い分け</a>
+            <a href="single-leg-stance-article.html"><span class="rl-label">関連記事</span>片脚立ちによる全身評価</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Gribble PA, et al. Selection Criteria for Patients With Chronic Ankle Instability in Controlled Research: A Position Statement of the International Ankle Consortium. J Orthop Sports Phys Ther. 2013. <a href="https://www.jospt.org/doi/10.2519/jospt.2013.0303" target="_blank" rel="noopener noreferrer">https://www.jospt.org/doi/10.2519/jospt.2013.0303</a></li>
+            <li>International Ankle Consortium. 2016 consensus statement: Prevalence, impact and long-term consequences of lateral ankle sprains. <a href="https://ankleconsortium.org/research/publications/" target="_blank" rel="noopener noreferrer">https://ankleconsortium.org/research/publications/</a></li>
+            <li>Smith MD, Vicenzino B, et al. Return to sport decisions after an acute lateral ankle sprain injury: introducing the PAASS framework—an international multidisciplinary consensus. Br J Sports Med. 2021. <a href="https://www.semanticscholar.org/paper/77554d06dbb90c64b827dd3c3454647f49fce04c" target="_blank" rel="noopener noreferrer">https://www.semanticscholar.org/paper/77554d06dbb90c64b827dd3c3454647f49fce04c</a></li>
+            <li>Current concepts on the pathophysiology and management of recurrent ankle sprains and chronic ankle instability. Curr Phys Med Rehabil Rep. <a href="https://link.springer.com/article/10.1007/s40141-013-0041-y" target="_blank" rel="noopener noreferrer">https://link.springer.com/article/10.1007/s40141-013-0041-y</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.85">
+            東洋医学に関する記述は、上記の医学的文献とは性質が異なる<strong>伝統医学上の観察モデル</strong>です。科学的に検証された内容とは区別して記載しています。また、医学情報は更新されるため、実際の判断では最新のガイドラインをご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#lead">リード／この記事で分かること</a></li>
+            <li><a href="#basics">何が損傷されるのか</a></li>
+            <li><a href="#acute">急性期をどう考えるか</a></li>
+            <li><a href="#cai">慢性足関節不安定症とは</a></li>
+            <li><a href="#assess">現場で観察したいポイント</a></li>
+            <li><a href="#rts">復帰判断の枠組み</a></li>
+            <li><a href="#prevention">再発予防の基本</a></li>
+            <li><a href="#redflag">医療機関への相談を優先するサイン</a></li>
+            <li><a href="#zero">ZEROの臨床視点</a></li>
+            <li><a href="#summary">まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">足関節・スポーツ障害</p>
+          <div class="tag-row"><span>#足関節捻挫</span><span>#慢性足関節不安定症</span><span>#再発予防</span><span>#競技復帰</span><span>#PAASS</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          ホームへ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="#" onclick="window.scrollTo(0,0)">記事一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>
