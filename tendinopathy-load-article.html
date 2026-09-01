@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>腱症（tendinopathy）と負荷管理 | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・整体師向け。腱炎と腱症という呼び方の違い、炎症だけで説明できない理由、完全安静では耐性が戻らない考え方、痛みゼロを開始条件にしない進め方、運動中・直後・翌日の反応の見方、段階的な負荷移行を解説します。">
+  <meta name="keywords" content="腱症、tendinopathy、負荷管理、アイソメトリック、再発予防">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/tendinopathy-load-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="腱症（tendinopathy）と負荷管理">
+  <meta property="og:description" content="「炎症だから休めば治る」を見直す。複数の腱障害を理解するための中核となる基礎記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/tendinopathy-load-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_tendinopathy.png">
+  <meta property="article:section" content="腱・負荷管理">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.95}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .key-box li{line-height:1.9;margin-bottom:4px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.9}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.95rem;line-height:1.9}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .no-box ul{margin:0;padding-left:20px}
+    .no-box li{margin-bottom:6px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.94rem;line-height:1.9;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.06rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .rf-urgent{border-left:3px solid #e06a5a;padding-left:14px;margin:14px 0}
+    .rf-soon{border-left:3px solid #d9a441;padding-left:14px;margin:14px 0}
+    .rf-stop{border-left:3px solid #9ca3af;padding-left:14px;margin:14px 0}
+    .rf-label{font-weight:700;font-size:0.9rem;display:block;margin-bottom:6px}
+    .rf-urgent .rf-label{color:#f0a08a}
+    .rf-soon .rf-label{color:var(--gold-light)}
+    .rf-stop .rf-label{color:#cbd5e1}
+    .ex-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:18px 0}
+    .ex-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.04rem;margin:0 0 12px 0}
+    .ex-row{font-size:0.93rem;line-height:1.85;margin-bottom:8px;color:#d1d5db}
+    .ex-row b{color:var(--free-accent-light);display:inline-block;min-width:5.2em}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.93rem;line-height:1.85;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:5px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:500px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.7}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.87rem;line-height:1.9;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    .article-content p{line-height:1.95}
+    .article-content li{line-height:1.9}
+    @media (max-width:768px){.check-card,.ex-card,.red-flag{padding:16px}table.sp-table{min-width:440px}.ex-row b{display:block;min-width:0}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>腱・負荷管理</span>
+        <span>2026.09.05</span>
+        <span>読了目安：約13分</span>
+      </div>
+      <h1 class="article-main-title">腱症（tendinopathy）と負荷管理</h1>
+      <p class="article-subtitle">― 「炎症だから休む」からの理解の転換 ―</p>
+      <div class="tag-row"><span>#腱症</span><span>#tendinopathy</span><span>#負荷管理</span><span>#アイソメトリック</span><span>#再発予防</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_tendinopathy.png" alt="腱症（tendinopathy）と負荷管理のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="intro">
+          <h2>はじめに</h2>
+          <div class="lead-box">
+            アキレス腱が痛い。膝のお皿の下が痛い。肘の外側が痛い。<br><br>
+            部位は違っても、これらには共通する考え方があります。そして共通する<strong>誤解</strong>もあります。それが<strong>「炎症だから、休めば治る」</strong>という理解です。<br><br>
+            休むと、たしかに痛みは軽くなります。ところが動き始めると、また同じところが痛む。この繰り返しに心当たりのある方は多いはずです。なぜそうなるのか。この記事は、<strong>複数の腱の問題を理解するための中核</strong>として書きます。ここを押さえると、部位ごとの話が一本の線でつながります。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>「腱炎」と「腱症（tendinopathy）」という呼び方の違い</li>
+              <li>すべてを炎症だけで説明できない理由</li>
+              <li>完全安静だけでは負荷耐性が戻りにくいという考え方</li>
+              <li>痛みをゼロにしてから始める、とは限らないという視点</li>
+              <li>運動中・直後・翌日という3点で反応を見る方法</li>
+              <li>アイソメトリックを万能視しないこと、段階的な移行の考え方</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="basic">
+          <h2>1．まず知っておきたい基本</h2>
+          <h3>「腱炎」から「腱症」へ</h3>
+          <p>
+            かつては<strong>腱炎（tendinitis）</strong>という呼び方が主流でした。「-itis」は炎症を表す接尾語です。つまり「腱の炎症」という理解です。
+          </p>
+          <p>
+            しかし、実際に長引いている腱の組織を調べると、<strong>典型的な炎症の像が主体ではない</strong>ことが報告されるようになりました。むしろ、<strong>組織の構造的な変化</strong>が中心に見られる、という指摘です。
+          </p>
+          <p>
+            そこで現在は、<strong>腱症・腱障害（tendinopathy）</strong>という、より中立的な用語が用いられることが増えています。「-pathy」は「疾患・障害」を表し、<strong>機序を断定しない呼び方</strong>です。
+          </p>
+          <div class="point-box">
+            <p class="box-title">なぜ呼び方が大事なのか</p>
+            言葉は行動を決めます。<strong>「炎症」と言われた人は、「冷やして休む」と考えます。</strong>それが正解の場面もありますが、多くの慢性的な腱の問題では、それだけでは足りません。<br><br>
+            <strong>ただし、炎症が全く関与しないという意味ではありません。</strong>近年は炎症性の要素も再検討されています。「炎症か、そうでないか」の二択ではなく、<strong>「炎症だけでは説明しきれない」</strong>という理解が現時点では妥当です。
+          </div>
+          <h3>共通する背景 ― 負荷の変化</h3>
+          <p>
+            アキレス腱、膝蓋腱、外側上顆（肘の外側）など、部位は異なっても<strong>共通して見られる背景</strong>があります。それは<strong>負荷の急な変化</strong>です。
+          </p>
+          <ul>
+            <li>走行距離を急に増やした</li>
+            <li>ジャンプ系の練習量が急に増えた</li>
+            <li>久しぶりに運動を再開して、いきなり以前と同じ量をやった</li>
+            <li>仕事で反復動作の量が急に増えた</li>
+            <li>シューズや路面、道具が変わった</li>
+          </ul>
+          <div class="point-box">
+            <p class="box-title">「量」より「変化の速さ」</p>
+            重要なのは、絶対的な量そのものより、<strong>どれだけ急に変えたか</strong>です。同じ週50kmでも、ずっと走ってきた人と、先月まで10kmだった人とではまったく意味が違います。<br><br>
+            だから問診では、<strong>「今どれくらいやっていますか」だけでなく「先月はどれくらいでしたか」</strong>を必ず聞いてください。ここに答えが隠れていることが、非常に多いのです。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="notsimple">
+          <h2>2．なぜ「休めば治る」ではないのか</h2>
+          <p>
+            完全に休むと、痛みは軽くなります。負荷がかからないのですから、当然です。
+          </p>
+          <p>
+            <strong>問題は、その間に腱の「負荷に耐える能力」が上がらないことです。</strong>むしろ、使わなければ耐性は下がる方向に向かいます。
+          </p>
+          <p>
+            そして休養明けに元の活動へ戻ると、<strong>下がった耐性に対して、以前と同じ負荷がかかります</strong>。結果として再び症状が出る。この循環が、症状を長引かせる一因になりうると考えられています。
+          </p>
+          <div class="point-box">
+            <p class="box-title">腱は、適切な負荷によって適応する</p>
+            腱は、単なる紐ではありません。<strong>適切な負荷が加わることで適応していく組織</strong>です。だからこそ、負荷を完全に取り除くのではなく、<strong>耐えられる範囲の負荷を与え続けながら、その範囲を広げていく</strong>という発想になります。<br><br>
+            ここが「炎症だから休む」からの、いちばん大きな転換点です。
+          </div>
+          <h3>痛みをゼロにしてから始める、とは限らない</h3>
+          <p>
+            腱の問題では、<strong>ある程度の痛みを許容しながら運動を進める</strong>という考え方が広く用いられています。「痛みが完全に消えるまで待つ」と、その間に耐性が落ちてしまうためです。
+          </p>
+          <p>
+            <strong>ただし、これは「痛みを我慢させる」という意味ではありません。</strong>許容の基準が必要です。
+          </p>
+          <div class="key-box">
+            <p class="box-title">反応を見る3つの時点</p>
+            <ul>
+              <li><strong>運動中</strong>：痛みが許容できる程度にとどまっているか。動作が崩れるほどではないか。</li>
+              <li><strong>運動直後</strong>：痛みが急に強くなっていないか。</li>
+              <li><strong>翌日（および翌朝）</strong>：<strong>ここが最重要です。</strong>痛みやこわばりが前日より明らかに強くなっていないか。</li>
+            </ul>
+            翌日に持ち越さず、いつもの状態に戻っているなら、その負荷は<strong>許容範囲</strong>と考えられます。翌日に強く残るなら、量が多すぎたと判断して調整します。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="loading">
+          <h2>3．負荷の種類と、段階的な移行</h2>
+          <p>
+            腱への運動としては、いくつかの方法が検討されてきました。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>種類</th><th>内容</th><th>位置づけ</th></tr></thead>
+              <tbody>
+                <tr><td><strong>アイソメトリック</strong><br>（等尺性）</td><td>関節を動かさず、力を出し続ける</td><td>痛みが強い時期に扱いやすい選択肢として用いられる。<strong>ただし万能ではない</strong></td></tr>
+                <tr><td><strong>等張性運動</strong><br>（アイソトニック）</td><td>関節を動かしながら、筋を縮めたり伸ばしたりする</td><td>耐性を高める中心的な負荷として用いられる</td></tr>
+                <tr><td><strong>重い負荷のゆっくりした筋力トレーニング</strong><br>（heavy slow resistance）</td><td>重めの負荷を、ゆっくりした速度で行う</td><td>下肢の腱障害を中心に検討されている方法<sup>[1][2]</sup></td></tr>
+                <tr><td><strong>エネルギー貯蔵・放出を伴う負荷</strong></td><td>ジャンプ、ホップ、走行など、速い伸張−短縮を含む動作</td><td>競技復帰に向けて、<strong>段階の最後</strong>に位置づけられることが多い</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="no-box">
+            <p class="box-title">アイソメトリックを万能視しない</p>
+            「腱の痛みにはアイソメトリック」という説明が広まりましたが、<strong>これを一律の答えとして扱うのは適切ではありません</strong>。<br><br>
+            鎮痛効果を報告した研究がある一方で、<strong>効果は一定ではなく、対象や条件によって結果が異なると報告されています</strong><sup>[3]</sup>。有用な選択肢の一つではありますが、それだけで完結するものではありません。<br><br>
+            そして、<strong>「この回数・この秒数なら安全」と一律に断定することもできません</strong>。数値はあくまで出発点で、実際には反応を見ながら調整するものです。
+          </div>
+          <div class="point-box">
+            <p class="box-title">段階の考え方</p>
+            大まかな流れとしては、<strong>痛みが強い時期に扱いやすい負荷から始め、耐性が上がるにつれて動きを伴う負荷へ、最後に速い動作を含む負荷へ</strong>と移行していく、という組み立てが用いられます。<br><br>
+            ただし、<strong>移行の基準は一律ではありません。</strong>部位、経過、競技、生活によって変わります。無料記事では、この「考え方」までをお伝えします。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="check">
+          <h2>4．現場で確認したいこと</h2>
+          <div class="check-card">
+            <p class="box-title">問診で聞くこと</p>
+            <ul>
+              <li>いつから、どんなきっかけで始まったか</li>
+              <li><strong>直近1〜3か月の活動量の変化</strong>（先月と今月を比べる）</li>
+              <li>朝起きたときのこわばりはあるか、どれくらいで和らぐか</li>
+              <li>動き始めに痛み、温まると軽くなるか（腱障害でよく聞かれるパターン）</li>
+              <li>運動の翌日に痛みが強くなるか</li>
+              <li>シューズ、路面、道具、環境の変化はないか</li>
+              <li>睡眠、休養日の有無、全身の疲労</li>
+              <li>医療機関の受診歴、診断や指示の有無</li>
+              <li>過去に同じ部位で症状が出たことがあるか</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">観察・動作で見ること</p>
+            <ul>
+              <li>痛みの部位（腱そのものか、付着部か）</li>
+              <li>圧痛の範囲、腫れや太さの左右差</li>
+              <li>負荷をかけたときの症状（ヒールレイズ、ホップ、握力など部位に応じて）</li>
+              <li><strong>どこまでの負荷なら許容範囲か</strong>という境界</li>
+              <li>動作の質（かばい方、代償）</li>
+              <li>症状の日内変動</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="policy">
+          <h2>5．運動支援の基本方針</h2>
+          <div class="key-box">
+            <p class="box-title">基本の考え方</p>
+            <ul>
+              <li><strong>完全に止めない</strong>：耐えられる範囲の負荷を残します。</li>
+              <li><strong>まず負荷の履歴を整える</strong>：急に増やした活動があれば、そこを調整するのが最初の一手です。</li>
+              <li><strong>許容範囲を決めて共有する</strong>：運動中の痛みの上限と、翌日に持ち越さないという基準。</li>
+              <li><strong>変数は一つずつ</strong>：重量、回数、速度、頻度を同時に上げない。</li>
+              <li><strong>時間がかかることを最初に伝える</strong>：数か月単位になることが少なくありません。ここを共有しないと、途中で中断されます。</li>
+              <li><strong>「治す」より「耐性を上げる」</strong>：目標の置き方を変えると、進め方が明確になります。</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">期間の共有が、いちばん大事かもしれません</p>
+            腱の問題で最も多い失敗は、<strong>「2週間やって変わらないからやめた」</strong>です。<br><br>
+            最初に<strong>「これは数か月かけて耐性を上げていくものです」</strong>と伝えておくかどうかで、継続率がまったく変わります。技術的な工夫より、この一言のほうが結果を左右することがあります。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>6．医療機関への相談を考えるサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">腱の症状で確認したいサイン</p>
+            <div class="rf-urgent">
+              <span class="rf-label">■ 緊急性が高い可能性があるもの（速やかに医療へ）</span>
+              <ul>
+                <li><strong>腱断裂が疑われる状況</strong>：運動中に「ブチッ」という音や感覚があった、蹴られたような衝撃を感じた</li>
+                <li>腱に<strong>陥凹（へこみ）</strong>が触れる</li>
+                <li>つま先立ちができない、力がまったく入らない（アキレス腱の場合）</li>
+                <li>著しい筋力低下が急に生じた</li>
+                <li>強い腫脹、発赤、熱感に発熱を伴う（感染の可能性）</li>
+                <li>外傷後に体重をかけられない</li>
+              </ul>
+            </div>
+            <div class="rf-soon">
+              <span class="rf-label">■ 早めの医療相談が望ましいもの</span>
+              <ul>
+                <li>安静時や夜間に強くなる痛み</li>
+                <li>原因のわからない腫れが続く</li>
+                <li>発熱、体重減少、複数の関節の腫れや痛みを伴う</li>
+                <li>数か月にわたって改善しない、悪化している</li>
+                <li>フルオロキノロン系抗菌薬など、腱への影響が知られている薬を使用している</li>
+                <li>成長期の子どもで、痛みが続く場合</li>
+              </ul>
+            </div>
+            <div class="rf-stop">
+              <span class="rf-label">■ 運動を中止して確認すべきもの</span>
+              <ul>
+                <li>翌日の痛み・こわばりが、明らかに強くなる状態が続く</li>
+                <li>運動のたびに症状が悪化していく</li>
+                <li>新たに力が入りにくくなった</li>
+                <li>腫れが増えてきた</li>
+              </ul>
+            </div>
+            <p style="margin:0">
+              <strong>腱断裂が疑われる場合は、その場で運動を中止し、荷重を避けて医療機関につないでください。</strong>「痛みが軽いから大丈夫」とは限りません。断裂の直後は、かえって痛みが強くないことがあります。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="avoid">
+          <h2>7．現場で避けたい対応</h2>
+          <div class="no-box">
+            <p class="box-title">避けたい対応</p>
+            <ul>
+              <li><strong>「炎症だから安静に」で終える。</strong>耐性が戻らず、再発の循環に入りやすくなります。</li>
+              <li><strong>痛みが完全に消えるまで負荷をかけない。</strong>待つ間に耐性が落ちます。</li>
+              <li><strong>アイソメトリックを万能の答えとして扱う。</strong>効果は一定ではないと報告されています。</li>
+              <li><strong>「この回数なら安全」と一律に断定する。</strong>反応を見て調整するものです。</li>
+              <li><strong>負荷の履歴を確認しない。</strong>急な増加は、もっとも扱いやすい要素です。</li>
+              <li><strong>短期間で結果を求めさせる。</strong>期間の見通しを共有しないと、中断につながります。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>8．まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>「腱炎」から「腱症（tendinopathy）」へ ― 機序を断定しない呼び方が用いられています。</li>
+              <li>炎症だけでは説明しきれませんが、炎症が無関係という意味でもありません。</li>
+              <li>共通する背景は、負荷の「量」より「変化の速さ」です。</li>
+              <li>完全安静だけでは耐性が戻らず、再発の循環に入りやすくなります。</li>
+              <li>痛みゼロを開始条件にせず、運動中・直後・翌日の3点で判断します。</li>
+              <li>アイソメトリックは選択肢の一つで、万能ではありません。段階的に負荷を移行します。</li>
+              <li>断裂の疑い、急な陥凹、著しい筋力低下、感染兆候は、まず医療へ。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>腱症を理解するための考え方と、負荷管理の基本原則</span>を整理しました。部位別の詳細なプロトコルには、あえて踏み込んでいません。<br><br>
+              実際の現場で問われるのは、その先です。アキレス腱、膝蓋腱、外側上顆――部位ごとに何が変わるのか。どの条件を満たしたら次の段階へ進めるのか。競技のスケジュールとどう折り合いをつけるのか。停滞したとき、負荷・回復・動作のどこを見直すのか。<span>ZERO MEMBERS では、負荷量の具体的な設計、進行と後退の判断、症例ごとの臨床推論を扱っています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="patellofemoral-pain-article.html"><span class="rl-label">関連記事</span>膝前面痛（膝蓋大腿疼痛）― 「ニーイン」だけで説明しない</a>
+            <a href="shoulder-saps-article.html"><span class="rl-label">関連記事</span>肩の痛みを「インピンジメント」で片づけない</a>
+            <a href="ankle-sprain-cai-article.html"><span class="rl-label">関連記事</span>足関節捻挫のその後 ― 慢性足関節不安定症と再発予防</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Cook JL, Purdam CR. Revisiting the continuum model of tendon pathology. Br J Sports Med. 2016. <a href="https://www.fitasaphysio.com/uploads/4/3/3/4/43345381/br_j_sports_med-2016-cook-bjsports-2015-095422.pdf" target="_blank" rel="noopener noreferrer">https://www.fitasaphysio.com/uploads/4/3/3/4/43345381/br_j_sports_med-2016-cook-bjsports-2015-095422.pdf</a></li>
+            <li>Load progression criteria in exercise programmes in lower limb tendinopathy: a systematic review. 2020. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7678382/" target="_blank" rel="noopener noreferrer">https://pmc.ncbi.nlm.nih.gov/articles/PMC7678382/</a></li>
+            <li>Lim HY, Wong SH. Effects of isometric, eccentric, or heavy slow resistance exercises on pain and function in individuals with patellar tendinopathy: A systematic review. Physiother Res Int. 2018. <a href="https://onlinelibrary.wiley.com/doi/10.1002/pri.1721" target="_blank" rel="noopener noreferrer">https://onlinelibrary.wiley.com/doi/10.1002/pri.1721</a></li>
+            <li>Magnusson SP, Langberg H, Kjaer M. The acute response of tendon to loading: implications for rehabilitation. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3102919/" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3102919/</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.9">
+            医学情報は更新されます。実際の判断では、最新のガイドラインおよび担当する医療者の指示をご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・整体師・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。本記事の内容は、医療機関で受けている診断・治療を中断したり変更したりすることを意図したものではありません。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#intro">はじめに／この記事で分かること</a></li>
+            <li><a href="#basic">1. まず知っておきたい基本</a></li>
+            <li><a href="#notsimple">2. なぜ「休めば治る」ではないのか</a></li>
+            <li><a href="#loading">3. 負荷の種類と段階的な移行</a></li>
+            <li><a href="#check">4. 現場で確認したいこと</a></li>
+            <li><a href="#policy">5. 運動支援の基本方針</a></li>
+            <li><a href="#redflag">6. 医療機関への相談を考えるサイン</a></li>
+            <li><a href="#avoid">7. 現場で避けたい対応</a></li>
+            <li><a href="#summary">8. まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">腱・負荷管理</p>
+          <div class="tag-row"><span>#腱症</span><span>#tendinopathy</span><span>#負荷管理</span><span>#アイソメトリック</span><span>#再発予防</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          記事一覧へ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="archive-2026-08.html">2026年8月講義一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

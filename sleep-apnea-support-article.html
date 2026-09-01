@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>睡眠時無呼吸を疑ったら | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・整体師向け。閉塞性睡眠時無呼吸の基本と症状、肥満だけの問題ではない理由、口呼吸や顎の位置だけで判断できないこと、STOP-Bangの位置づけ、気づいて医療につなぐための伝え方を解説します。">
+  <meta name="keywords" content="睡眠時無呼吸、OSA、いびき、スクリーニング、医療連携">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/sleep-apnea-support-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="睡眠時無呼吸を疑ったら">
+  <meta property="og:description" content="いびきと日中の眠気を見過ごさない。診断はせず、気づいてつなぐための基礎記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/sleep-apnea-support-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_sleepapnea.png">
+  <meta property="article:section" content="睡眠・呼吸">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.95}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .key-box li{line-height:1.9;margin-bottom:4px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.9}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.95rem;line-height:1.9}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .no-box ul{margin:0;padding-left:20px}
+    .no-box li{margin-bottom:6px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.94rem;line-height:1.9;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.06rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .rf-urgent{border-left:3px solid #e06a5a;padding-left:14px;margin:14px 0}
+    .rf-soon{border-left:3px solid #d9a441;padding-left:14px;margin:14px 0}
+    .rf-stop{border-left:3px solid #9ca3af;padding-left:14px;margin:14px 0}
+    .rf-label{font-weight:700;font-size:0.9rem;display:block;margin-bottom:6px}
+    .rf-urgent .rf-label{color:#f0a08a}
+    .rf-soon .rf-label{color:var(--gold-light)}
+    .rf-stop .rf-label{color:#cbd5e1}
+    .ex-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:18px 0}
+    .ex-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.04rem;margin:0 0 12px 0}
+    .ex-row{font-size:0.93rem;line-height:1.85;margin-bottom:8px;color:#d1d5db}
+    .ex-row b{color:var(--free-accent-light);display:inline-block;min-width:5.2em}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.93rem;line-height:1.85;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:5px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:500px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.7}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.87rem;line-height:1.9;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    .article-content p{line-height:1.95}
+    .article-content li{line-height:1.9}
+    @media (max-width:768px){.check-card,.ex-card,.red-flag{padding:16px}table.sp-table{min-width:440px}.ex-row b{display:block;min-width:0}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>睡眠・呼吸</span>
+        <span>2026.09.05</span>
+        <span>読了目安：約12分</span>
+      </div>
+      <h1 class="article-main-title">睡眠時無呼吸を疑ったら</h1>
+      <p class="article-subtitle">― いびき・口呼吸・顎・体重から考える ―</p>
+      <div class="tag-row"><span>#睡眠時無呼吸</span><span>#OSA</span><span>#いびき</span><span>#スクリーニング</span><span>#医療連携</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_sleepapnea.png" alt="睡眠時無呼吸を疑ったらのイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="intro">
+          <h2>はじめに</h2>
+          <div class="lead-box">
+            「夜、家族にいびきがうるさいと言われて」「昼間、どうしても眠くなるんです」。<br><br>
+            雑談のなかで、こういう話が出ることがあります。多くの場合、笑い話として流されます。しかし、その裏に<strong>睡眠時無呼吸</strong>が隠れていることがあります。<br><br>
+            私たちは診断できません。治療もできません。それでも、<strong>この領域では大きな役割を果たせます</strong>。それは「気づいて、つなぐ」ことです。週に何度も顔を合わせ、体調の変化を聞ける立場にいる私たちは、実は気づける位置にいるのです。<br><br>
+            この記事は、睡眠・鼻呼吸・顎に関するこれまでの内容を束ねる回として書きます。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>閉塞性睡眠時無呼吸（OSA）の基本と、代表的な症状</li>
+              <li>「肥満だけの問題」ではないという理解</li>
+              <li>口呼吸や顎の位置だけで判断できない理由</li>
+              <li>STOP-Bangなどのスクリーニングツールの位置づけ</li>
+              <li>気づいたときの、伝え方と受診のすすめ方</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="basic">
+          <h2>1．まず知っておきたい基本</h2>
+          <p>
+            <strong>睡眠時無呼吸</strong>とは、睡眠中に呼吸が止まったり浅くなったりすることを繰り返す状態を指します。なかでも頻度が高いのが<strong>閉塞性睡眠時無呼吸（obstructive sleep apnea：OSA）</strong>で、これは<strong>上気道（のどの空気の通り道）が狭くなったり塞がったりする</strong>ことで起こるとされるものです。
+          </p>
+          <h3>代表的な症状</h3>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>時間帯</th><th>現れやすいこと</th></tr></thead>
+              <tbody>
+                <tr><td><strong>睡眠中</strong></td><td>大きないびき、いびきが途切れて再開する、呼吸が止まっているのを家族に指摘される、息が詰まるような感じで目が覚める、何度もトイレに起きる</td></tr>
+                <tr><td><strong>起床時</strong></td><td>頭痛、口の渇き、寝た気がしない、だるさ</td></tr>
+                <tr><td><strong>日中</strong></td><td>強い眠気、集中力の低下、居眠り、疲労感、気分の落ち込み</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="point-box">
+            <p class="box-title">本人は気づきにくい</p>
+            この状態の難しさは、<strong>いちばん重要な情報を本人が持っていないこと</strong>にあります。睡眠中のことですから、当然です。<br><br>
+            だから、<strong>「ご家族から、いびきや呼吸のことで何か言われたことはありますか」</strong>という聞き方が有効になります。ここを聞かないと、情報が出てきません。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="notsimple">
+          <h2>2．なぜ単純には判断できないのか</h2>
+          <h3>肥満だけの問題ではない</h3>
+          <p>
+            体重の増加は、OSAに関連する要素の一つとして知られています。<strong>ただし、それだけではありません。</strong>関わりうる要素として、次のようなものが挙げられます。
+          </p>
+          <ul>
+            <li><strong>顎顔面の形態</strong>：下顎の位置や大きさ、気道の広さ</li>
+            <li><strong>鼻閉</strong>：鼻づまり、アレルギー性鼻炎、鼻中隔の状態</li>
+            <li><strong>扁桃やアデノイドの大きさ</strong>（特に小児で重要）</li>
+            <li><strong>舌の大きさや位置</strong></li>
+            <li><strong>加齢</strong>：気道周囲の組織の変化</li>
+            <li><strong>飲酒、鎮静作用のある薬</strong>：筋の緊張が下がる</li>
+            <li><strong>性別、閉経の前後</strong></li>
+            <li><strong>睡眠時の体位</strong>：仰向けで悪化することがある</li>
+          </ul>
+          <div class="no-box">
+            <p class="box-title">避けたい説明</p>
+            <ul>
+              <li><strong>「痩せれば治ります」</strong>――体重管理は重要な要素ですが、それだけで解決するとは限りません。<strong>痩せている方にもOSAはあります。</strong></li>
+              <li><strong>「口呼吸だから無呼吸です」</strong>――口呼吸は観察されうる特徴の一つですが、それだけで診断はできません。</li>
+              <li><strong>「顎の位置を整えれば治ります」</strong>――<strong>断定してはいけません。</strong>顎顔面形態が関わりうることと、施術で治せることは別の話です。</li>
+              <li><strong>「姿勢を直せば無呼吸が改善します」</strong>――根拠のない主張です。</li>
+            </ul>
+          </div>
+          <h3>私たちは診断できない</h3>
+          <p>
+            OSAの診断には、<strong>睡眠中の呼吸や酸素飽和度などを記録する検査</strong>が必要です。問診や見た目だけで確定することはできません。
+          </p>
+          <p>
+            <strong>そして診断は医師が行います。</strong>トレーナーや整体師が「無呼吸ですね」と伝えることはできません。私たちの役割は、あくまで<strong>気づいて、医療につなぐこと</strong>です。
+          </p>
+          <h3>STOP-Bangなどのスクリーニングツール</h3>
+          <p>
+            OSAのスクリーニングには、<strong>STOP-Bang</strong>という質問票が広く知られています<sup>[1][2]</sup>。いびき、日中の疲労感、呼吸停止の指摘、血圧、BMI、年齢、首囲、性別といった項目から構成されます。
+          </p>
+          <div class="point-box">
+            <p class="box-title">ツールの位置づけを間違えない</p>
+            <strong>これは「見逃しを減らすための入口」であって、診断のためのものではありません。</strong><br><br>
+            スクリーニングツールは、<strong>可能性の高い人を拾い上げること</strong>を重視して設計されています。そのため、<strong>該当したからといって必ずOSAがあるわけではありません</strong>。逆に、該当しなくても否定はできません。<br><br>
+            私たちがこうしたツールの存在を知る意味は、<strong>「何を聞けばよいか」の目安を得ること</strong>にあります。点数をつけて判定するためではありません。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="risk">
+          <h2>3．なぜ、つなぐことが大切なのか</h2>
+          <p>
+            この項目は、私たちが行動を起こす理由に関わります。
+          </p>
+          <div class="key-box">
+            <p class="box-title">知っておきたい影響</p>
+            <ul>
+              <li><strong>強い日中の眠気と、運転のリスク</strong>：仕事で運転する方では特に重要です。事故につながる可能性が指摘されています。</li>
+              <li><strong>心血管系への影響</strong>：高血圧をはじめとする循環器領域との関連が報告されています。</li>
+              <li><strong>代謝への影響</strong>：血糖の管理や体重との関連が議論されています。</li>
+              <li><strong>日中のパフォーマンス</strong>：集中力、気分、トレーニングの質にも関わりえます。</li>
+            </ul>
+          </div>
+          <p>
+            つまり、<strong>「いびきがうるさい」という話は、単なる生活上の困りごとではない可能性がある</strong>ということです。ここを知っているかどうかで、私たちの反応が変わります。
+          </p>
+          <h3>治療は医療の領域</h3>
+          <p>
+            OSAへの対応としては、<strong>CPAP（持続陽圧呼吸療法）</strong>という機器を用いた治療、<strong>口腔内装置</strong>（歯科で作製されるマウスピース）、<strong>体重管理</strong>、<strong>鼻や扁桃に対する耳鼻科的な対応</strong>などがあります。
+          </p>
+          <p>
+            <strong>これらはすべて医療の領域です。</strong>私たちが選択したり、要否を判断したりするものではありません。
+          </p>
+          <div class="point-box">
+            <p class="box-title">運動の位置づけ</p>
+            運動は、<strong>体重管理、体力、睡眠の質などを通じて役立つ可能性</strong>があります。ただし、<strong>医療的な治療の代わりにはなりません</strong>。<br><br>
+            「運動していれば大丈夫」という説明は避けてください。すでにCPAPなどを使っている方に対しては、<strong>治療を続けながら運動を組み立てる</strong>という姿勢で関わります。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="check">
+          <h2>4．現場で確認したいこと</h2>
+          <div class="check-card">
+            <p class="box-title">聞き取りの例</p>
+            <ul>
+              <li>「ご家族から、いびきや睡眠中の呼吸について何か言われたことはありますか」</li>
+              <li>「夜中に息苦しくて目が覚めることはありますか」</li>
+              <li>「朝起きたとき、頭が重い、口が乾いていることはありますか」</li>
+              <li>「睡眠時間のわりに、寝た気がしないことはありますか」</li>
+              <li>「日中、会議中や運転中に眠くなることはありますか」</li>
+              <li>「夜中に何度もトイレに起きますか」</li>
+              <li>「鼻はつまりやすいですか」</li>
+              <li>「お酒を飲んだ日は、いびきが変わりますか」</li>
+              <li>「血圧について、何か言われていますか」</li>
+              <li>「体重の変化はありますか」</li>
+            </ul>
+          </div>
+          <div class="check-card">
+            <p class="box-title">観察できること（診断のためではありません）</p>
+            <ul>
+              <li>日中の眠そうな様子、あくびの頻度</li>
+              <li>トレーニング中の集中の続きにくさ</li>
+              <li>鼻づまりや口呼吸の傾向</li>
+              <li>疲労の抜けにくさ、回復の遅さ</li>
+              <li>体重・体組成の推移</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">聞き方の配慮</p>
+            いびきや体重は、<strong>デリケートな話題</strong>です。踏み込みすぎると、関係そのものが壊れます。<br><br>
+            おすすめは、<strong>「疲れの取れ方」から入ること</strong>です。「最近、睡眠で疲れは取れていますか」から始めれば、自然に話が広がります。いきなり「いびきをかきますか」と聞くより、ずっと入りやすいはずです。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="policy">
+          <h2>5．運動支援と、受診のすすめ方</h2>
+          <div class="key-box">
+            <p class="box-title">私たちにできること</p>
+            <ul>
+              <li>睡眠と疲労について、定期的に聞ける関係をつくる</li>
+              <li>気づいた内容を記録し、経過を追う</li>
+              <li>体重管理や体力向上を、無理のない形で支援する</li>
+              <li>睡眠衛生に関する一般的な助言（就寝前の飲酒、就寝時刻の安定など）</li>
+              <li><strong>受診をすすめ、その後も継続して関わる</strong></li>
+              <li>治療を受けている方について、その方針と矛盾しない運動を組む</li>
+            </ul>
+          </div>
+          <h3>受診をすすめるときの伝え方</h3>
+          <div class="point-box">
+            <p class="box-title">避けたい伝え方と、望ましい伝え方</p>
+            <strong>避けたい例：</strong><br>
+            「それ、睡眠時無呼吸ですよ。放っておくと危ないです」<br>
+            → 診断的な断定であり、不安だけを強めます。<br><br>
+            <strong>望ましい例：</strong><br>
+            「いびきと日中の眠気が続いているとのことなので、一度きちんと調べてもらうと安心だと思います。睡眠の状態は検査で分かりますし、分かれば対応の選択肢もあります。呼吸器内科や、睡眠外来のあるところで相談できますよ」<br><br>
+            ポイントは3つです。<strong>断定しない。不安を煽らない。具体的な相談先を示す。</strong>「病院へ行ってください」だけでは、多くの人は動きません。
+          </div>
+          <p>
+            なお、<strong>お子さんの場合</strong>は、扁桃やアデノイドが関わることがあり、いびきや口呼吸、日中の落ち着きのなさが見られることがあります。この場合も、小児科や耳鼻咽喉科での相談をすすめてください。
+          </p>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>6．医療機関への相談を考えるサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">睡眠に関して確認したいサイン</p>
+            <div class="rf-urgent">
+              <span class="rf-label">■ 緊急性が高い可能性があるもの（速やかに医療へ）</span>
+              <ul>
+                <li>運転中や作業中に、実際に居眠りをしてしまった</li>
+                <li>睡眠中に息が詰まって目が覚めることが頻繁にある</li>
+                <li>胸の痛み、動悸、強い息切れを伴う</li>
+                <li>朝方の強い頭痛が続いている</li>
+                <li>意識がもうろうとすることがある</li>
+              </ul>
+            </div>
+            <div class="rf-soon">
+              <span class="rf-label">■ 早めの医療相談が望ましいもの</span>
+              <ul>
+                <li>家族から、睡眠中に呼吸が止まっていると指摘された</li>
+                <li>大きないびきが続いている</li>
+                <li>日中の強い眠気が続いている</li>
+                <li>十分な睡眠時間をとっても疲れが取れない</li>
+                <li>血圧が高いと指摘されている</li>
+                <li>夜間に何度もトイレに起きる</li>
+                <li>気分の落ち込みや集中力の低下が続いている</li>
+                <li>お子さんのいびき、口呼吸、睡眠中の呼吸の乱れ</li>
+              </ul>
+            </div>
+            <div class="rf-stop">
+              <span class="rf-label">■ 運動を中止して確認すべきもの</span>
+              <ul>
+                <li>運動中の強い息切れ、胸痛、動悸</li>
+                <li>ふらつき、意識が遠のく感じ</li>
+                <li>極端な眠気で、安全に運動できない状態</li>
+              </ul>
+            </div>
+            <p style="margin:0">
+              過度に怖がらせる必要はありません。ただ、<strong>運転を伴う仕事をしている方で、日中に強い眠気がある場合</strong>は、本人と周囲の安全に関わります。ここは、はっきりと受診をすすめてください。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="avoid">
+          <h2>7．現場で避けたい対応</h2>
+          <div class="no-box">
+            <p class="box-title">避けたい対応</p>
+            <ul>
+              <li><strong>「無呼吸ですね」と診断的に伝える。</strong>私たちにはできません。</li>
+              <li><strong>「顎を整えれば治ります」「姿勢を直せば改善します」と説明する。</strong>根拠のない断定です。</li>
+              <li><strong>口呼吸だけを取り上げて判断する。</strong>観察されうる特徴の一つにすぎません。</li>
+              <li><strong>「痩せれば大丈夫」で終える。</strong>痩せている方にもOSAはあります。</li>
+              <li><strong>CPAPなどの治療について、要否や中止を助言する。</strong>医療の領域です。</li>
+              <li><strong>気づいたのに、何も伝えずに流す。</strong>これも避けたい対応です。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>8．まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>閉塞性睡眠時無呼吸は、上気道が狭くなることで生じるとされる状態です。</li>
+              <li>肥満だけの問題ではなく、顎顔面形態、鼻閉、扁桃、舌、加齢、飲酒なども関わりえます。</li>
+              <li>口呼吸や顎の位置だけで判断することはできません。診断は検査と医師によります。</li>
+              <li>STOP-Bangなどは「見逃しを減らす入口」であり、診断ツールではありません。</li>
+              <li>強い日中の眠気は、運転のリスクを含めて重要なサインです。</li>
+              <li>運動は役立つ可能性がありますが、医療的治療の代わりにはなりません。</li>
+              <li>私たちの役割は、気づいて、断定せず、具体的な相談先を示してつなぐことです。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>睡眠時無呼吸に気づき、断定せずに医療へつなぐための土台</span>を整理しました。<br><br>
+              実際の支援では、その先が続きます。治療を受けている方の運動を、どう設計するのか。睡眠の状態が変動する方の負荷を、どう調整するのか。呼吸、顎、鼻、姿勢といった要素を、どこまで関連づけて考え、どこから先は踏み込まないのか。<span>ZERO MEMBERS では、他部位や全身とのつながりの読み方、評価所見の統合、症例ごとの臨床推論を扱っています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="tmj-whole-body-article.html"><span class="rl-label">関連記事</span>顎関節と全身 ― 咬合・頭頸部・呼吸のつながり</a>
+            <a href="diaphragm-breathing-article.html"><span class="rl-label">関連記事</span>横隔膜と呼吸 ― 呼吸から身体を組み立て直す</a>
+            <a href="autonomic-selfcare-article.html"><span class="rl-label">関連記事</span>自律神経を整えるという言葉を分解する</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Chung F, et al. STOP-Bang Questionnaire: A Practical Approach to Screen for Obstructive Sleep Apnea. Chest. 2016. <a href="https://pubmed.ncbi.nlm.nih.gov/26378880/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/26378880/</a></li>
+            <li>Validation of the STOP-Bang questionnaire for screening of obstructive sleep apnea in the general population and commercial drivers: a systematic review and meta-analysis. 2021. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8590671/" target="_blank" rel="noopener noreferrer">https://pmc.ncbi.nlm.nih.gov/articles/PMC8590671/</a></li>
+            <li>日本呼吸器学会（睡眠時無呼吸症候群に関する情報）. <a href="https://www.jrs.or.jp/" target="_blank" rel="noopener noreferrer">https://www.jrs.or.jp/</a></li>
+            <li>厚生労働省 e-ヘルスネット（睡眠と生活習慣病、睡眠時無呼吸に関する解説）. <a href="https://www.e-healthnet.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">https://www.e-healthnet.mhlw.go.jp/</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.9">
+            医学情報は更新されます。実際の判断では、最新のガイドラインおよび担当する医療者の指示をご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・整体師・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。本記事の内容は、医療機関で受けている診断・治療を中断したり変更したりすることを意図したものではありません。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#intro">はじめに／この記事で分かること</a></li>
+            <li><a href="#basic">1. まず知っておきたい基本</a></li>
+            <li><a href="#notsimple">2. なぜ単純には判断できないのか</a></li>
+            <li><a href="#risk">3. なぜ、つなぐことが大切なのか</a></li>
+            <li><a href="#check">4. 現場で確認したいこと</a></li>
+            <li><a href="#policy">5. 運動支援と受診のすすめ方</a></li>
+            <li><a href="#redflag">6. 医療機関への相談を考えるサイン</a></li>
+            <li><a href="#avoid">7. 現場で避けたい対応</a></li>
+            <li><a href="#summary">8. まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">睡眠・呼吸</p>
+          <div class="tag-row"><span>#睡眠時無呼吸</span><span>#OSA</span><span>#いびき</span><span>#スクリーニング</span><span>#医療連携</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          記事一覧へ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="archive-2026-08.html">2026年8月講義一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>

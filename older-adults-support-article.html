@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高齢者の運動支援 | 零 -ZERO- BLOG</title>
+  <meta name="description" content="トレーナー・整体師向け。サルコペニア・フレイル・ロコモの違い、AWGS基準の位置づけ、転倒が多因子で起きる理解、「高齢者だから軽い運動だけ」を見直す視点、筋力とパワーへの負荷、栄養と多職種連携を解説します。">
+  <meta name="keywords" content="サルコペニア、フレイル、転倒予防、レジスタンストレーニング、AWGS">
+  <link rel="canonical" href="https://noriatsu3377-hue.github.io/ZERO.muryou/older-adults-support-article.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="高齢者の運動支援">
+  <meta property="og:description" content="「転ばせないために動かさない」を見直す。安全に負荷をかけ、能力を保つための基礎記事。">
+  <meta property="og:url" content="https://noriatsu3377-hue.github.io/ZERO.muryou/older-adults-support-article.html">
+  <meta property="og:image" content="https://noriatsu3377-hue.github.io/ZERO.muryou/assets/thumbnail_olderadults.png">
+  <meta property="article:section" content="高齢者・フレイル">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lead-box{border-left:3px solid var(--gold-primary);background:rgba(212,175,55,0.05);padding:18px 22px;border-radius:0 8px 8px 0;margin:24px 0;font-size:1rem;line-height:1.95}
+    .key-box{background:rgba(20,184,166,0.06);border:1px solid rgba(20,184,166,0.3);border-radius:10px;padding:18px 22px;margin:22px 0}
+    .key-box .box-title{font-weight:700;margin:0 0 10px 0;color:var(--free-accent-light);font-size:1rem}
+    .key-box ul{margin:0;padding-left:20px}
+    .key-box li{line-height:1.9;margin-bottom:4px}
+    .point-box{border-left:3px solid var(--free-accent-light);background:rgba(20,184,166,0.05);padding:16px 20px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.97rem;line-height:1.9}
+    .point-box .box-title{font-weight:700;margin:0 0 8px 0;color:var(--free-accent-light);font-size:1rem}
+    .no-box{border:1px dashed rgba(156,163,175,0.5);background:rgba(156,163,175,0.05);border-radius:8px;padding:16px 20px;margin:24px 0;font-size:0.95rem;line-height:1.9}
+    .no-box .box-title{font-weight:700;margin:0 0 8px 0;color:#cbd5e1;font-size:1rem}
+    .no-box ul{margin:0;padding-left:20px}
+    .no-box li{margin-bottom:6px}
+    .red-flag{border:1px solid rgba(220,90,80,0.55);background:rgba(180,60,50,0.09);border-radius:8px;padding:18px 22px;margin:28px 0;font-size:0.94rem;line-height:1.9;box-shadow:0 0 0 1px rgba(220,90,80,0.12)}
+    .red-flag .box-title{font-weight:700;margin:0 0 10px 0;color:#f0a08a;font-size:1.06rem}
+    .red-flag ul{margin:0 0 10px 0;padding-left:20px}
+    .rf-urgent{border-left:3px solid #e06a5a;padding-left:14px;margin:14px 0}
+    .rf-soon{border-left:3px solid #d9a441;padding-left:14px;margin:14px 0}
+    .rf-stop{border-left:3px solid #9ca3af;padding-left:14px;margin:14px 0}
+    .rf-label{font-weight:700;font-size:0.9rem;display:block;margin-bottom:6px}
+    .rf-urgent .rf-label{color:#f0a08a}
+    .rf-soon .rf-label{color:var(--gold-light)}
+    .rf-stop .rf-label{color:#cbd5e1}
+    .ex-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:18px 0}
+    .ex-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.04rem;margin:0 0 12px 0}
+    .ex-row{font-size:0.93rem;line-height:1.85;margin-bottom:8px;color:#d1d5db}
+    .ex-row b{color:var(--free-accent-light);display:inline-block;min-width:5.2em}
+    .check-card{background:rgba(25,29,36,0.6);border:1px solid var(--card-border);border-radius:10px;padding:20px 22px;margin:16px 0}
+    .check-card .box-title{font-weight:700;color:var(--gold-light);font-size:1.02rem;margin:0 0 12px 0}
+    .check-card ul{margin:0;padding-left:0;list-style:none}
+    .check-card li{font-size:0.93rem;line-height:1.85;color:#d1d5db;padding-left:24px;position:relative;margin-bottom:5px}
+    .check-card li:before{content:"\25A1";position:absolute;left:0;color:var(--gold-primary)}
+    .sp-table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+    table.sp-table{width:100%;border-collapse:collapse;min-width:500px;font-size:0.9rem}
+    table.sp-table th,table.sp-table td{border:1px solid var(--card-border);padding:10px 12px;text-align:left;vertical-align:top;line-height:1.7}
+    table.sp-table th{background:rgba(212,175,55,0.08);color:var(--text-primary);font-weight:700}
+    table.sp-table td{color:var(--text-secondary)}
+    .rel-list{display:grid;gap:12px;margin:18px 0}
+    .rel-list a{background:var(--card-bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 18px;font-size:0.92rem;color:var(--text-secondary);transition:var(--transition-fast);display:block}
+    .rel-list a:hover{border-color:var(--gold-primary);color:var(--text-primary)}
+    .rel-list .rl-label{display:block;font-size:0.72rem;color:var(--text-muted);margin-bottom:4px}
+    .ref-list{font-size:0.85rem;line-height:1.9;color:var(--text-muted);padding-left:22px}
+    .ref-list a{color:var(--free-accent-light);word-break:break-all}
+    .disclaimer{border:1px solid var(--card-border);background:rgba(25,29,36,0.5);border-radius:8px;padding:16px 20px;margin:26px 0;font-size:0.87rem;line-height:1.9;color:var(--text-muted)}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0 0}
+    .tag-row span{font-size:0.76rem;color:var(--text-muted);border:1px solid var(--card-border);border-radius:20px;padding:3px 12px}
+    .article-content p{line-height:1.95}
+    .article-content li{line-height:1.9}
+    @media (max-width:768px){.check-card,.ex-card,.red-flag{padding:16px}table.sp-table{min-width:440px}.ex-row b{display:block;min-width:0}}
+  </style>
+</head>
+<body>
+
+  <div class="reading-progress-container"><div class="reading-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+      <nav><ul class="nav-links"><li><a href="index.html">ホーム</a></li><li><a href="#" class="active">記事一覧</a></li></ul></nav>
+      <a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer" class="nav-cta">零を体験する</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-tag free">無料公開</span>
+        <span>高齢者・フレイル</span>
+        <span>2026.09.05</span>
+        <span>読了目安：約13分</span>
+      </div>
+      <h1 class="article-main-title">高齢者の運動支援</h1>
+      <p class="article-subtitle">― サルコペニア・フレイル・転倒予防 ―</p>
+      <div class="tag-row"><span>#サルコペニア</span><span>#フレイル</span><span>#転倒予防</span><span>#レジスタンストレーニング</span><span>#AWGS</span></div>
+    </header>
+
+    <div class="article-cover">
+      <img src="assets/thumbnail_olderadults.png" alt="高齢者の運動支援のイメージ">
+    </div>
+
+    <div class="article-body-layout">
+      <article class="article-content">
+
+        <section id="intro">
+          <h2>はじめに</h2>
+          <div class="lead-box">
+            「高齢の方だから、軽い体操くらいにしておきましょう」。<br><br>
+            善意から出た言葉です。転ばせてはいけない、無理をさせてはいけない。その気持ちはよく分かります。しかし、この判断が<strong>その方の能力を守れないことがある</strong>としたら、どうでしょうか。<br><br>
+            転倒を防ぐために動かさない。すると筋力とバランスが落ちる。落ちると、より転びやすくなる。<strong>安全のつもりの配慮が、逆の結果を招く</strong>ことがあるのです。<br><br>
+            この記事では、<strong>「安全に負荷をかけ、能力を保つ・高める」</strong>という考え方を中心に整理します。
+          </div>
+          <div class="key-box">
+            <p class="box-title">この記事で分かること</p>
+            <ul>
+              <li>サルコペニア、フレイル、ロコモの違い</li>
+              <li>AWGSなどアジア人向けの基準があること、その位置づけ</li>
+              <li>転倒が多因子で起きるという理解</li>
+              <li>「高齢者だから軽い運動だけ」という思い込みの問題</li>
+              <li>筋力・パワー・バランスへの負荷のかけ方</li>
+              <li>栄養と多職種連携の重要性</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="basic">
+          <h2>1．まず知っておきたい基本</h2>
+          <h3>加齢と衰弱は、同じではない</h3>
+          <p>
+            最初に、いちばん大切な前提を共有します。<strong>年齢を重ねることと、弱っていくことは同一ではありません。</strong>
+          </p>
+          <p>
+            加齢に伴う変化は確かにあります。しかし、<strong>個人差は非常に大きく</strong>、80代でも高い身体機能を保っている方がいます。「高齢だから」で一括りにすることは、その方の可能性を狭めることになります。
+          </p>
+          <h3>三つの言葉を整理する</h3>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>用語</th><th>意味</th><th>特徴</th></tr></thead>
+              <tbody>
+                <tr><td><strong>サルコペニア</strong></td><td>加齢に伴って<strong>筋量と筋力（および身体機能）が低下した状態</strong></td><td>「筋肉」に焦点がある概念</td></tr>
+                <tr><td><strong>フレイル</strong></td><td>加齢に伴い<strong>心身の予備能力が低下し、ストレスに対して脆弱になった状態</strong></td><td>身体面だけでなく、<strong>認知や社会的なつながりも含む</strong>広い概念。<strong>適切な介入により改善しうる</strong>とされる</td></tr>
+                <tr><td><strong>ロコモティブシンドローム</strong></td><td>運動器（骨・関節・筋肉・神経）の障害により、<strong>移動機能が低下した状態</strong></td><td>日本整形外科学会が提唱した概念。運動器に焦点がある</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="point-box">
+            <p class="box-title">「フレイルは改善しうる」という点が重要です</p>
+            フレイルは、<strong>健康な状態と要介護状態の中間に位置づけられ、適切な介入によって改善が期待できる</strong>とされています。<br><br>
+            つまり、<strong>私たちが関われる余地がある</strong>ということです。「もう歳だから」ではなく「今から取り組む意味がある」。この違いは、本人の意欲にも直結します。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="criteria">
+          <h2>2．評価の概念を知っておく</h2>
+          <p>
+            サルコペニアについては、アジア人を対象とした基準として<strong>AWGS（Asian Working Group for Sarcopenia）</strong>による2019年の合意があります<sup>[1]</sup>。
+          </p>
+          <p>
+            そこで用いられる評価の枠組みは、大きく次の3つです。
+          </p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead><tr><th>要素</th><th>代表的な指標</th></tr></thead>
+              <tbody>
+                <tr><td><strong>筋力</strong></td><td>握力</td></tr>
+                <tr><td><strong>身体機能</strong></td><td>歩行速度、椅子からの立ち上がり、SPPB（簡易身体能力バッテリー）</td></tr>
+                <tr><td><strong>筋量</strong></td><td>DXAや生体電気インピーダンス法による測定</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            AWGS 2019では、地域と医療機関のそれぞれに向けた手順が示されており、入口となる簡易な確認として<strong>下腿周囲長</strong>や<strong>SARC-F</strong>といった質問票が挙げられています<sup>[1]</sup>。
+          </p>
+          <div class="no-box">
+            <p class="box-title">これは診断のためのものではありません</p>
+            <strong>トレーナーや整体師が、これらの基準を用いて「あなたはサルコペニアです」と判断することはできません。</strong>診断は医師が行います。<br><br>
+            私たちがこれを知る意味は二つです。<strong>一つは、機能を客観的に把握する視点を持つこと。もう一つは、明らかに低下している方に受診をすすめられるようになることです。</strong><br><br>
+            「握力が弱い気がする」ではなく「握力と歩行速度を定期的に記録している」。この差が、支援の質を変えます。
+          </div>
+          <h3>現場で使える基本的な評価</h3>
+          <div class="check-card">
+            <p class="box-title">記録しておきたい項目</p>
+            <ul>
+              <li><strong>握力</strong>（左右）</li>
+              <li><strong>歩行速度</strong>（一定距離を歩く時間）</li>
+              <li><strong>椅子立ち上がりテスト</strong>（5回立ち座りの時間、または30秒間の回数）</li>
+              <li><strong>Timed Up and Go（TUG）</strong>：椅子から立ち上がり、3m歩いて戻り、座るまでの時間</li>
+              <li><strong>片脚立位時間</strong>（安全を確保したうえで）</li>
+              <li><strong>下腿周囲長</strong></li>
+              <li>体重の推移</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">同じ条件で、繰り返し測る</p>
+            大事なのは、<strong>その日の値そのものより変化</strong>です。同じ時間帯、同じ靴、同じ手順で。<strong>3か月前と比べてどうか</strong>――この情報が、本人にとっても医療者にとっても価値を持ちます。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="falls">
+          <h2>3．転倒は、多因子で起きる</h2>
+          <p>
+            転倒予防を「バランス練習」だけで考えると、大切な要素を見落とします。<strong>転倒には、複数の要因が関わることが知られています。</strong>
+          </p>
+          <div class="check-card">
+            <p class="box-title">確認しておきたい要因</p>
+            <ul>
+              <li><strong>転倒歴</strong>：過去1年の転倒の有無と回数（もっとも重要な情報の一つです）</li>
+              <li><strong>薬剤</strong>：種類と数。ふらつきや眠気に関わるものがあります</li>
+              <li><strong>視力</strong>：白内障、眼鏡の度、遠近両用レンズと階段</li>
+              <li><strong>足部と履物</strong>：変形、痛み、爪、スリッパや靴の状態</li>
+              <li><strong>住環境</strong>：段差、敷物、照明、手すり、コード類</li>
+              <li><strong>認知機能</strong>：注意の配分、二重課題への対応</li>
+              <li><strong>血圧</strong>：立ちくらみ、起立時のふらつき</li>
+              <li><strong>失禁・頻尿</strong>：夜間トイレへの移動</li>
+              <li><strong>栄養状態</strong>、<strong>飲酒</strong></li>
+              <li><strong>転倒への恐怖</strong>：活動を控えることで、かえって機能が落ちる場合があります</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">薬について、私たちができること</p>
+            <strong>薬の中止や変更を助言することはできません。</strong>これは明確に医療の領域です。<br><br>
+            できるのは、<strong>「ふらつきが増えた」「立ちくらみが出るようになった」といった変化に気づき、主治医や薬剤師への相談をすすめること</strong>です。「お薬手帳を持って、一度相談してみてください」と伝えられるだけで十分に価値があります。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="policy">
+          <h2>4．運動支援の基本方針</h2>
+          <div class="no-box">
+            <p class="box-title">「高齢者だから軽い運動だけ」という思い込み</p>
+            この思い込みは、現場に根強く残っています。しかし、<strong>安全性を確認したうえで、筋力やパワーに対してしっかりと負荷をかけることの重要性</strong>が指摘されています。<br><br>
+            軽い負荷の体操を繰り返すだけでは、<strong>筋力の向上には結びつきにくい</strong>ことがあります。もちろん、いきなり高強度から始めるという意味ではありません。<strong>段階を踏んだうえで、適切な負荷まで到達させる</strong>という考え方です。
+          </div>
+          <div class="key-box">
+            <p class="box-title">柱となる要素</p>
+            <ul>
+              <li><strong>レジスタンストレーニング</strong>：筋力を高める。特に下肢。</li>
+              <li><strong>バランストレーニング</strong>：転倒予防の中心的な要素として検討されています。</li>
+              <li><strong>歩行</strong>：日常の移動能力そのもの。量の確保も重要です。</li>
+              <li><strong>素早く力を出す能力（パワー）</strong>：つまずいたときに立て直す、椅子から立つ、階段を上る――こうした場面では、<strong>力の大きさだけでなく速さも関わります</strong>。</li>
+              <li><strong>栄養</strong>：特にタンパク質。運動だけでは十分でない場合があります。</li>
+            </ul>
+          </div>
+          <div class="point-box">
+            <p class="box-title">「素早く力を出す」という視点</p>
+            見落とされがちですが、重要な要素です。<strong>つまずいてから体勢を立て直すまでの時間は、ごくわずかです。</strong>そこで必要なのは、ゆっくり大きな力を出す能力ではなく、<strong>短時間で力を立ち上げる能力</strong>です。<br><br>
+            ゆっくりとした動作だけを続けていると、この能力に働きかけられません。<strong>安全を確保したうえで、少し速い動作を取り入れる</strong>ことには意味があります。
+          </div>
+          <h3>多職種との連携</h3>
+          <p>
+            この領域は、私たちだけで完結しません。
+          </p>
+          <ul>
+            <li><strong>医師</strong>：運動の可否、既往と合併症、薬剤の管理</li>
+            <li><strong>管理栄養士</strong>：栄養状態、タンパク質摂取、食事の実際</li>
+            <li><strong>歯科</strong>：噛む機能は、栄養摂取に直結します</li>
+            <li><strong>理学療法士・作業療法士</strong>：疾患のある方のリハビリテーション</li>
+            <li><strong>ケアマネジャー・地域包括支援センター</strong>：生活全般の支援</li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section id="exercise">
+          <h2>5．基礎的な運動例</h2>
+          <p>
+            以下は、<strong>医師から運動を制限されておらず、安全な環境（支持物、見守り）を確保できる場合</strong>の基本例です。
+          </p>
+          <div class="ex-card">
+            <p class="box-title">① 椅子スクワット</p>
+            <div class="ex-row"><b>目的</b>下肢の筋力を高め、立ち座りの動作能力を保つ</div>
+            <div class="ex-row"><b>方法</b>椅子の前に立ち、ゆっくり腰を下ろして座る。立ち上がる。慣れたら座面に触れる直前で止めて立ち上がる</div>
+            <div class="ex-row"><b>目安</b>8〜12回を1〜3セット。週2〜3回。楽にできるようになったら、椅子を低くする・回数を増やす・速度を上げるなど<strong>段階的に負荷を上げる</strong></div>
+            <div class="ex-row"><b>注意</b>後ろに必ず椅子を置く。手すりや机で支えてよい。膝や腰に強い痛みが出たら中止</div>
+          </div>
+          <div class="ex-card">
+            <p class="box-title">② カーフレイズ（かかと上げ）</p>
+            <div class="ex-row"><b>目的</b>ふくらはぎの筋力を高め、歩行や姿勢の安定に関わる能力を保つ</div>
+            <div class="ex-row"><b>方法</b>壁や手すりに手を添え、かかとをゆっくり持ち上げて下ろす</div>
+            <div class="ex-row"><b>目安</b>10〜15回を1〜3セット。慣れたら片脚ずつ（必ず支持物を使って）</div>
+            <div class="ex-row"><b>注意</b>ふらつく場合は必ず支えを使う。足やアキレス腱に痛みが出たら中止</div>
+          </div>
+          <div class="ex-card">
+            <p class="box-title">③ 支持物を使ったバランス運動</p>
+            <div class="ex-row"><b>目的</b>バランス能力を保ち、転倒のリスクに備える</div>
+            <div class="ex-row"><b>方法</b>手すりや机に手を添えて片脚立ち。慣れたら指1本だけの支持、次に支えなし（安全を確保して）。継ぎ足立ち（片足の前にもう一方を置く）も有効</div>
+            <div class="ex-row"><b>目安</b>左右各10〜30秒を2〜3回。毎日でも可</div>
+            <div class="ex-row"><b>注意</b><strong>必ず支えられる環境で行う。</strong>周囲に物を置かない。ふらつきやめまいがあれば中止</div>
+          </div>
+          <div class="ex-card">
+            <p class="box-title">④ 歩行と日常活動</p>
+            <div class="ex-row"><b>目的</b>移動能力そのものを保ち、活動量を確保する</div>
+            <div class="ex-row"><b>方法</b>無理のないペースで歩く。慣れてきたら、少し速く歩く時間を混ぜる</div>
+            <div class="ex-row"><b>目安</b>できる範囲から。まずは「毎日外に出る」ことでも十分な出発点です</div>
+            <div class="ex-row"><b>注意</b>暑さ・寒さ、路面、履物に配慮する。胸痛やふらつきがあれば中止</div>
+          </div>
+          <div class="point-box">
+            <p class="box-title">進めることを忘れない</p>
+            高齢の方への運動指導で最も多い落とし穴は、<strong>ずっと同じ内容を続けてしまうこと</strong>です。安全に配慮するあまり、負荷が上がらない。<br><br>
+            <strong>「楽にできるようになったら、次の段階へ」</strong>。この視点を持ち続けてください。それが、能力を保つ・高めるということです。
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="redflag">
+          <h2>6．医療機関への相談を考えるサイン</h2>
+          <div class="red-flag">
+            <p class="box-title">高齢の方の支援で確認したいサイン</p>
+            <div class="rf-urgent">
+              <span class="rf-label">■ 緊急性が高い可能性があるもの（速やかに、状況により救急対応）</span>
+              <ul>
+                <li>胸の痛み、圧迫感</li>
+                <li>失神、意識が遠のく</li>
+                <li>急激な息切れ、安静時の呼吸困難</li>
+                <li>急に生じた手足の麻痺やしびれ、ろれつが回らない、顔のゆがみ</li>
+                <li>急な意識状態の変化、いつもと明らかに様子が違う</li>
+                <li>転倒後に強い痛みがあり、立てない・歩けない（骨折の可能性）</li>
+              </ul>
+            </div>
+            <div class="rf-soon">
+              <span class="rf-label">■ 早めの医療相談が望ましいもの</span>
+              <ul>
+                <li>過去1年に転倒している、繰り返している</li>
+                <li>体重が半年で数kg以上減っている</li>
+                <li>握力や歩行速度が明らかに落ちてきた</li>
+                <li>立ちくらみ、ふらつきが増えた</li>
+                <li>食事量が減っている、食欲がない</li>
+                <li>薬が増えた、変わったあとに調子が変わった</li>
+                <li>物忘れが増えた、以前できたことが難しくなった</li>
+                <li>外出の頻度が明らかに減った、閉じこもりがちになっている</li>
+                <li>むくみが増えた、息切れしやすくなった</li>
+              </ul>
+            </div>
+            <div class="rf-stop">
+              <span class="rf-label">■ 運動を中止して確認すべきもの</span>
+              <ul>
+                <li>運動中の胸痛、強い息切れ、動悸</li>
+                <li>ふらつき、めまい、気分不良</li>
+                <li>いつもと違う疲労感、顔色の変化</li>
+                <li>関節や筋の強い痛み</li>
+              </ul>
+            </div>
+            <p style="margin:0">
+              <strong>「転倒した」という情報は、必ず記録して共有してください。</strong>本人が軽く扱っていても、繰り返す転倒は重要なサインです。また、<strong>転倒後に痛みが続く場合</strong>は、たとえ歩けていても骨折の可能性を考え、受診をすすめてください。
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="avoid">
+          <h2>7．現場で避けたい対応</h2>
+          <div class="no-box">
+            <p class="box-title">避けたい対応</p>
+            <ul>
+              <li><strong>「高齢だから軽い運動だけ」で固定する。</strong>安全を確認したうえで、負荷を上げていく視点が必要です。</li>
+              <li><strong>転倒を恐れて動かさない。</strong>機能低下を招き、かえって転倒リスクを高める可能性があります。</li>
+              <li><strong>運動だけで完結させる。</strong>栄養、薬、視力、住環境も転倒に関わります。</li>
+              <li><strong>薬について中止や減量を助言する。</strong>医療の領域です。相談をすすめるにとどめます。</li>
+              <li><strong>測定せずに「良くなっている気がする」で進める。</strong>記録があってこそ、変化が分かります。</li>
+              <li><strong>「もう歳ですから」と可能性を狭める言い方をする。</strong>フレイルは改善しうるとされています。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="summary">
+          <h2>8．まとめ</h2>
+          <div class="key-box">
+            <p class="box-title">今回の要点</p>
+            <ul>
+              <li>加齢と衰弱は同じではありません。個人差は非常に大きいものです。</li>
+              <li>サルコペニア・フレイル・ロコモは、焦点の異なる概念です。フレイルは改善しうるとされています。</li>
+              <li>AWGSなどの基準は、私たちが診断するためのものではありません。記録と受診勧奨に活かします。</li>
+              <li>転倒は多因子で起きます。転倒歴、薬剤、視力、足部、住環境、認知機能、血圧まで確認します。</li>
+              <li>「軽い運動だけ」ではなく、安全を確認したうえで筋力とパワーに負荷をかけます。</li>
+              <li>栄養と多職種連携を、運動と同じ重みで考えてください。</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cta">
+          <h2>さらに深く学びたい方へ</h2>
+          <div class="premium-restricted-header">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <div class="restricted-info">
+              この無料記事では、<span>高齢の方に安全に負荷をかけるための考え方と、転倒を多因子で捉える視点</span>を整理しました。<br><br>
+              実際の現場では、その先が問われます。測定した値をどう解釈し、どの要素から優先して取り組むのか。負荷をどの順序で、どれだけ上げるのか。合併症や既往のある方に、何を調整するのか。改善が停滞したとき、運動・栄養・生活のどこを見直すのか。<span>ZERO MEMBERS では、評価所見の統合、負荷量の設計、症例ごとの臨床推論を扱っています。</span>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="related">
+          <h2>あわせて読みたい</h2>
+          <div class="rel-list">
+            <a href="single-leg-stance-article.html"><span class="rl-label">関連記事</span>片脚立ちによる全身評価</a>
+            <a href="recovery-training-article.html"><span class="rl-label">関連記事</span>「追い込まない」時代の身体づくり</a>
+            <a href="tendinopathy-load-article.html"><span class="rl-label">関連記事</span>腱症（tendinopathy）と負荷管理</a>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="refs">
+          <h2>参考文献・情報源</h2>
+          <ol class="ref-list">
+            <li>Chen LK, et al. Asian Working Group for Sarcopenia: 2019 Consensus Update on Sarcopenia Diagnosis and Treatment. J Am Med Dir Assoc. 2020. <a href="https://www.jamda.com/article/S1525-8610(19)30872-2/abstract" target="_blank" rel="noopener noreferrer">https://www.jamda.com/article/S1525-8610(19)30872-2/abstract</a></li>
+            <li>日本サルコペニア・フレイル学会（診療ガイドラインおよび関連資料）. <a href="https://jssf.umin.jp/" target="_blank" rel="noopener noreferrer">https://jssf.umin.jp/</a></li>
+            <li>日本整形外科学会 ロコモティブシンドローム公式サイト（ロコモ ONLINE）. <a href="https://locomo-joa.jp/" target="_blank" rel="noopener noreferrer">https://locomo-joa.jp/</a></li>
+            <li>厚生労働省 e-ヘルスネット（高齢者の身体活動・運動、フレイルに関する解説）. <a href="https://www.e-healthnet.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">https://www.e-healthnet.mhlw.go.jp/</a></li>
+            <li>厚生労働省「健康づくりのための身体活動・運動ガイド」. <a href="https://www.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">https://www.mhlw.go.jp/</a></li>
+          </ol>
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.9">
+            医学情報は更新されます。実際の判断では、最新のガイドラインおよび担当する医療者の指示をご確認ください。
+          </p>
+        </section>
+
+        <section id="disclaimer">
+          <div class="disclaimer">
+            <strong>免責事項</strong><br>
+            本記事は、身体について学ぶ方に向けた教育目的の情報提供であり、医学的な診断や治療を目的とするものではありません。症状がある場合は、自己判断せず医師などの医療専門職にご相談ください。トレーナー・整体師・セラピストは、それぞれが保有する資格と職域の範囲内で活動してください。緊急性が疑われる症状がある場合は、運動や施術よりも医療機関の受診を優先してください。本記事の内容は、医療機関で受けている診断・治療を中断したり変更したりすることを意図したものではありません。
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">目次</h3>
+          <ul class="toc-list">
+            <li><a href="#intro">はじめに／この記事で分かること</a></li>
+            <li><a href="#basic">1. まず知っておきたい基本</a></li>
+            <li><a href="#criteria">2. 評価の概念を知っておく</a></li>
+            <li><a href="#falls">3. 転倒は多因子で起きる</a></li>
+            <li><a href="#policy">4. 運動支援の基本方針</a></li>
+            <li><a href="#exercise">5. 基礎的な運動例</a></li>
+            <li><a href="#redflag">6. 医療機関への相談を考えるサイン</a></li>
+            <li><a href="#avoid">7. 現場で避けたい対応</a></li>
+            <li><a href="#summary">8. まとめ</a></li>
+            <li><a href="#cta">さらに深く学びたい方へ</a></li>
+            <li><a href="#related">あわせて読みたい</a></li>
+            <li><a href="#refs">参考文献</a></li>
+            <li><a href="#disclaimer">免責事項</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block" style="border-color: rgba(212, 175, 55, 0.3); background: linear-gradient(180deg, #12151a 0%, rgba(212, 175, 55, 0.03) 100%);">
+          <h3 class="sidebar-title" style="color: var(--gold-primary);">カテゴリ</h3>
+          <p style="font-size:0.92rem;color:var(--text-secondary);line-height:1.8;margin:0">高齢者・フレイル</p>
+          <div class="tag-row"><span>#サルコペニア</span><span>#フレイル</span><span>#転倒予防</span><span>#レジスタンストレーニング</span><span>#AWGS</span></div>
+        </div>
+        <a href="index.html" class="sidebar-back-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+          記事一覧へ戻る
+        </a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>零 -ZERO-</span> <div class="logo-badge">BLOG</div></a>
+        <p>足す前に戻る。身体本来の完成形を統合的に学ぶ。</p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="archive-2026-08.html">2026年8月講義一覧</a></li>
+          <li><a href="https://noriatsu3377-hue.github.io/ZERO-/" target="_blank" rel="noopener noreferrer">コミュニティ概要</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">&copy; 2026 零 -ZERO- All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const bar = document.querySelector('.reading-progress-bar');
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) { bar.style.width = (window.pageYOffset / totalHeight) * 100 + '%'; }
+    });
+  </script>
+</body>
+</html>
