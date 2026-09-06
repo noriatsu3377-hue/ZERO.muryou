@@ -888,3 +888,322 @@ img {
     aspect-ratio: 16/9;
   }
 }
+
+/* =========================================================
+   記事共通コンポーネント（2026-09 追加）
+   基礎記事シリーズで再利用する汎用クラス。
+   個別記事へ重複CSSを書かず、ここを共通で参照する。
+   ========================================================= */
+
+/* --- キーボード操作時のフォーカス表示（アクセシビリティ） --- */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--gold-primary);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* --- 視覚的に隠すが読み上げには残すユーティリティ --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- パンくずリスト --- */
+.breadcrumb {
+  margin: 24px 0 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.breadcrumb li + li::before {
+  content: "\203A";
+  color: var(--text-muted);
+}
+.breadcrumb a {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+.breadcrumb a:hover {
+  color: var(--gold-primary);
+}
+.breadcrumb [aria-current="page"] {
+  color: var(--text-primary);
+}
+
+/* --- 汎用インフォメーションボックス --- */
+.zbox {
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 24px 0;
+  font-size: 0.97rem;
+  line-height: 1.95;
+}
+.zbox > :first-child { margin-top: 0; }
+.zbox > :last-child { margin-bottom: 0; }
+.zbox ul,
+.zbox ol { margin: 0; padding-left: 20px; }
+.zbox li { line-height: 1.9; margin-bottom: 5px; }
+.zbox-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+/* 導入（記事冒頭のリード） */
+.zbox--lead {
+  border-left: 3px solid var(--gold-primary);
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 0 10px 10px 0;
+  font-size: 1rem;
+}
+/* この記事でわかること／今回の要点 */
+.zbox--key {
+  background: rgba(20, 184, 166, 0.06);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+.zbox--key .zbox-title { color: var(--free-accent-light); }
+/* 臨床のポイント */
+.zbox--point {
+  border-left: 3px solid var(--free-accent-light);
+  background: rgba(20, 184, 166, 0.05);
+  border-radius: 0 10px 10px 0;
+}
+.zbox--point .zbox-title { color: var(--free-accent-light); }
+/* 東洋医学の観察モデル */
+.zbox--tcm {
+  border-left: 3px solid var(--gold-primary);
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 0 10px 10px 0;
+}
+.zbox--tcm .zbox-title { color: var(--gold-primary); }
+/* やってはいけない単純化・断定 */
+.zbox--caution {
+  border: 1px dashed rgba(156, 163, 175, 0.5);
+  background: rgba(156, 163, 175, 0.05);
+}
+.zbox--caution .zbox-title { color: #cbd5e1; }
+/* 補足のお知らせ */
+.zbox--notice {
+  border: 1px solid var(--card-border);
+  background: rgba(25, 29, 36, 0.55);
+  font-size: 0.92rem;
+}
+.zbox--notice .zbox-title { color: var(--gold-light); }
+
+/* --- レッドフラッグ（緊急度を色＋テキストラベルの両方で示す） --- */
+.redflag {
+  border: 1px solid rgba(220, 90, 80, 0.55);
+  background: rgba(180, 60, 50, 0.09);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 28px 0;
+  font-size: 0.94rem;
+  line-height: 1.9;
+  box-shadow: 0 0 0 1px rgba(220, 90, 80, 0.12);
+}
+.redflag > :last-child { margin-bottom: 0; }
+.redflag-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.06rem;
+  color: #f0a08a;
+  margin: 0 0 12px 0;
+}
+.rf-tier {
+  border-left: 3px solid #9ca3af;
+  padding-left: 14px;
+  margin: 14px 0;
+}
+.rf-tier ul { margin: 0; padding-left: 20px; }
+.rf-tier li { margin-bottom: 4px; }
+.rf-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+}
+.rf-tier--urgent { border-left-color: #e06a5a; }
+.rf-tier--urgent .rf-label { color: #f0a08a; }
+.rf-tier--soon { border-left-color: #d9a441; }
+.rf-tier--soon .rf-label { color: var(--gold-light); }
+.rf-tier--stop { border-left-color: #9ca3af; }
+
+/* --- カード（確認項目・運動例） --- */
+.zcard {
+  background: rgba(25, 29, 36, 0.6);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin: 18px 0;
+}
+.zcard > :last-child { margin-bottom: 0; }
+.zcard-title {
+  display: block;
+  font-weight: 700;
+  color: var(--gold-light);
+  font-size: 1.02rem;
+  margin: 0 0 12px 0;
+}
+/* チェックリスト（□ はCSSの装飾のため読み上げ対象外） */
+.z-check {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.z-check li {
+  font-size: 0.93rem;
+  line-height: 1.85;
+  color: #d1d5db;
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.z-check li::before {
+  content: "\25A1";
+  position: absolute;
+  left: 0;
+  color: var(--gold-primary);
+}
+/* 運動例の定義リスト（目的／方法／目安／注意） */
+.z-def {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.85;
+  color: #d1d5db;
+}
+.z-def dt {
+  float: left;
+  clear: left;
+  width: 5.2em;
+  font-weight: 700;
+  color: var(--free-accent-light);
+}
+.z-def dd {
+  margin: 0 0 8px 5.6em;
+}
+
+/* --- 表（スマートフォンで横スクロール、ページ全体はスクロールさせない） --- */
+.ztable-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 22px 0;
+  max-width: 100%;
+}
+.ztable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+  font-size: 0.9rem;
+}
+.ztable th,
+.ztable td {
+  border: 1px solid var(--card-border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.7;
+}
+.ztable th {
+  background: rgba(212, 175, 55, 0.08);
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.ztable td { color: var(--text-secondary); }
+
+/* --- 関連記事リンク --- */
+.zrel {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+}
+.zrel a {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+.zrel a:hover {
+  border-color: var(--gold-primary);
+  color: var(--text-primary);
+}
+.zrel-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+/* --- タグ・免責 --- */
+.ztags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ztags li {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+.zdisclaimer {
+  border: 1px solid var(--card-border);
+  background: rgba(25, 29, 36, 0.5);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 26px 0;
+  font-size: 0.87rem;
+  line-height: 1.9;
+  color: var(--text-muted);
+}
+
+/* --- 記事内CTA（既存の premium-cta-section を記事幅で使うための調整） --- */
+.article-content .premium-cta-section {
+  margin: 32px 0 8px;
+  padding: 40px 32px;
+}
+
+/* --- 記事本文の可読性 --- */
+.article-content p { line-height: 1.95; }
+.article-content li { line-height: 1.9; }
+
+@media (max-width: 768px) {
+  .zbox,
+  .redflag,
+  .zcard { padding: 16px; }
+  .ztable { min-width: 420px; }
+  .z-def dt { float: none; width: auto; }
+  .z-def dd { margin: 0 0 10px 0; }
+  .article-content .premium-cta-section { padding: 28px 20px; }
+}
