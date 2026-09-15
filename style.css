@@ -1188,6 +1188,89 @@ button:focus-visible,
   color: var(--text-muted);
 }
 
+
+/* --- 理解確認の設問（details/summary で解答を開閉） --- */
+.zquiz {
+  background: rgba(25, 29, 36, 0.6);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin: 18px 0;
+}
+.zquiz-q {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.98rem;
+  line-height: 1.85;
+  margin: 0 0 10px 0;
+}
+.zquiz details {
+  border-top: 1px solid var(--card-border);
+  padding-top: 12px;
+}
+.zquiz summary {
+  cursor: pointer;
+  color: var(--free-accent-light);
+  font-size: 0.9rem;
+  font-weight: 700;
+  list-style: none;
+}
+.zquiz summary::-webkit-details-marker { display: none; }
+.zquiz summary::before {
+  content: "\25B8 ";
+  display: inline-block;
+  transition: var(--transition-fast);
+}
+.zquiz details[open] summary::before { content: "\25BE "; }
+.zquiz-a {
+  font-size: 0.93rem;
+  line-height: 1.9;
+  color: #d1d5db;
+  margin: 10px 0 0 0;
+}
+.zquiz-a strong { color: var(--gold-light); }
+
+/* --- 図解（HTML/CSSで作成する概念図） --- */
+.zfig {
+  background: rgba(25, 29, 36, 0.5);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 22px;
+  margin: 24px 0;
+}
+.zfig figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-top: 14px;
+}
+.zflow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.zflow li {
+  flex: 1 1 140px;
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.zflow li strong {
+  display: block;
+  color: var(--gold-light);
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+}
+
 /* --- 記事内CTA（既存の premium-cta-section を記事幅で使うための調整） --- */
 .article-content .premium-cta-section {
   margin: 32px 0 8px;
