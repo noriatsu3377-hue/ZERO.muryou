@@ -1271,6 +1271,26 @@ button:focus-visible,
   margin-bottom: 4px;
 }
 
+
+/* --- 学習用ケースの段落・小見出し（2026-09-23 追加） --- */
+.zcase-p {
+  font-size: 0.94rem;
+  line-height: 1.9;
+  color: #d1d5db;
+  margin: 0 0 12px 0;
+}
+.zcase-h {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--free-accent-light);
+  margin: 14px 0 6px 0;
+}
+.zref-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+}
+
 /* --- 記事内CTA（既存の premium-cta-section を記事幅で使うための調整） --- */
 .article-content .premium-cta-section {
   margin: 32px 0 8px;
