@@ -1310,3 +1310,19 @@ button:focus-visible,
   .z-def dd { margin: 0 0 10px 0; }
   .article-content .premium-cta-section { padding: 28px 20px; }
 }
+
+/* ZM-CTA: 無料記事→MEMBERS導線 */
+.zm-cta{margin:48px 0 16px;padding:28px 24px;border:1px solid var(--gold-primary);border-radius:16px;background:var(--card-bg);box-shadow:0 0 24px var(--gold-glow)}
+.zm-cta-tag{display:inline-block;color:var(--gold-primary);font-weight:700;font-size:.85rem;letter-spacing:.1em;margin-bottom:10px}
+.zm-cta-text{color:var(--text-primary);line-height:1.8;margin:0 0 10px}
+.zm-cta-rel{color:var(--text-secondary);margin:0 0 10px;font-size:.95rem}
+.zm-cta-list{color:var(--text-secondary);margin:0 0 12px 1.2em;line-height:1.8;font-size:.95rem}
+.zm-cta-event{color:var(--gold-light);font-size:.92rem;margin:0 0 18px}
+.zm-cta-btn{display:inline-block}
+.zm-banner{margin:24px auto 8px;padding:24px;border:1px solid var(--gold-primary);border-radius:16px;background:var(--card-bg);text-align:center}
+.zm-banner .tag{color:var(--gold-primary);font-weight:700;font-size:.85rem;letter-spacing:.12em}
+.zm-banner h2{color:var(--text-primary);font-size:1.5rem;margin:8px 0}
+.zm-banner p{color:var(--text-secondary);line-height:1.8;margin:0 0 16px}
+.zm-benefits{list-style:none;padding:0;margin:16px auto 20px;max-width:520px;text-align:left;color:var(--text-secondary);line-height:2}
+.zm-benefits li::before{content:"✓ ";color:var(--gold-primary);font-weight:700}
+@media(max-width:600px){.zm-cta{padding:20px 16px}.zm-banner{padding:20px 16px}.zm-banner h2{font-size:1.25rem}}
